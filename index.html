@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Баланс очереди · Бионика и реабилитация</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --paper:#f5f6f8; --panel:#ffffff; --panel-2:#eef1f5; --ink:#1b2027; --muted:#5b6572;
+    --line:#dce0e7; --teal:#0d8a99; --indigo:#3f57c9; --amber:#c07d16; --warn:#c0491f; --good:#2f9e6f; --block:#d93f6a;
+    --shadow:0 1px 2px rgba(20,28,40,.06),0 6px 18px rgba(20,28,40,.05);
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,"Cascadia Code","JetBrains Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#0d1117; --panel:#151b24; --panel-2:#1b2330; --ink:#e8edf3; --muted:#98a4b2;
+    --line:#26303f; --teal:#2bc3d2; --indigo:#8b97ff; --amber:#e6ad55; --warn:#f0865c; --good:#4ccb92; --block:#f0658a;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28);
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:36px 22px 72px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
+  h1{font-size:clamp(23px,4vw,34px);line-height:1.1;margin:0 0 12px;font-weight:680;letter-spacing:-.02em}
+  .lede{font-size:15.5px;color:var(--muted);margin:0;max-width:64ch}
+  .toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:18px}
+  button.refresh{font-family:var(--mono);font-size:14px;font-weight:600;cursor:pointer;color:var(--paper);background:var(--teal);border:0;padding:10px 18px;border-radius:10px;box-shadow:var(--shadow);transition:opacity .12s,transform .12s}
+  button.refresh:hover{opacity:.92;transform:translateY(-1px)}
+  button.refresh:disabled{opacity:.55;cursor:default;transform:none}
+  .updated{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+  a.tg{font-family:var(--mono);font-size:13px;color:var(--teal);text-decoration:none}
+  a.tg:hover{text-decoration:underline}
+
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;box-shadow:var(--shadow);min-width:104px}
+  .stat b{font-family:var(--mono);font-size:20px;font-variant-numeric:tabular-nums;display:block}
+  .stat span{font-size:12px;color:var(--muted)}
+
+  h2{font-size:13px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:42px 0 16px;display:flex;align-items:center;gap:10px}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:20px 22px}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;margin:0 0 8px;font-size:13px}
+  .legend .k{display:inline-flex;align-items:center;gap:7px;color:var(--ink)}
+  .swatch{width:12px;height:12px;border-radius:3px;flex:none}
+  .chart-scroll{overflow-x:auto}
+  svg.balance{display:block;height:auto;max-width:100%}
+  .callout{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--block);border-radius:12px;box-shadow:var(--shadow);padding:16px 20px;margin-top:18px;font-size:14.5px}
+  .callout b{color:var(--ink)}
+
+  details{margin-top:18px}
+  summary{cursor:pointer;font-family:var(--mono);font-size:13px;color:var(--teal)}
+  table.data{border-collapse:collapse;width:100%;margin-top:12px;font-size:13px;font-variant-numeric:tabular-nums}
+  table.data th,table.data td{padding:6px 12px;border-bottom:1px solid var(--line);text-align:right}
+  table.data th:first-child,table.data td:first-child{text-align:left;font-family:var(--mono)}
+  table.data th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+
+  footer{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  footer code{font-family:var(--mono);color:var(--ink);background:var(--panel-2);padding:2px 6px;border-radius:6px}
+  .err{color:var(--warn);font-size:14px;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Монитор · баланс очереди</p>
+  <h1>Приход ↔ публикация новостей</h1>
+  <p class="lede">Живые данные конвейера канала «Бионика и реабилитация». Обновляются автоматически из репозитория; кнопкой «Обновить» можно перезапросить вручную.</p>
+  <div class="toolbar">
+    <button class="refresh" id="btn" onclick="load()">↻ Обновить</button>
+    <span class="updated" id="updated">загрузка…</span>
+    <a class="tg" href="https://t.me/MA_Prosthetics" target="_blank" rel="noopener">✈ канал @MA_Prosthetics</a>
+  </div>
+  <div id="err"></div>
+
+  <div class="stats" id="tiles"></div>
+
+  <h2>Баланс за 30 дней</h2>
+  <div class="stats" id="balance-tiles"></div>
+
+  <h2>По дням · добавлено vs опубликовано</h2>
+  <div class="card">
+    <div class="legend">
+      <span class="k"><span class="swatch" style="background:var(--indigo)"></span>добавлено в базу</span>
+      <span class="k"><span class="swatch" style="background:var(--amber)"></span>опубликовано</span>
+      <span class="k"><svg width="16" height="8" style="flex:none"><line x1="0" y1="4" x2="16" y2="4" stroke="var(--teal)" stroke-width="2"/></svg>ширина сбора (1–7)</span>
+    </div>
+    <div class="chart-scroll"><div id="chart"></div></div>
+  </div>
+
+  <details>
+    <summary>Показать таблицу данных</summary>
+    <table class="data" id="tbl">
+      <thead><tr><th>Дата (МСК)</th><th>Добавлено</th><th>Опубликовано</th><th>Ширина</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </details>
+
+  <footer>Источник: приватный репозиторий <code>MA-protez</code> · агрегаты пересобирает <code>scripts/build_balance.py</code>. Тексты новостей и список компаний на этой странице не публикуются.</footer>
+</div>
+
+<script>
+const NS = "http://www.w3.org/2000/svg";
+const el = (n,at,txt) => { const e=document.createElementNS(NS,n); for(const k in at) e.setAttribute(k,at[k]); if(txt!=null) e.textContent=txt; return e; };
+
+function tile(val, label, color){
+  const d=document.createElement("div"); d.className="stat";
+  d.innerHTML = `<b${color?` style="color:${color}"`:""}>${val}</b><span>${label}</span>`;
+  return d;
+}
+
+function renderTiles(d){
+  const t=d.totals, w=d.width;
+  const host=document.getElementById("tiles"); host.innerHTML="";
+  host.append(
+    tile(t.companies, "компаний в списке"),
+    tile(t.total, "всего в базе"),
+    tile(t.new, "готовы к публикации", "var(--amber)"),
+    tile(t.posted, "опубликовано", "var(--good)"),
+    tile(t.blocked, "заблокировано", "var(--block)"),
+    tile(`${w.level} · ${w.mode==="auto"?"АВТО":"ручной"}`, `ширина сбора (из ${w.max})`, "var(--teal)"),
+  );
+  // баланс за 30 дней
+  const s=d.series;
+  const recent=s.slice(-7).reduce((a,x)=>a+x.added,0);
+  const intake=(recent/7);
+  const pace=Math.max(1, Math.ceil(t.new/10));
+  const bh=document.getElementById("balance-tiles"); bh.innerHTML="";
+  bh.append(
+    tile("+"+d.added_30d, "добавлено (30 дней)", "var(--indigo)"),
+    tile("−"+d.published_30d, "опубликовано (30 дней)", "var(--amber)"),
+    tile(t.new, "в буфере сейчас (new)"),
+    tile("~"+intake.toFixed(1), "приток / день (7д)", intake<1?"var(--warn)":"var(--ink)"),
+    tile("⌈new/10⌉ = "+pace, "темп публикации / день"),
+  );
+}
+
+function renderChart(d){
+  const BAL=d.series, WMAX=(d.width&&d.width.max)||7;
+  const YMAXraw=Math.max(2, ...BAL.map(x=>Math.max(x.added>50?0:x.added, x.published)));
+  const YMAX=Math.min(6, Math.max(4, YMAXraw)); const GRID=[0,2,4,YMAX].filter((v,i,a)=>a.indexOf(v)===i);
+  const bandTop=20, bandH=30;
+  const pad={l:40,r:14,t:bandTop+bandH+24,b:44};
+  const slotW=Math.max(26, Math.min(40, Math.floor(900/BAL.length))), barW=Math.round(slotW*0.33), gapIn=2, plotH=210;
+  const W=pad.l+BAL.length*slotW+pad.r, H=pad.t+plotH+pad.b;
+  const yPix=v=>pad.t+plotH-Math.min(v,YMAX)/YMAX*plotH;
+  const bandY=w=>bandTop+bandH-(w-1)/(WMAX-1)*bandH;
+  const cx=i=>pad.l+i*slotW+slotW/2;
+  const svg=el("svg",{class:"balance",viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:"img",
+    "aria-label":"По дням: добавлено (индиго) и опубликовано (янтарь), сверху дорожка ширины сбора."});
+  // band
+  svg.appendChild(el("rect",{x:pad.l,y:bandTop,width:(W-pad.r-pad.l),height:bandH,rx:6,fill:"var(--panel-2)",opacity:.55}));
+  svg.appendChild(el("text",{x:pad.l,y:bandTop-6,fill:"var(--teal)","font-size":10.5,"font-family":"var(--mono)"},"ширина сбора новостей (1→"+WMAX+")"));
+  svg.appendChild(el("text",{x:pad.l-8,y:bandTop+9,"text-anchor":"end",fill:"var(--muted)","font-size":10,"font-family":"var(--mono)"},WMAX));
+  svg.appendChild(el("text",{x:pad.l-8,y:bandTop+bandH+2,"text-anchor":"end",fill:"var(--muted)","font-size":10,"font-family":"var(--mono)"},1));
+  let bp="",prevW=null;
+  BAL.forEach((row,i)=>{ if(row.width==null) return; const x=cx(i),y=bandY(row.width);
+    if(bp===""){bp=`M ${x} ${y}`;} else {bp+=` L ${x} ${bandY(prevW)} L ${x} ${y}`;} prevW=row.width; });
+  if(bp) svg.appendChild(el("path",{d:bp,fill:"none",stroke:"var(--teal)","stroke-width":2}));
+  BAL.forEach((row,i)=>{ if(row.width==null) return; const c=el("circle",{cx:cx(i),cy:bandY(row.width),r:3.2,fill:"var(--teal)"});
+    c.appendChild(el("title",null,`${row.date} · ширина ${row.width}`)); svg.appendChild(c); });
+  // grid
+  for(const g of GRID){ const yy=yPix(g);
+    svg.appendChild(el("line",{x1:pad.l,y1:yy,x2:W-pad.r,y2:yy,stroke:"var(--line)","stroke-width":1}));
+    svg.appendChild(el("text",{x:pad.l-8,y:yy+4,"text-anchor":"end",fill:"var(--muted)","font-size":11,"font-family":"var(--mono)"},g)); }
+  // bars
+  BAL.forEach((row,i)=>{
+    const slotX=pad.l+i*slotW, x0=slotX+(slotW-(barW*2+gapIn))/2;
+    const draw=(val,x,color,label)=>{ if(val<=0) return; const yy=yPix(Math.min(val,YMAX)),h=pad.t+plotH-yy;
+      const r=el("rect",{x,y:yy,width:barW,height:h,rx:2.5,fill:color}); r.appendChild(el("title",null,`${row.date} · ${label}: ${val}`)); svg.appendChild(r);
+      svg.appendChild(el("text",{x:x+barW/2,y:yy-4,"text-anchor":"middle",fill:"var(--muted)","font-size":10,"font-family":"var(--mono)"},val)); };
+    draw(row.added,x0,"var(--indigo)","добавлено");
+    draw(row.published,x0+barW+gapIn,"var(--amber)","опубликовано");
+    if(i%5===0||i===BAL.length-1) svg.appendChild(el("text",{x:slotX+slotW/2,y:H-pad.b+18,"text-anchor":"middle",fill:"var(--muted)","font-size":10.5,"font-family":"var(--mono)"},row.date.slice(5)));
+  });
+  svg.appendChild(el("line",{x1:pad.l,y1:yPix(0),x2:W-pad.r,y2:yPix(0),stroke:"var(--muted)","stroke-width":1.5}));
+  const host=document.getElementById("chart"); host.innerHTML=""; host.appendChild(svg);
+}
+
+function renderTable(d){
+  const tb=document.querySelector("#tbl tbody"); tb.innerHTML="";
+  for(const row of d.series){ const tr=document.createElement("tr");
+    tr.innerHTML=`<td>${row.date}</td><td>${row.added||"·"}</td><td>${row.published||"·"}</td><td>${row.width==null?"·":row.width}</td>`;
+    tb.appendChild(tr); }
+}
+
+function fmtUpdated(iso){
+  try{ const dt=new Date(iso);
+    return "обновлено: "+dt.toLocaleString("ru-RU",{timeZone:"Europe/Moscow",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"})+" МСК"; }
+  catch(e){ return "обновлено: "+iso; }
+}
+
+async function load(){
+  const btn=document.getElementById("btn"), up=document.getElementById("updated"), err=document.getElementById("err");
+  btn.disabled=true; up.textContent="обновление…"; err.textContent="";
+  try{
+    const r=await fetch("./balance.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok) throw new Error("HTTP "+r.status);
+    const d=await r.json();
+    renderTiles(d); renderChart(d); renderTable(d);
+    up.textContent=fmtUpdated(d.generated_at);
+  }catch(e){
+    err.innerHTML='<p class="err">Не удалось загрузить данные ('+e.message+'). Проверь, что balance.json опубликован.</p>';
+    up.textContent="ошибка загрузки";
+  }finally{ btn.disabled=false; }
+}
+load();
+</script>
+</body>
+</html>

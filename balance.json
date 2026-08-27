@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-08-27T16:37:09+00:00",
+  "totals": {
+    "total": 58,
+    "new": 8,
+    "posted": 49,
+    "blocked": 1,
+    "companies": 67
+  },
+  "width": {
+    "level": 7,
+    "mode": "manual",
+    "max": 7
+  },
+  "added_30d": 58,
+  "published_30d": 49,
+  "series": [
+    {
+      "date": "2026-07-29",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-07-30",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-07-31",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-01",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-02",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-03",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-04",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-05",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-06",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-07",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-08",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-09",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-10",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-11",
+      "added": 0,
+      "published": 0,
+      "width": null
+    },
+    {
+      "date": "2026-08-12",
+      "added": 53,
+      "published": 5,
+      "width": 1
+    },
+    {
+      "date": "2026-08-13",
+      "added": 1,
+      "published": 5,
+      "width": 1
+    },
+    {
+      "date": "2026-08-14",
+      "added": 1,
+      "published": 5,
+      "width": 1
+    },
+    {
+      "date": "2026-08-15",
+      "added": 0,
+      "published": 4,
+      "width": 1
+    },
+    {
+      "date": "2026-08-16",
+      "added": 0,
+      "published": 4,
+      "width": 1
+    },
+    {
+      "date": "2026-08-17",
+      "added": 0,
+      "published": 4,
+      "width": 1
+    },
+    {
+      "date": "2026-08-18",
+      "added": 0,
+      "published": 4,
+      "width": 1
+    },
+    {
+      "date": "2026-08-19",
+      "added": 0,
+      "published": 3,
+      "width": 1
+    },
+    {
+      "date": "2026-08-20",
+      "added": 3,
+      "published": 3,
+      "width": 2
+    },
+    {
+      "date": "2026-08-21",
+      "added": 0,
+      "published": 2,
+      "width": 7
+    },
+    {
+      "date": "2026-08-22",
+      "added": 0,
+      "published": 2,
+      "width": null
+    },
+    {
+      "date": "2026-08-23",
+      "added": 0,
+      "published": 2,
+      "width": 7
+    },
+    {
+      "date": "2026-08-24",
+      "added": 0,
+      "published": 2,
+      "width": null
+    },
+    {
+      "date": "2026-08-25",
+      "added": 0,
+      "published": 2,
+      "width": 7
+    },
+    {
+      "date": "2026-08-26",
+      "added": 0,
+      "published": 1,
+      "width": null
+    },
+    {
+      "date": "2026-08-27",
+      "added": 0,
+      "published": 1,
+      "width": null
+    }
+  ]
+}
