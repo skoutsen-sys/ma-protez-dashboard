@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-31T16:20:22+00:00",
+  "generated_at": "2026-08-31T18:20:11+00:00",
   "totals": {
     "total": 75,
-    "new": 17,
-    "posted": 57,
+    "new": 16,
+    "posted": 58,
     "blocked": 1,
     "companies": 67
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 75,
-  "published_30d": 57,
+  "published_30d": 58,
   "series": [
     {
       "date": "2026-08-02",
@@ -192,7 +192,7 @@
     {
       "date": "2026-08-31",
       "added": 1,
-      "published": 1,
+      "published": 2,
       "width": 1
     }
   ]
