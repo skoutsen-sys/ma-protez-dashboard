@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T02:25:03+00:00",
+  "generated_at": "2026-09-01T04:26:00+00:00",
   "totals": {
     "total": 75,
     "new": 16,
@@ -193,7 +193,7 @@
       "date": "2026-09-01",
       "added": 0,
       "published": 0,
-      "width": null
+      "width": 1
     }
   ]
 }
