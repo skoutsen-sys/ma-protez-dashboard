@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T20:26:44+00:00",
+  "generated_at": "2026-09-02T22:25:30+00:00",
   "totals": {
     "total": 75,
     "new": 11,
@@ -15,12 +15,6 @@
   "added_30d": 75,
   "published_30d": 62,
   "series": [
-    {
-      "date": "2026-08-04",
-      "added": 0,
-      "published": 0,
-      "width": null
-    },
     {
       "date": "2026-08-05",
       "added": 0,
@@ -193,6 +187,12 @@
       "date": "2026-09-02",
       "added": 0,
       "published": 2,
+      "width": null
+    },
+    {
+      "date": "2026-09-03",
+      "added": 0,
+      "published": 0,
       "width": null
     }
   ]
