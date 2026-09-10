@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-09-10T14:26:57+00:00",
+  "generated_at": "2026-09-10T16:26:03+00:00",
   "totals": {
-    "total": 82,
-    "new": 8,
-    "posted": 72,
+    "total": 84,
+    "new": 9,
+    "posted": 73,
     "blocked": 2,
-    "companies": 68
+    "companies": 72
   },
   "width": {
     "level": 1,
     "mode": "manual",
     "max": 7
   },
-  "added_30d": 82,
-  "published_30d": 72,
+  "added_30d": 84,
+  "published_30d": 73,
   "series": [
     {
       "date": "2026-08-12",
@@ -191,8 +191,8 @@
     },
     {
       "date": "2026-09-10",
-      "added": 0,
-      "published": 1,
+      "added": 2,
+      "published": 2,
       "width": null
     }
   ]
