@@ -35,6 +35,22 @@
   .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;box-shadow:var(--shadow);min-width:104px}
   .stat b{font-family:var(--mono);font-size:20px;font-variant-numeric:tabular-nums;display:block}
   .stat span{font-size:12px;color:var(--muted)}
+  .stat.clickable{cursor:pointer;transition:border-color .12s,transform .12s}
+  .stat.clickable:hover{border-color:var(--teal);transform:translateY(-1px)}
+
+  .drillcard{margin-top:14px}
+  .drillhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:14px;color:var(--ink)}
+  .drillhead .x{background:none;border:0;color:var(--muted);font-size:16px;cursor:pointer;line-height:1}
+  ul.cols{columns:2;column-gap:24px;margin:0;padding:0 0 0 18px;font-size:13.5px}
+  ul.cols li{margin:3px 0}
+  ul.newslist{list-style:none;margin:0;padding:0;font-size:13.5px;max-height:62vh;overflow:auto}
+  ul.newslist li{padding:6px 2px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+  .newslist .d{font-family:var(--mono);color:var(--muted);font-size:12px}
+  .newslist .c{color:var(--teal);font-weight:600}
+  .bd{display:inline-block;width:16px;text-align:center;flex:none}
+  .bd.good{color:var(--good)}.bd.block{color:var(--block)}.bd.amber{color:var(--amber)}
+  .rf{font-size:11px}
+  @media(max-width:560px){ul.cols{columns:1}}
 
   h2{font-size:13px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:42px 0 16px;display:flex;align-items:center;gap:10px}
   h2::after{content:"";flex:1;height:1px;background:var(--line)}
@@ -73,6 +89,8 @@
   <div id="err"></div>
 
   <div class="stats" id="tiles"></div>
+  <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Нажми на плитку «компаний», «всего в базе», «готовы», «опубликовано» или «заблокировано» — покажу список.</p>
+  <div id="drill"></div>
 
   <h2>Баланс за 30 дней</h2>
   <div class="stats" id="balance-tiles"></div>
@@ -95,28 +113,54 @@
     </table>
   </details>
 
-  <footer>Источник: приватный репозиторий <code>MA-protez</code> · агрегаты пересобирает <code>scripts/build_balance.py</code>. Тексты новостей и список компаний на этой странице не публикуются.</footer>
+  <footer>Источник: приватный репозиторий <code>MA-protez</code> · данные пересобирает <code>scripts/build_balance.py</code> и публикует сюда автоматически. Показаны названия компаний и заголовки новостей (без полных текстов).</footer>
 </div>
 
 <script>
 const NS = "http://www.w3.org/2000/svg";
 const el = (n,at,txt) => { const e=document.createElementNS(NS,n); for(const k in at) e.setAttribute(k,at[k]); if(txt!=null) e.textContent=txt; return e; };
 
-function tile(val, label, color){
-  const d=document.createElement("div"); d.className="stat";
+let D=null, openKind=null;
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+function tile(val, label, color, drill){
+  const d=document.createElement("div"); d.className="stat"+(drill?" clickable":"");
   d.innerHTML = `<b${color?` style="color:${color}"`:""}>${val}</b><span>${label}</span>`;
+  if(drill){ d.title="показать список"; d.onclick=()=>showDrill(drill); }
   return d;
+}
+
+function showDrill(kind){
+  const host=document.getElementById("drill");
+  if(!D) return;
+  if(openKind===kind){ host.innerHTML=""; openKind=null; return; }
+  openKind=kind;
+  host.innerHTML = kind==="companies" ? renderCompanies() : renderNews(kind.split(":")[1]);
+  host.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function renderCompanies(){
+  const list=(D.companies||[]).slice().sort((a,b)=>a.name.localeCompare(b.name,"ru"));
+  const items=list.map(c=>`<li>${esc(c.name)}${c.region==="RU"?' <span class="rf">🇷🇺</span>':''}</li>`).join("");
+  return `<div class="card drillcard"><div class="drillhead"><b>Компании · ${list.length}</b><button class="x" onclick="showDrill('companies')" aria-label="закрыть">✕</button></div><ul class="cols">${items}</ul></div>`;
+}
+function renderNews(filter){
+  let list=(D.news||[]);
+  if(filter && filter!=="all") list=list.filter(n=>n.status===filter);
+  const label={all:"все",new:"готовы к публикации",posted:"опубликованы",blocked:"заблокированы"}[filter]||filter;
+  const badge=s=> s==="posted"?'<span class="bd good">✓</span>':(s==="blocked"?'<span class="bd block">🚫</span>':'<span class="bd amber">•</span>');
+  const rows=list.map(n=>`<li>${badge(n.status)}<span class="d">${esc(n.date||"—")}</span> <span class="c">${esc(n.company||"")}</span> — ${esc(n.title||"")}</li>`).join("");
+  return `<div class="card drillcard"><div class="drillhead"><b>Новости · ${label} · ${list.length}</b><button class="x" onclick="showDrill('news:${filter}')" aria-label="закрыть">✕</button></div><ul class="newslist">${rows||'<li>пусто</li>'}</ul></div>`;
 }
 
 function renderTiles(d){
   const t=d.totals, w=d.width;
   const host=document.getElementById("tiles"); host.innerHTML="";
   host.append(
-    tile(t.companies, "компаний в списке"),
-    tile(t.total, "всего в базе"),
-    tile(t.new, "готовы к публикации", "var(--amber)"),
-    tile(t.posted, "опубликовано", "var(--good)"),
-    tile(t.blocked, "заблокировано", "var(--block)"),
+    tile(t.companies, "компаний в списке", null, "companies"),
+    tile(t.total, "всего в базе", null, "news:all"),
+    tile(t.new, "готовы к публикации", "var(--amber)", "news:new"),
+    tile(t.posted, "опубликовано", "var(--good)", "news:posted"),
+    tile(t.blocked, "заблокировано", "var(--block)", "news:blocked"),
     tile(`${w.level} · ${w.mode==="auto"?"АВТО":"ручной"}`, `ширина сбора (из ${w.max})`, "var(--teal)"),
   );
   // баланс за 30 дней
@@ -195,8 +239,9 @@ async function load(){
   try{
     const r=await fetch("./balance.json?t="+Date.now(),{cache:"no-store"});
     if(!r.ok) throw new Error("HTTP "+r.status);
-    const d=await r.json();
+    const d=await r.json(); D=d;
     renderTiles(d); renderChart(d); renderTable(d);
+    if(openKind){ const k=openKind; openKind=null; showDrill(k); }
     up.textContent=fmtUpdated(d.generated_at);
   }catch(e){
     err.innerHTML='<p class="err">Не удалось загрузить данные ('+e.message+'). Проверь, что balance.json опубликован.</p>';
