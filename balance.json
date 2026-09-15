@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-15T04:53:33+00:00",
+  "generated_at": "2026-09-15T11:43:19+00:00",
   "totals": {
-    "total": 88,
-    "new": 8,
-    "posted": 78,
+    "total": 90,
+    "new": 9,
+    "posted": 79,
     "blocked": 2,
     "companies": 72
   },
@@ -12,8 +12,8 @@
     "mode": "manual",
     "max": 7
   },
-  "added_30d": 33,
-  "published_30d": 55,
+  "added_30d": 35,
+  "published_30d": 56,
   "series": [
     {
       "date": "2026-08-17",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-09-15",
-      "added": 0,
-      "published": 0,
-      "width": null
+      "added": 2,
+      "published": 1,
+      "width": 1
     }
   ],
   "companies": [
@@ -516,6 +516,13 @@
       "region": "RU"
     },
     {
+      "date": "2026-09-10",
+      "company": "Zimmer Biomet",
+      "title": "Сокращение штата на 580 сотрудников в Швейцарии",
+      "status": "new",
+      "region": "world"
+    },
+    {
       "date": "2026-09-09",
       "company": "Teh Lin Prosthetic & Orthopaedic Inc.",
       "title": "Участие Teh Lin на MEDICAL FAIR ASIA 2026",
@@ -534,6 +541,13 @@
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet объявляет о реструктуризации руководства Америки",
       "status": "posted",
+      "region": "world"
+    },
+    {
+      "date": "2026-09-08",
+      "company": "Zimmer Biomet",
+      "title": "Реструктуризация руководства американского региона и подразделения робототехники",
+      "status": "new",
       "region": "world"
     },
     {
@@ -1030,7 +1044,7 @@
       "date": "2026-03-27",
       "company": "BionicM",
       "title": "BionicM и Brooks Rehabilitation сравнят Bio Leg с микропроцессорными коленями",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
