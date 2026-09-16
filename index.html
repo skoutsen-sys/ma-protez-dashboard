@@ -51,6 +51,14 @@
   .bd.good{color:var(--good)}.bd.block{color:var(--block)}.bd.amber{color:var(--amber)}
   .rf{font-size:11px}
   @media(max-width:560px){ul.cols{columns:1}}
+  ul.storylist{list-style:none;margin:0;padding:0;font-size:14px;max-height:62vh;overflow:auto}
+  ul.storylist li{padding:9px 2px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+  ul.storylist li:last-child{border-bottom:0}
+  ul.storylist li:hover .c{text-decoration:underline}
+  .story{padding:12px 0;border-bottom:1px solid var(--line)}
+  .story:last-child{border-bottom:0}
+  .storyn{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:5px}
+  .story p{margin:0;font-size:14.5px;line-height:1.6}
 
   h2{font-size:13px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:42px 0 16px;display:flex;align-items:center;gap:10px}
   h2::after{content:"";flex:1;height:1px;background:var(--line)}
@@ -113,6 +121,11 @@
     </table>
   </details>
 
+  <h2>Истории компаний</h2>
+  <div class="stats" id="story-tiles"></div>
+  <p style="font-size:12.5px;color:var(--muted);margin:8px 0 0">Серия «Истории компаний»: нажми на число — список компаний с числом историй, затем на компанию — все её истории на одном экране.</p>
+  <div id="story-drill"></div>
+
   <footer>Источник: приватный репозиторий <code>MA-protez</code> · данные пересобирает <code>scripts/build_balance.py</code> и публикует сюда автоматически. Показаны названия компаний и заголовки новостей (без полных текстов).</footer>
 </div>
 
@@ -150,6 +163,40 @@ function renderNews(filter){
   const badge=s=> s==="posted"?'<span class="bd good">✓</span>':(s==="blocked"?'<span class="bd block">🚫</span>':'<span class="bd amber">•</span>');
   const rows=list.map(n=>`<li>${badge(n.status)}<span class="d">${esc(n.date||"—")}</span> <span class="c">${esc(n.company||"")}</span> — ${esc(n.title||"")}</li>`).join("");
   return `<div class="card drillcard"><div class="drillhead"><b>Новости · ${label} · ${list.length}</b><button class="x" onclick="showDrill('news:${filter}')" aria-label="закрыть">✕</button></div><ul class="newslist">${rows||'<li>пусто</li>'}</ul></div>`;
+}
+
+let storyOpen=false;
+function renderStoryTiles(){
+  const host=document.getElementById("story-tiles"); host.innerHTML="";
+  const n=(D.stories||[]).length;
+  const d=document.createElement("div"); d.className="stat clickable";
+  d.innerHTML=`<b style="color:var(--teal)">${n}</b><span>циклов историй · нажми</span>`;
+  d.title="показать список"; d.onclick=toggleStories;
+  host.append(d);
+}
+function toggleStories(){
+  const host=document.getElementById("story-drill");
+  if(!D) return;
+  if(storyOpen){ host.innerHTML=""; storyOpen=false; return; }
+  storyOpen=true; renderStoryList();
+  host.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function renderStoryList(){
+  const host=document.getElementById("story-drill");
+  const list=(D.stories||[]).slice().sort((a,b)=>a.company.localeCompare(b.company,"ru"));
+  const rows=list.map((g,i)=>{
+    const posted=g.posts.filter(p=>p.status==="posted").length;
+    return `<li data-i="${i}"><span class="c">${esc(g.company)}</span>${g.region==="RU"?' <span class="rf">🇷🇺</span>':''} <span class="d">${g.posts.length} историй${posted?` · ${posted} опубл.`:''}</span></li>`;
+  }).join("");
+  host.innerHTML=`<div class="card drillcard"><div class="drillhead"><b>Истории компаний · ${list.length} циклов</b><button class="x" onclick="toggleStories()" aria-label="закрыть">✕</button></div><ul class="storylist">${rows}</ul></div>`;
+  host.querySelectorAll(".storylist li").forEach(li=>{ li.onclick=()=>renderStoryCompany(list[+li.dataset.i]); });
+}
+function renderStoryCompany(g){
+  const host=document.getElementById("story-drill");
+  const badge=s=> s==="posted"?'<span class="bd good">✓</span>':(s==="blocked"?'<span class="bd block">🚫</span>':'<span class="bd amber">•</span>');
+  const items=g.posts.map((p,i)=>`<div class="story"><div class="storyn">${i+1} ${badge(p.status)}</div><p>${esc(p.text)}</p></div>`).join("");
+  host.innerHTML=`<div class="card drillcard"><div class="drillhead"><b>${esc(g.company)} · ${g.posts.length} историй</b><button class="x" onclick="renderStoryList()" aria-label="назад">◀ к списку</button></div>${items}</div>`;
+  host.scrollIntoView({behavior:"smooth",block:"nearest"});
 }
 
 function renderTiles(d){
@@ -240,8 +287,9 @@ async function load(){
     const r=await fetch("./balance.json?t="+Date.now(),{cache:"no-store"});
     if(!r.ok) throw new Error("HTTP "+r.status);
     const d=await r.json(); D=d;
-    renderTiles(d); renderChart(d); renderTable(d);
+    renderTiles(d); renderChart(d); renderTable(d); renderStoryTiles();
     if(openKind){ const k=openKind; openKind=null; showDrill(k); }
+    if(storyOpen){ renderStoryList(); }
     up.textContent=fmtUpdated(d.generated_at);
   }catch(e){
     err.innerHTML='<p class="err">Не удалось загрузить данные ('+e.message+'). Проверь, что balance.json опубликован.</p>';
