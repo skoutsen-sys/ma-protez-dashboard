@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-16T00:19:10+00:00",
+  "generated_at": "2026-09-16T07:40:58+00:00",
   "totals": {
     "total": 90,
-    "new": 9,
-    "posted": 79,
+    "new": 8,
+    "posted": 80,
     "blocked": 2,
     "companies": 72
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 35,
-  "published_30d": 52,
+  "published_30d": 53,
   "series": [
     {
       "date": "2026-08-18",
@@ -192,7 +192,7 @@
     {
       "date": "2026-09-16",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -519,7 +519,7 @@
       "date": "2026-09-10",
       "company": "Zimmer Biomet",
       "title": "Сокращение штата на 580 сотрудников в Швейцарии",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
