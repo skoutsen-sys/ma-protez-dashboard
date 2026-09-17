@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-17T13:27:00+00:00",
+  "generated_at": "2026-09-17T18:13:06+00:00",
   "totals": {
     "total": 93,
-    "new": 10,
-    "posted": 81,
+    "new": 9,
+    "posted": 82,
     "blocked": 2,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 38,
-  "published_30d": 50,
+  "published_30d": 51,
   "series": [
     {
       "date": "2026-08-19",
@@ -192,7 +192,7 @@
     {
       "date": "2026-09-17",
       "added": 2,
-      "published": 1,
+      "published": 2,
       "width": 1
     }
   ],
@@ -534,7 +534,7 @@
       "date": "2026-09-10",
       "company": "Hanger, Inc.",
       "title": "Hanger и Numotion объединяются в единого лидера в сфере мобильности и помощи пациентам",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
