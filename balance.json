@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-17T00:32:02+00:00",
+  "generated_at": "2026-09-17T07:38:50+00:00",
   "totals": {
     "total": 91,
-    "new": 9,
-    "posted": 80,
+    "new": 8,
+    "posted": 81,
     "blocked": 2,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 36,
-  "published_30d": 49,
+  "published_30d": 50,
   "series": [
     {
       "date": "2026-08-19",
@@ -192,7 +192,7 @@
     {
       "date": "2026-09-17",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -555,7 +555,7 @@
       "date": "2026-09-08",
       "company": "Zimmer Biomet",
       "title": "Реструктуризация руководства американского региона и подразделения робототехники",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
