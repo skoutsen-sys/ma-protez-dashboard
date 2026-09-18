@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-18T00:18:19+00:00",
+  "generated_at": "2026-09-18T07:23:42+00:00",
   "totals": {
     "total": 93,
-    "new": 9,
-    "posted": 82,
+    "new": 8,
+    "posted": 83,
     "blocked": 2,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 38,
-  "published_30d": 48,
+  "published_30d": 49,
   "series": [
     {
       "date": "2026-08-20",
@@ -192,7 +192,7 @@
     {
       "date": "2026-09-18",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -541,7 +541,7 @@
       "date": "2026-09-10",
       "company": "Моторика",
       "title": "«Моторика» приобрела контрольный пакет «ГК Лимб»",
-      "status": "new",
+      "status": "posted",
       "region": "RU"
     },
     {
