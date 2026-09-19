@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-19T00:20:30+00:00",
+  "generated_at": "2026-09-19T07:21:09+00:00",
   "totals": {
     "total": 93,
-    "new": 8,
-    "posted": 83,
+    "new": 7,
+    "posted": 84,
     "blocked": 2,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 35,
-  "published_30d": 46,
+  "published_30d": 47,
   "series": [
     {
       "date": "2026-08-21",
@@ -192,7 +192,7 @@
     {
       "date": "2026-09-19",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1003,7 +1003,7 @@
       "date": "2026-05-11",
       "company": "ExoAtlet Global",
       "title": "ExoAtlet вышла на биржу: Cosmo Robotics провела IPO на KOSDAQ",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
