@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T18:23:50+00:00",
+  "generated_at": "2026-09-23T22:56:59+00:00",
   "totals": {
     "total": 94,
     "new": 1,
@@ -13,14 +13,8 @@
     "max": 7
   },
   "added_30d": 36,
-  "published_30d": 43,
+  "published_30d": 41,
   "series": [
-    {
-      "date": "2026-08-25",
-      "added": 0,
-      "published": 2,
-      "width": 7
-    },
     {
       "date": "2026-08-26",
       "added": 0,
@@ -194,6 +188,12 @@
       "added": 1,
       "published": 1,
       "width": 2
+    },
+    {
+      "date": "2026-09-24",
+      "added": 0,
+      "published": 0,
+      "width": null
     }
   ],
   "companies": [
