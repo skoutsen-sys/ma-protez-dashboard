@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-23T00:32:33+00:00",
+  "generated_at": "2026-09-23T07:44:58+00:00",
   "totals": {
     "total": 93,
-    "new": 1,
-    "posted": 87,
+    "new": 0,
+    "posted": 88,
     "blocked": 5,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 35,
-  "published_30d": 42,
+  "published_30d": 43,
   "series": [
     {
       "date": "2026-08-25",
@@ -192,7 +192,7 @@
     {
       "date": "2026-09-23",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1143,7 +1143,7 @@
       "date": "2026-02-26",
       "company": "Ottobock",
       "title": "Ottobock инвестировал в Blue Arbor Technologies и нейроинтерфейс RESTORE",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     }
   ],
