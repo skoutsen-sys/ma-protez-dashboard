@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-25T07:47:36+00:00",
+  "generated_at": "2026-09-25T13:46:34+00:00",
   "totals": {
-    "total": 94,
-    "new": 0,
-    "posted": 89,
+    "total": 98,
+    "new": 3,
+    "posted": 90,
     "blocked": 5,
     "companies": 74
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 36,
-  "published_30d": 41,
+  "added_30d": 40,
+  "published_30d": 42,
   "series": [
     {
       "date": "2026-08-27",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-09-25",
-      "added": 0,
-      "published": 0,
-      "width": null
+      "added": 4,
+      "published": 1,
+      "width": 3
     }
   ],
   "companies": [
@@ -503,10 +503,38 @@
       "region": "world"
     },
     {
+      "date": "2026-09-24",
+      "company": "Ottobock",
+      "title": "Ottobock и Hanger Inc присоединились к мероприятию Austin Advocacy Day 2026 в защиту доступа к O&P-услугам",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-09-24",
+      "company": "ORTHO 2026 (World Orthopedics Conference)",
+      "title": "ORTHO 2026 — 4-я Всемирная конференция по ортопедии в Лондоне",
+      "status": "posted",
+      "region": "world"
+    },
+    {
       "date": "2026-09-23",
       "company": "Düsseldorf Exhibition",
       "title": "REHACARE International 2026 в Дюссельдорфе",
       "status": "posted",
+      "region": "world"
+    },
+    {
+      "date": "2026-09-23",
+      "company": "REHACARE International (Düsseldorf)",
+      "title": "REHACARE International 2026 в Дюссельдорфе",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-09-22",
+      "company": "International Conference on Prosthetics and Orthotics Engineering",
+      "title": "Международная конференция по инженерии протезов и ортезов в Лиссабоне",
+      "status": "new",
       "region": "world"
     },
     {
@@ -1553,11 +1581,11 @@
         },
         {
           "text": "Сделка: в 2020 году College Park продала линейку локтевых модулей Espire Elbow британской Steeper, сосредоточившись на своей ключевой компетенции — нижней конечности. Вывод для отрасли: разумная фокусировка — избавляться от непрофильных UL-активов и укреплять лидерство в LL, где у компании десятилетия наработок.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Позиция: продукция College Park сертифицирована по ISO 13485 и продаётся по всему миру; компания входит в число заметных независимых производителей протезных стоп в США. Вывод для отрасли: в мире, где узлы всё чаще делают крупные холдинги, независимые специализированные вендоры LL сохраняют нишу за счёт инженерной репутации.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
