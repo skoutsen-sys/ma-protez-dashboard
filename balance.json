@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-27T00:35:43+00:00",
+  "generated_at": "2026-09-27T08:09:05+00:00",
   "totals": {
     "total": 98,
-    "new": 2,
-    "posted": 91,
+    "new": 1,
+    "posted": 92,
     "blocked": 5,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 28,
-  "published_30d": 40,
+  "published_30d": 41,
   "series": [
     {
       "date": "2026-08-29",
@@ -192,7 +192,7 @@
     {
       "date": "2026-09-27",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -527,7 +527,7 @@
       "date": "2026-09-23",
       "company": "REHACARE International (Düsseldorf)",
       "title": "REHACARE International 2026 в Дюссельдорфе",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
