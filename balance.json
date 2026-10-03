@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-03T05:17:47+00:00",
+  "generated_at": "2026-10-03T11:38:43+00:00",
   "totals": {
-    "total": 109,
-    "new": 5,
-    "posted": 97,
+    "total": 116,
+    "new": 11,
+    "posted": 98,
     "blocked": 7,
     "companies": 74
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 34,
-  "published_30d": 33,
+  "added_30d": 41,
+  "published_30d": 34,
   "series": [
     {
       "date": "2026-09-04",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-10-03",
-      "added": 0,
-      "published": 0,
-      "width": null
+      "added": 7,
+      "published": 1,
+      "width": 3
     }
   ],
   "companies": [
@@ -517,10 +517,17 @@
       "region": "world"
     },
     {
+      "date": "2026-10-19",
+      "company": "International Society for Prosthetics and Orthotics (ISPO)",
+      "title": "AccessAbilities Expo Dubai 2026",
+      "status": "new",
+      "region": "world"
+    },
+    {
       "date": "2026-10-14",
       "company": "Ottobock",
       "title": "Выставка ТСР в Хабаровске",
-      "status": "new",
+      "status": "posted",
       "region": "RU"
     },
     {
@@ -538,9 +545,44 @@
       "region": "RU"
     },
     {
+      "date": "2026-10-01",
+      "company": "Фонд «Защитники Отечества»",
+      "title": "Обсуждение создания новой научно-технологической платформы протезирования",
+      "status": "new",
+      "region": "RU"
+    },
+    {
+      "date": "2026-10-01",
+      "company": "Peking University People's Hospital",
+      "title": "3D-печатные остеоинтегрированные протезы показали многообещающие результаты",
+      "status": "new",
+      "region": "world"
+    },
+    {
       "date": "2026-09-30",
       "company": "Rehabilitation fair",
       "title": "Rehabilitation fair 2026 в Варшаве — международная выставка реабилитации и физиотерапии",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-09-30",
+      "company": "South Africa Mountain Rescue (WSAR) with exoskeleton vendor",
+      "title": "Первое успешное применение экзоскелета при спасении в ЮАР",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-09-30",
+      "company": "Медтехнопроект",
+      "title": "В Москве запустили производство биополимерных сосудистых протезов",
+      "status": "new",
+      "region": "RU"
+    },
+    {
+      "date": "2026-09-30",
+      "company": "Psyonic",
+      "title": "Psyonic запускает программу развёртывания биопротезов в развивающихся странах",
       "status": "new",
       "region": "world"
     },
@@ -564,6 +606,13 @@
       "title": "Steplife зарегистрировала компанию в Индии и начала сборку протезов",
       "status": "blocked",
       "region": "RU"
+    },
+    {
+      "date": "2026-09-26",
+      "company": "BrainCo",
+      "title": "BrainCo расширяет программу умных протезов в Гонконге",
+      "status": "new",
+      "region": "world"
     },
     {
       "date": "2026-09-24",
@@ -1584,7 +1633,7 @@
         },
         {
           "text": "Бизнес: в 2024 году PSYONIC получила на Shark Tank 1 млн долларов — инвестицию разделили Лори Грайнер, Деймонд Джон и Кевин О'Лири. Оценка компании поднялась примерно до 65 млн долларов. Вывод для отрасли: UL-бионика выходит в публичное медиаполе и краудинвестинг, привлекая непрофильный капитал и внимание к теме протезирования.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Масштаб: помимо пациентов Ability Hand закупают лидеры робототехники — среди клиентов называют NASA, Meta и Apptronik (кисть как манипулятор для роботов). Производство выросло примерно со 100 до 500 единиц в год с планом до 1000. Вывод для отрасли: двойное применение (человек + гуманоидные роботы) даёт протезным вендорам новый рынок сбыта.",
