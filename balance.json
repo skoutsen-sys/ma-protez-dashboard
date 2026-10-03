@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-03T16:17:02+00:00",
+  "generated_at": "2026-10-03T19:16:41+00:00",
   "totals": {
     "total": 116,
-    "new": 11,
-    "posted": 98,
+    "new": 10,
+    "posted": 99,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 41,
-  "published_30d": 34,
+  "published_30d": 35,
   "series": [
     {
       "date": "2026-09-04",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-03",
       "added": 7,
-      "published": 1,
+      "published": 2,
       "width": 3
     }
   ],
@@ -520,7 +520,7 @@
       "date": "2026-10-19",
       "company": "International Society for Prosthetics and Orthotics (ISPO)",
       "title": "AccessAbilities Expo Dubai 2026",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
