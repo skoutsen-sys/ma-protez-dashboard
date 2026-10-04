@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-04T05:51:20+00:00",
+  "generated_at": "2026-10-04T12:20:43+00:00",
   "totals": {
     "total": 116,
-    "new": 10,
-    "posted": 99,
+    "new": 9,
+    "posted": 100,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 41,
-  "published_30d": 34,
+  "published_30d": 35,
   "series": [
     {
       "date": "2026-09-05",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-04",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -541,7 +541,7 @@
       "date": "2026-10-02",
       "company": "Ural Institute of Traumatology and Orthopedics",
       "title": "Всероссийский конгресс травматологов-ортопедов Урала в Екатеринбурге",
-      "status": "new",
+      "status": "posted",
       "region": "RU"
     },
     {
@@ -1641,7 +1641,7 @@
         },
         {
           "text": "Доступность: PSYONIC добивается покрытия Ability Hand по Medicare и частным страховкам, удерживая цену за счёт материалов и конструкции. Это прямая атака на главный барьер UL-бионики — дороговизну. Вывод для отрасли: экономика возмещения (reimbursement) становится таким же полем конкуренции, как и сама механика кисти.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
