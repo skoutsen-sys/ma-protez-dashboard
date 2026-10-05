@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-05T09:03:01+00:00",
+  "generated_at": "2026-10-05T19:17:30+00:00",
   "totals": {
-    "total": 116,
-    "new": 8,
-    "posted": 101,
+    "total": 123,
+    "new": 14,
+    "posted": 102,
     "blocked": 7,
     "companies": 74
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 39,
-  "published_30d": 35,
+  "added_30d": 46,
+  "published_30d": 36,
   "series": [
     {
       "date": "2026-09-06",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-10-05",
-      "added": 0,
-      "published": 1,
-      "width": null
+      "added": 7,
+      "published": 2,
+      "width": 3
     }
   ],
   "companies": [
@@ -510,6 +510,13 @@
       "region": "world"
     },
     {
+      "date": "2026-10-22",
+      "company": "ISPO Canada / OPC (Orthotics Prosthetics Canada)",
+      "title": "2026 OPRC — Конференция ортопедии, протезирования и реабилитации",
+      "status": "posted",
+      "region": "world"
+    },
+    {
       "date": "2026-10-19",
       "company": "Dubai World Trade Centre",
       "title": "AccessAbilities Expo 2026 в Дубае",
@@ -531,6 +538,13 @@
       "region": "RU"
     },
     {
+      "date": "2026-10-13",
+      "company": "Ministry of Health (Belarus/Russia)",
+      "title": "Выставка «Медицина и здоровье» 2026 (Санкт-Петербург)",
+      "status": "new",
+      "region": "RU"
+    },
+    {
       "date": "2026-10-07",
       "company": "Выставка Реабилитация Казань",
       "title": "Выставка «РЕАБИЛИТАЦИЯ» в Казани 2026",
@@ -538,11 +552,32 @@
       "region": "RU"
     },
     {
+      "date": "2026-10-06",
+      "company": "ISPO (International Society of Prosthetics and Orthotics)",
+      "title": "Международная конференция World Health Expo Йоханнесбург",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-05",
+      "company": "Stryker",
+      "title": "Запуск Mako 4 SmartRobotics в Индии",
+      "status": "new",
+      "region": "world"
+    },
+    {
       "date": "2026-10-02",
       "company": "Ural Institute of Traumatology and Orthopedics",
       "title": "Всероссийский конгресс травматологов-ортопедов Урала в Екатеринбурге",
       "status": "posted",
       "region": "RU"
+    },
+    {
+      "date": "2026-10-02",
+      "company": "Ottobock",
+      "title": "Специалисты в области экзоскелетов выбирают ремесленный сектор рынка роста",
+      "status": "new",
+      "region": "world"
     },
     {
       "date": "2026-10-01",
@@ -555,6 +590,13 @@
       "date": "2026-10-01",
       "company": "Peking University People's Hospital",
       "title": "3D-печатные остеоинтегрированные протезы показали многообещающие результаты",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-01",
+      "company": "Stryker",
+      "title": "Исследование RACER показало критику Mako в сравнении с ручной хирургией",
       "status": "new",
       "region": "world"
     },
@@ -606,6 +648,13 @@
       "title": "Steplife зарегистрировала компанию в Индии и начала сборку протезов",
       "status": "blocked",
       "region": "RU"
+    },
+    {
+      "date": "2026-09-28",
+      "company": "Hanger Inc",
+      "title": "Hanger приобретает Numotion, формируя лидера в области мобильности и помощи пациентам",
+      "status": "new",
+      "region": "world"
     },
     {
       "date": "2026-09-26",
@@ -1659,7 +1708,7 @@
         },
         {
           "text": "Продукты: в 2023 году представлена TASKA CX — быстрее предшественника и в уменьшенном размере (ближе к женской и подростковой антропометрии). Приложение позволяет загружать и настраивать хваты; библиотека включает порядка 23 стандартных грипов. Вывод для отрасли: кастомизация хватов через ПО становится стандартом де-факто для бионических кистей.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Бизнес: TASKA производит кисти в Крайстчёрче и расширяет площадку, продавая устройства по всему миру через сеть клиник-партнёров. Из нишевого новозеландского проекта компания превратилась в глобального нишевого игрока UL. Вывод для отрасли: даже без «домашнего» крупного рынка можно строить экспортную O&P-компанию на одном сильном дифференциаторе — водозащите.",
