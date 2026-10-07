@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-07T05:57:59+00:00",
+  "generated_at": "2026-10-07T13:21:59+00:00",
   "totals": {
-    "total": 123,
-    "new": 12,
-    "posted": 104,
+    "total": 131,
+    "new": 19,
+    "posted": 105,
     "blocked": 7,
     "companies": 74
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 45,
-  "published_30d": 36,
+  "added_30d": 53,
+  "published_30d": 37,
   "series": [
     {
       "date": "2026-09-08",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-10-07",
-      "added": 0,
-      "published": 0,
-      "width": null
+      "added": 8,
+      "published": 1,
+      "width": 3
     }
   ],
   "companies": [
@@ -503,6 +503,13 @@
       "region": "world"
     },
     {
+      "date": "2026-11-18",
+      "company": "Japan Medical Rehabilitation Equipment Association (организатор)",
+      "title": "TokyoRehabilitation (HOSPEX Japan) 2026",
+      "status": "new",
+      "region": "world"
+    },
+    {
       "date": "2026-10-22",
       "company": "XII International Prosthetics and Orthotics Congress",
       "title": "XII Международный конгресс протезирования и ортопедии",
@@ -538,6 +545,13 @@
       "region": "RU"
     },
     {
+      "date": "2026-10-14",
+      "company": "ICPOE (организаторы)",
+      "title": "International Conference on Prosthetics and Orthotics Engineering (ICPOE-2026)",
+      "status": "new",
+      "region": "world"
+    },
+    {
       "date": "2026-10-13",
       "company": "Ministry of Health (Belarus/Russia)",
       "title": "Выставка «Медицина и здоровье» 2026 (Санкт-Петербург)",
@@ -552,6 +566,20 @@
       "region": "RU"
     },
     {
+      "date": "2026-10-07",
+      "company": "Humotech",
+      "title": "Humotech запустила первую мобильную клинику для тестирования протезов",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-07",
+      "company": "Татэкспо (организатор)",
+      "title": "Реабилитация - 2026 — Казань",
+      "status": "new",
+      "region": "RU"
+    },
+    {
       "date": "2026-10-06",
       "company": "ISPO (International Society of Prosthetics and Orthotics)",
       "title": "Международная конференция World Health Expo Йоханнесбург",
@@ -559,10 +587,17 @@
       "region": "world"
     },
     {
+      "date": "2026-10-06",
+      "company": "Lifeward",
+      "title": "Lifeward запустила пилот-программу ReWalk с Ottobock Care",
+      "status": "new",
+      "region": "world"
+    },
+    {
       "date": "2026-10-05",
       "company": "Stryker",
       "title": "Запуск Mako 4 SmartRobotics в Индии",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
@@ -576,6 +611,13 @@
       "date": "2026-10-02",
       "company": "Ottobock",
       "title": "Специалисты в области экзоскелетов выбирают ремесленный сектор рынка роста",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-02",
+      "company": "Mobius Bionics",
+      "title": "LUKE Arm прошел первое домашнее испытание с нейроинтерфейсом прямого подключения к нерву",
       "status": "new",
       "region": "world"
     },
@@ -597,6 +639,20 @@
       "date": "2026-10-01",
       "company": "Stryker",
       "title": "Исследование RACER показало критику Mako в сравнении с ручной хирургией",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-01",
+      "company": "Wandercraft",
+      "title": "Wandercraft приобрела Ekso Bionics",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-01",
+      "company": "Ptak Warsaw Expo (площадка)",
+      "title": "International Trade Fair for Rehabilitation and Physiotherapy — Варшава",
       "status": "new",
       "region": "world"
     },
@@ -1626,7 +1682,7 @@
         },
         {
           "text": "Флагман Vincent Systems — многосуставная кисть VINCENTevolution 2. В ней шесть встроенных моторов, новая схема управления и искусственное осязание (тактильная обратная связь пользователю). Ключевое преимущество — вес: это одна из самых лёгких мультиартикуляционных кистей на рынке, на 20-30% легче сопоставимых бионических аналогов. Вывод для отрасли: Vincent конкурирует не числом хватов, а сочетанием лёгкости и обратной связи.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Инженерная культура Vincent Systems признана и за пределами протезирования: за дизайн VINCENTevolution2 компания получила German Design Award и Designpreis der Bundesrepublik Deutschland. Это отражает подход основателя Штефана Шульца, для которого протез — одновременно медицинское устройство и продукт точного машиностроения. Вывод для отрасли: в бионике кисти эргономика и промышленный дизайн становятся таким же конкурентным фактором, как электроника.",
