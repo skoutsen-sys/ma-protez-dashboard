@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-08T13:27:57+00:00",
+  "generated_at": "2026-10-08T19:56:34+00:00",
   "totals": {
     "total": 131,
-    "new": 17,
-    "posted": 107,
+    "new": 16,
+    "posted": 108,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 52,
-  "published_30d": 38,
+  "published_30d": 39,
   "series": [
     {
       "date": "2026-09-09",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-08",
       "added": 0,
-      "published": 1,
+      "published": 2,
       "width": null
     }
   ],
@@ -569,7 +569,7 @@
       "date": "2026-10-07",
       "company": "Humotech",
       "title": "Humotech запустила первую мобильную клинику для тестирования протезов",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
