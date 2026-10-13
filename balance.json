@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-12T22:58:37+00:00",
+  "generated_at": "2026-10-13T06:46:34+00:00",
   "totals": {
     "total": 137,
-    "new": 14,
-    "posted": 116,
+    "new": 13,
+    "posted": 117,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 49,
-  "published_30d": 39,
+  "published_30d": 40,
   "series": [
     {
       "date": "2026-09-14",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-13",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -660,7 +660,7 @@
       "date": "2026-10-02",
       "company": "Mobius Bionics",
       "title": "LUKE Arm прошел первое домашнее испытание с нейроинтерфейсом прямого подключения к нерву",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
