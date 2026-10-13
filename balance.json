@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-13T15:57:35+00:00",
+  "generated_at": "2026-10-13T21:14:07+00:00",
   "totals": {
     "total": 140,
-    "new": 16,
-    "posted": 117,
+    "new": 15,
+    "posted": 118,
     "blocked": 7,
     "companies": 74
   },
@@ -15,12 +15,6 @@
   "added_30d": 52,
   "published_30d": 40,
   "series": [
-    {
-      "date": "2026-09-14",
-      "added": 0,
-      "published": 1,
-      "width": null
-    },
     {
       "date": "2026-09-15",
       "added": 2,
@@ -192,8 +186,14 @@
     {
       "date": "2026-10-13",
       "added": 3,
-      "published": 1,
+      "published": 2,
       "width": 3
+    },
+    {
+      "date": "2026-10-14",
+      "added": 0,
+      "published": 0,
+      "width": null
     }
   ],
   "companies": [
@@ -569,7 +569,7 @@
       "date": "2026-10-12",
       "company": "Hocoma",
       "title": "Armeo Power получает награду McKnight's Tech Award за инновации в реабилитации",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
