@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-14T01:12:55+00:00",
+  "generated_at": "2026-10-14T07:37:29+00:00",
   "totals": {
     "total": 140,
-    "new": 15,
-    "posted": 118,
+    "new": 14,
+    "posted": 119,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 52,
-  "published_30d": 40,
+  "published_30d": 41,
   "series": [
     {
       "date": "2026-09-15",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-14",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -576,7 +576,7 @@
       "date": "2026-10-12",
       "company": "Ottobock",
       "title": "Ottobock: передовые методы в уходе за протезами верхних конечностей с применением нейротехнологий",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
