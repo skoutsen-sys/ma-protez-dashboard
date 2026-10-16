@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-16T00:24:02+00:00",
+  "generated_at": "2026-10-16T07:08:33+00:00",
   "totals": {
     "total": 145,
-    "new": 16,
-    "posted": 122,
+    "new": 15,
+    "posted": 123,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 54,
-  "published_30d": 42,
+  "published_30d": 43,
   "series": [
     {
       "date": "2026-09-17",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-16",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -576,7 +576,7 @@
       "date": "2026-10-13",
       "company": "ACRM",
       "title": "ACRM 103-я Ежегодная Осенняя Конференция & EXPO",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
