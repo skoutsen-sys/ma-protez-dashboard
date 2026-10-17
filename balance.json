@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-17T15:33:32+00:00",
+  "generated_at": "2026-10-17T18:30:09+00:00",
   "totals": {
     "total": 153,
-    "new": 20,
-    "posted": 126,
+    "new": 19,
+    "posted": 127,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 60,
-  "published_30d": 44,
+  "published_30d": 45,
   "series": [
     {
       "date": "2026-09-18",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-17",
       "added": 8,
-      "published": 2,
+      "published": 3,
       "width": 3
     }
   ],
@@ -548,7 +548,7 @@
       "date": "2026-10-16",
       "company": "Томский государственный университет (ТГУ)",
       "title": "ТГУ представил прототипы экзоскелетов кисти для постинсультной реабилитации",
-      "status": "new",
+      "status": "posted",
       "region": "RU"
     },
     {
