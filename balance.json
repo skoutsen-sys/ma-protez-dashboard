@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-17T00:28:20+00:00",
+  "generated_at": "2026-10-17T06:56:39+00:00",
   "totals": {
     "total": 145,
-    "new": 14,
-    "posted": 124,
+    "new": 13,
+    "posted": 125,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 52,
-  "published_30d": 42,
+  "published_30d": 43,
   "series": [
     {
       "date": "2026-09-18",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-17",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -625,7 +625,7 @@
       "date": "2026-10-08",
       "company": "Ottobock",
       "title": "Выставка технических средств реабилитации Ottobock во Владивостоке",
-      "status": "new",
+      "status": "posted",
       "region": "RU"
     },
     {
