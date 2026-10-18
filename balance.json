@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-18T15:51:40+00:00",
+  "generated_at": "2026-10-18T18:37:50+00:00",
   "totals": {
     "total": 153,
-    "new": 18,
-    "posted": 128,
+    "new": 17,
+    "posted": 129,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 60,
-  "published_30d": 45,
+  "published_30d": 46,
   "series": [
     {
       "date": "2026-09-19",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-18",
       "added": 0,
-      "published": 1,
+      "published": 2,
       "width": null
     }
   ],
@@ -562,7 +562,7 @@
       "date": "2026-10-15",
       "company": "Motorika",
       "title": "ФМБА разрабатывает бионические протезы с восстановлением чувствительности",
-      "status": "new",
+      "status": "posted",
       "region": "RU"
     },
     {
