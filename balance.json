@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T13:47:17+00:00",
+  "generated_at": "2026-10-21T18:38:07+00:00",
   "totals": {
     "total": 163,
-    "new": 20,
-    "posted": 136,
+    "new": 19,
+    "posted": 137,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 70,
-  "published_30d": 50,
+  "published_30d": 51,
   "series": [
     {
       "date": "2026-09-22",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-21",
       "added": 4,
-      "published": 2,
+      "published": 3,
       "width": 3
     }
   ],
@@ -534,7 +534,7 @@
       "date": "2026-10-20",
       "company": "Phantom Neuro",
       "title": "Phantom Neuro привлекла $19 млн в раунде Series A для развития нейротехнологичных протезов",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
