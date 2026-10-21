@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T00:36:52+00:00",
+  "generated_at": "2026-10-21T07:38:21+00:00",
   "totals": {
     "total": 159,
-    "new": 18,
-    "posted": 134,
+    "new": 17,
+    "posted": 135,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 66,
-  "published_30d": 48,
+  "published_30d": 49,
   "series": [
     {
       "date": "2026-09-22",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-21",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -625,7 +625,7 @@
       "date": "2026-10-14",
       "company": "Össur (Embla Medical hf.)",
       "title": "Embla Medical (Össur) готовится к публикации квартальных результатов",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
