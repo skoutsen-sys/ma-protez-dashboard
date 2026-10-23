@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-23T00:39:37+00:00",
+  "generated_at": "2026-10-23T07:31:11+00:00",
   "totals": {
     "total": 163,
-    "new": 17,
-    "posted": 139,
+    "new": 16,
+    "posted": 140,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 69,
-  "published_30d": 51,
+  "published_30d": 52,
   "series": [
     {
       "date": "2026-09-24",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-23",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -660,7 +660,7 @@
       "date": "2026-10-14",
       "company": "Ahmed Ibrahim (independent innovator)",
       "title": "Инноватор из Гамильтона получил грант HHS DRIVE SPARK на разработку высокотехнологичного протеза кисти",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
