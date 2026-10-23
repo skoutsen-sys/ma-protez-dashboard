@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-23T13:25:32+00:00",
+  "generated_at": "2026-10-23T18:20:11+00:00",
   "totals": {
     "total": 168,
-    "new": 20,
-    "posted": 141,
+    "new": 19,
+    "posted": 142,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 74,
-  "published_30d": 53,
+  "published_30d": 54,
   "series": [
     {
       "date": "2026-09-24",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-23",
       "added": 5,
-      "published": 2,
+      "published": 3,
       "width": 3
     }
   ],
@@ -534,7 +534,7 @@
       "date": "2026-10-22",
       "company": "Exoskeleton Report",
       "title": "Мета-анализ подтвердил эффективность экзоскелетов при инсульте",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
