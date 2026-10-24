@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-24T15:56:10+00:00",
+  "generated_at": "2026-10-24T18:47:02+00:00",
   "totals": {
     "total": 168,
-    "new": 18,
-    "posted": 143,
+    "new": 17,
+    "posted": 144,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 74,
-  "published_30d": 54,
+  "published_30d": 55,
   "series": [
     {
       "date": "2026-09-25",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-24",
       "added": 0,
-      "published": 1,
+      "published": 2,
       "width": null
     }
   ],
@@ -541,7 +541,7 @@
       "date": "2026-10-21",
       "company": "Ottobock",
       "title": "Goldman Sachs снизила целевую цену акций Ottobock с EUR 88 до EUR 75",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
