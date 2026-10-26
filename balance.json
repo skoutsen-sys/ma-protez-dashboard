@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-26T15:11:02+00:00",
+  "generated_at": "2026-10-26T21:00:15+00:00",
   "totals": {
     "total": 172,
-    "new": 17,
-    "posted": 148,
+    "new": 16,
+    "posted": 149,
     "blocked": 7,
     "companies": 74
   },
@@ -12,15 +12,9 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 74,
+  "added_30d": 72,
   "published_30d": 57,
   "series": [
-    {
-      "date": "2026-09-27",
-      "added": 2,
-      "published": 1,
-      "width": 3
-    },
     {
       "date": "2026-09-28",
       "added": 0,
@@ -192,7 +186,13 @@
     {
       "date": "2026-10-26",
       "added": 0,
-      "published": 1,
+      "published": 2,
+      "width": null
+    },
+    {
+      "date": "2026-10-27",
+      "added": 0,
+      "published": 0,
       "width": null
     }
   ],
@@ -590,7 +590,7 @@
       "date": "2026-10-20",
       "company": "Össur",
       "title": "Össur опубликовала финансовые результаты третьего квартала 2026",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
