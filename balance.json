@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-27T01:28:27+00:00",
+  "generated_at": "2026-10-27T07:50:54+00:00",
   "totals": {
     "total": 172,
-    "new": 16,
-    "posted": 149,
+    "new": 15,
+    "posted": 150,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 72,
-  "published_30d": 57,
+  "published_30d": 58,
   "series": [
     {
       "date": "2026-09-28",
@@ -192,7 +192,7 @@
     {
       "date": "2026-10-27",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -751,7 +751,7 @@
       "date": "2026-10-13",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet и Think Surgical расширили эксклюзивное дистрибьюторское соглашение",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
