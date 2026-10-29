@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Атлас отрасли O&P · Бионика и реабилитация</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Каталог компаний отрасли протезирования и реабилитации: истории, новости и карта в разрезе продуктов, географии и размера.">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+  :root {
+    --paper:#f5f6f8; --panel:#ffffff; --panel-2:#eef1f5; --ink:#1b2027; --muted:#5b6572;
+    --line:#dce0e7; --teal:#0d8a99; --indigo:#3f57c9; --amber:#c07d16; --warn:#c0491f;
+    --good:#2f9e6f; --block:#d93f6a;
+    --shadow:0 1px 2px rgba(20,28,40,.06),0 6px 18px rgba(20,28,40,.05);
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,"Cascadia Code","JetBrains Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#0d1117; --panel:#151b24; --panel-2:#1b2330; --ink:#e8edf3; --muted:#98a4b2;
+    --line:#26303f; --teal:#2bc3d2; --indigo:#8b97ff; --amber:#e6ad55; --warn:#f0865c;
+    --good:#4ccb92; --block:#f0658a;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28);
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:30px 20px 72px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
+  h1{font-size:clamp(22px,4vw,32px);line-height:1.1;margin:0 0 10px;font-weight:680;letter-spacing:-.02em}
+  .lede{font-size:15px;color:var(--muted);margin:0;max-width:64ch}
+  .topbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:16px}
+  a.tg{font-family:var(--mono);font-size:13px;color:var(--teal);text-decoration:none}
+  a.tg:hover{text-decoration:underline}
+  .updated{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+
+  /* вкладки */
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin:24px 0 20px;border-bottom:1px solid var(--line)}
+  .tab{font-family:var(--mono);font-size:13px;font-weight:600;cursor:pointer;color:var(--muted);background:none;border:0;border-bottom:2px solid transparent;padding:9px 12px;margin-bottom:-1px;transition:color .12s,border-color .12s}
+  .tab:hover{color:var(--ink)}
+  .tab.active{color:var(--teal);border-bottom-color:var(--teal)}
+  .tab b{font-weight:700}
+  section.view{display:none}
+  section.view.active{display:block}
+
+  /* фильтры */
+  .filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+  .filters input[type=search]{font-family:var(--sans);font-size:14px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:8px 12px;min-width:180px;flex:1 1 180px}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{font-family:var(--mono);font-size:12px;cursor:pointer;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:5px 11px;transition:all .12s}
+  .chip:hover{border-color:var(--teal);color:var(--ink)}
+  .chip.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+  .fgroup{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .flabel{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-right:2px}
+  .count{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin:0 0 14px}
+  button.reset{font-family:var(--mono);font-size:12px;cursor:pointer;color:var(--muted);background:none;border:0;text-decoration:underline}
+
+  /* карточки компаний */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:12px}
+  .co{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:14px 15px;cursor:pointer;transition:border-color .12s,transform .12s;display:flex;flex-direction:column;gap:8px}
+  .co:hover{border-color:var(--teal);transform:translateY(-1px)}
+  .co .nm{font-weight:650;font-size:15px;line-height:1.25}
+  .co .meta{font-size:12.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10.5px;font-weight:600;padding:2px 7px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+  .badge.sz{border-color:transparent;color:#fff}
+  .sz-XL{background:var(--indigo)}.sz-L{background:var(--teal)}.sz-M{background:var(--good)}.sz-S{background:var(--amber)}
+  .segs{display:flex;gap:4px;flex-wrap:wrap}
+  .seg{font-family:var(--mono);font-size:10.5px;padding:2px 6px;border-radius:6px;background:var(--panel-2);color:var(--muted)}
+  .co .foot{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:2px;display:flex;gap:12px}
+  .co .foot b{color:var(--ink)}
+
+  /* модал детали компании */
+  .overlay{position:fixed;inset:0;background:rgba(10,14,20,.55);display:none;align-items:flex-start;justify-content:center;padding:28px 16px;z-index:50;overflow:auto}
+  .overlay.on{display:flex}
+  .modal{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);max-width:640px;width:100%;padding:22px 24px}
+  .modal h3{margin:0 0 4px;font-size:20px;letter-spacing:-.01em}
+  .modal .sub{font-size:13px;color:var(--muted);margin:0 0 14px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .modal .x{float:right;background:none;border:0;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;margin:-6px -6px 0 0}
+  .mh{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:18px 0 8px}
+  ul.mlist{list-style:none;margin:0;padding:0;font-size:13.5px}
+  ul.mlist li{padding:7px 2px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+  ul.mlist li:last-child{border-bottom:0}
+  .d{font-family:var(--mono);color:var(--muted);font-size:12px}
+  .modal .story{padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.6}
+  .modal .story:last-child{border-bottom:0}
+  .empty{color:var(--muted);font-size:13.5px;font-style:italic}
+
+  /* карта */
+  h2{font-size:13px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:30px 0 14px;display:flex;align-items:center;gap:10px}
+  h2:first-child{margin-top:4px}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:18px}
+  .matrix-scroll{overflow-x:auto}
+  table.mx{border-collapse:separate;border-spacing:3px;font-size:12.5px;min-width:440px}
+  table.mx th{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--muted);padding:4px 6px;text-align:center;white-space:nowrap}
+  table.mx th.rowh{text-align:left;max-width:230px;white-space:normal;line-height:1.25}
+  table.mx td{width:62px;height:40px;text-align:center;border-radius:8px;cursor:pointer;font-variant-numeric:tabular-nums;font-weight:600;transition:transform .1s}
+  table.mx td:hover{transform:scale(1.07);outline:2px solid var(--teal)}
+  table.mx td.z{cursor:default}table.mx td.z:hover{transform:none;outline:0}
+  .scale{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px}
+  .scale .bar{height:10px;width:120px;border-radius:5px;background:linear-gradient(90deg,var(--panel-2),var(--teal))}
+  .bars{display:flex;flex-direction:column;gap:8px}
+  .barrow{display:grid;grid-template-columns:130px 1fr 42px;align-items:center;gap:10px;font-size:13px}
+  .barrow .lab{color:var(--ink)}
+  .track{background:var(--panel-2);border-radius:6px;height:20px;overflow:hidden}
+  .fill{height:100%;border-radius:6px}
+  .barrow .val{font-family:var(--mono);font-size:12.5px;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0 0;font-size:12.5px}
+  .legend .k{display:inline-flex;align-items:center;gap:6px;color:var(--ink)}
+  .swatch{width:12px;height:12px;border-radius:3px;flex:none}
+  .note{font-size:12px;color:var(--muted);margin:10px 0 0}
+
+  /* новости/истории вкладки */
+  ul.feed{list-style:none;margin:0;padding:0;font-size:13.5px}
+  ul.feed li{padding:9px 2px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+  .c{color:var(--teal);font-weight:600}
+  .storyco{margin-bottom:10px}
+  .storyco summary{cursor:pointer;font-size:15px;font-weight:620;padding:10px 0;list-style:none}
+  .storyco summary::-webkit-details-marker{display:none}
+  .storyco summary .n{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:400;margin-left:8px}
+  .storyco[open] summary{color:var(--teal)}
+
+  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  .err{color:var(--warn);font-size:14px;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Атлас отрасли · O&P</p>
+  <h1>Компании протезирования и реабилитации</h1>
+  <p class="lede">Каталог отслеживаемых компаний, их истории и новости из канала — в одном месте,
+     с картой отрасли в разрезе продуктов, географии и размера.</p>
+  <div class="topbar">
+    <a class="tg" href="https://t.me/MA_Prosthetics" target="_blank" rel="noopener">→ канал «Бионика и реабилитация»</a>
+    <span class="updated" id="updated">загрузка…</span>
+  </div>
+
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-view="companies">Компании <b id="t-co">·</b></button>
+    <button class="tab" data-view="map">Карта отрасли</button>
+    <button class="tab" data-view="stories">Истории <b id="t-st">·</b></button>
+    <button class="tab" data-view="news">Новости <b id="t-nw">·</b></button>
+  </div>
+
+  <!-- КОМПАНИИ -->
+  <section class="view active" id="view-companies">
+    <div class="filters">
+      <input type="search" id="q" placeholder="Поиск по названию…" autocomplete="off">
+      <div class="fgroup"><span class="flabel">Регион</span><div class="chips" id="f-macro"></div></div>
+      <div class="fgroup"><span class="flabel">Сегмент</span><div class="chips" id="f-seg"></div></div>
+      <div class="fgroup"><span class="flabel">Размер</span><div class="chips" id="f-size"></div></div>
+      <button class="reset" id="reset">сбросить</button>
+    </div>
+    <p class="count" id="co-count"></p>
+    <div class="grid" id="co-grid"></div>
+  </section>
+
+  <!-- КАРТА -->
+  <section class="view" id="view-map">
+    <h2>Продукты × география</h2>
+    <div class="card">
+      <div class="matrix-scroll"><table class="mx" id="matrix"></table></div>
+      <div class="scale"><span>меньше</span><div class="bar"></div><span>больше компаний</span>
+        <span style="margin-left:auto">клик по ячейке → фильтр каталога</span></div>
+    </div>
+    <h2>По размеру компании</h2>
+    <div class="card"><div class="bars" id="bars-size"></div>
+      <p class="note">Размер — экспертная оценка: XL — публичные гиганты; L — крупные устоявшиеся; M — средние; S — стартапы/малые.</p>
+    </div>
+    <h2>По типу владения</h2>
+    <div class="card"><div class="bars" id="bars-type"></div></div>
+  </section>
+
+  <!-- ИСТОРИИ -->
+  <section class="view" id="view-stories">
+    <p class="count" id="st-count"></p>
+    <div id="st-list"></div>
+  </section>
+
+  <!-- НОВОСТИ -->
+  <section class="view" id="view-news">
+    <p class="count" id="nw-count"></p>
+    <ul class="feed" id="nw-list"></ul>
+  </section>
+
+  <div class="err" id="err" style="display:none"></div>
+
+  <footer>
+    Данные обновляются автоматически из рабочей очереди канала. Размер и тип компаний —
+    аналитическая оценка редакции. Источник новостей — публичные сообщения компаний и отраслевые медиа.
+  </footer>
+</div>
+
+<div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
+
+<script>
+// ---- Telegram Mini App (безвредно вне Telegram) ----
+(function(){ try { var tg = window.Telegram && window.Telegram.WebApp;
+  if (tg) { tg.ready(); tg.expand && tg.expand(); } } catch(e){} })();
+
+var SEG_NAMES = {
+  "UL":"Протезы рук / бионика кисти", "LL":"Протезы ног / коленные модули",
+  "OI":"Остеоинтеграция", "SL":"Гильзы, лайнеры, компоненты",
+  "OP":"O&P-клиники, сервис, дистрибуция", "NEU":"Нейроуправление / BCI",
+  "EXO":"Экзоскелеты", "коляски":"Кресла-коляски",
+  "эндопротезы":"Эндопротезы суставов", "реаб":"Реабилитационные роботы"
+};
+var SEG_ORDER = ["UL","LL","OI","SL","OP","NEU","EXO","коляски","эндопротезы","реаб"];
+var MACRO_ORDER = ["РФ","Европа","Сев. Америка","Азия","Прочее"];
+var SIZE_ORDER = ["XL","L","M","S"];
+var TYPE_NAMES = {public:"Публичная", private:"Частная", subsidiary:"Дочерняя / дистрибуция", state:"Госпредприятие"};
+var TYPE_COLOR = {public:"var(--indigo)", private:"var(--teal)", subsidiary:"var(--amber)", state:"var(--muted)"};
+
+function normName(name){
+  var s = (name||"").replace(/\(.*?\)/g," ").toLowerCase().replace(/[«»"'`]/g," ");
+  s = " " + s.replace(/\s+/g," ").trim() + " ";
+  [" гк "," группа "," ао "," ооо "," зао "," пао "," оао "," inc "," россия "," ру "].forEach(function(w){ s = s.split(w).join(" "); });
+  return s.replace(/\s+/g," ").trim();
+}
+
+var DATA=null, COS=[], NEWS=[], STORIES=[];
+var F = {macro:null, seg:null, size:null, q:""};
+
+fetch("balance.json?_=" + Date.now()).then(function(r){ return r.json(); }).then(function(d){
+  DATA=d; COS=d.companies||[]; NEWS=(d.news||[]).filter(function(n){return n.status==="posted";});
+  STORIES=d.stories||[];
+  var dt = d.generated_at ? new Date(d.generated_at) : null;
+  document.getElementById("updated").textContent = dt ? ("обновлено " + dt.toLocaleString("ru-RU")) : "";
+  document.getElementById("t-co").textContent = COS.length;
+  document.getElementById("t-st").textContent = STORIES.length;
+  document.getElementById("t-nw").textContent = NEWS.length;
+  buildChips(); renderCompanies(); renderMap(); renderStories(); renderNews();
+}).catch(function(e){
+  var el=document.getElementById("err"); el.style.display="block";
+  el.textContent="Не удалось загрузить данные: "+e;
+});
+
+// ---- вкладки ----
+document.getElementById("tabs").addEventListener("click", function(e){
+  var b=e.target.closest(".tab"); if(!b) return;
+  document.querySelectorAll(".tab").forEach(function(t){t.classList.remove("active");});
+  document.querySelectorAll(".view").forEach(function(v){v.classList.remove("active");});
+  b.classList.add("active");
+  document.getElementById("view-"+b.dataset.view).classList.add("active");
+  window.scrollTo(0,0);
+});
+
+// ---- фильтры-чипы ----
+function chip(label, val, group){
+  var c=document.createElement("button"); c.className="chip"; c.textContent=label; c.dataset.val=val;
+  c.onclick=function(){
+    if(F[group]===val){ F[group]=null; } else { F[group]=val; }
+    document.querySelectorAll("#f-"+group+" .chip").forEach(function(x){ x.classList.toggle("on", x.dataset.val===F[group]); });
+    renderCompanies();
+  };
+  return c;
+}
+function buildChips(){
+  var m=document.getElementById("f-macro");
+  MACRO_ORDER.filter(function(x){return COS.some(function(c){return c.macro===x;});})
+    .forEach(function(x){ m.appendChild(chip(x,x,"macro")); });
+  var sg=document.getElementById("f-seg");
+  SEG_ORDER.filter(function(x){return COS.some(function(c){return c.segment===x;});})
+    .forEach(function(x){ sg.appendChild(chip(x,x,"seg")); });
+  var sz=document.getElementById("f-size");
+  SIZE_ORDER.forEach(function(x){ sz.appendChild(chip(x,x,"size")); });
+}
+document.getElementById("q").addEventListener("input", function(e){ F.q=e.target.value.toLowerCase().trim(); renderCompanies(); });
+document.getElementById("reset").addEventListener("click", function(){
+  F={macro:null,seg:null,size:null,q:""}; document.getElementById("q").value="";
+  document.querySelectorAll(".chip.on").forEach(function(x){x.classList.remove("on");});
+  renderCompanies();
+});
+
+function matches(c){
+  if(F.macro && c.macro!==F.macro) return false;
+  if(F.seg && c.segment!==F.seg) return false;
+  if(F.size && c.size!==F.size) return false;
+  if(F.q && c.name.toLowerCase().indexOf(F.q)<0) return false;
+  return true;
+}
+
+function renderCompanies(){
+  var grid=document.getElementById("co-grid"); grid.innerHTML="";
+  var list=COS.filter(matches).slice().sort(function(a,b){ return (b.news_count+b.story_count)-(a.news_count+a.story_count) || a.name.localeCompare(b.name,"ru"); });
+  document.getElementById("co-count").textContent = list.length + " из " + COS.length + " компаний";
+  list.forEach(function(c){
+    var el=document.createElement("div"); el.className="co";
+    var segs = (c.segments||[]).map(function(s){return '<span class="seg" title="'+(SEG_NAMES[s]||s)+'">'+s+'</span>';}).join("");
+    el.innerHTML =
+      '<div class="nm">'+esc(c.name)+'</div>'+
+      '<div class="meta"><span>'+esc(c.country)+'</span><span class="badge sz sz-'+c.size+'">'+c.size+'</span>'+
+        '<span class="badge">'+esc(TYPE_NAMES[c.type]||c.type)+'</span></div>'+
+      '<div class="segs">'+segs+'</div>'+
+      '<div class="foot"><span><b>'+c.news_count+'</b> новостей</span><span><b>'+c.story_count+'</b> историй</span></div>';
+    el.onclick=function(){ openCompany(c); };
+    grid.appendChild(el);
+  });
+}
+
+function openCompany(c){
+  var key=normName(c.name);
+  var news=NEWS.filter(function(n){return normName(n.company)===key;});
+  var grp=STORIES.filter(function(g){return normName(g.company)===key;});
+  var stories=[]; grp.forEach(function(g){ (g.posts||[]).forEach(function(p){ if(p.status==="posted") stories.push(p.text); }); });
+  var segs=(c.segments||[]).map(function(s){return '<span class="seg" title="'+(SEG_NAMES[s]||s)+'">'+s+'</span>';}).join(" ");
+  var html='<button class="x" onclick="closeModal()">×</button>'+
+    '<h3>'+esc(c.name)+'</h3>'+
+    '<p class="sub"><span>'+esc(c.country)+'</span>·<span class="badge sz sz-'+c.size+'">'+c.size+'</span>'+
+      '<span>'+esc(TYPE_NAMES[c.type]||c.type)+'</span>'+(c.site?('·<a class="tg" target="_blank" rel="noopener" href="https://'+esc(c.site)+'">'+esc(c.site)+'</a>'):'')+'</p>'+
+    '<div class="segs">'+segs+'</div>';
+  html+='<div class="mh">Истории ('+stories.length+')</div>';
+  if(stories.length){ stories.forEach(function(t){ html+='<div class="story">'+esc(t)+'</div>'; }); }
+  else html+='<p class="empty">Пока нет опубликованных историй.</p>';
+  html+='<div class="mh">Новости ('+news.length+')</div>';
+  if(news.length){ html+='<ul class="mlist">'; news.forEach(function(n){ html+='<li><span class="d">'+esc(fmtDate(n.date))+'</span><span>'+esc(n.title)+'</span></li>'; }); html+='</ul>'; }
+  else html+='<p class="empty">Пока нет опубликованных новостей.</p>';
+  document.getElementById("modal").innerHTML=html;
+  document.getElementById("overlay").classList.add("on");
+}
+function closeModal(){ document.getElementById("overlay").classList.remove("on"); }
+document.getElementById("overlay").addEventListener("click", function(e){ if(e.target.id==="overlay") closeModal(); });
+document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeModal(); });
+
+// ---- карта ----
+function renderMap(){
+  var segs=SEG_ORDER.filter(function(s){return COS.some(function(c){return c.segment===s;});});
+  var macros=MACRO_ORDER.filter(function(m){return COS.some(function(c){return c.macro===m;});});
+  var max=0, cell={};
+  segs.forEach(function(s){ macros.forEach(function(m){
+    var n=COS.filter(function(c){return c.segment===s && c.macro===m;}).length;
+    cell[s+"|"+m]=n; if(n>max) max=n;
+  }); });
+  var t=document.getElementById("matrix"); var h="<tr><th></th>";
+  macros.forEach(function(m){ h+='<th>'+m+'</th>'; }); h+="</tr>";
+  segs.forEach(function(s){
+    h+='<tr><th class="rowh" title="'+(SEG_NAMES[s]||s)+'">'+s+' <span style="color:var(--muted)">'+(SEG_NAMES[s]||"")+'</span></th>';
+    macros.forEach(function(m){
+      var n=cell[s+"|"+m];
+      if(!n){ h+='<td class="z" style="background:var(--panel-2);color:var(--muted)">·</td>'; return; }
+      var a=0.14+0.86*(n/max);
+      var col="color-mix(in srgb, var(--teal) "+Math.round(a*100)+"%, var(--panel))";
+      var ink=a>0.55?"#fff":"var(--ink)";
+      h+='<td style="background:'+col+';color:'+ink+'" data-seg="'+s+'" data-macro="'+m+'" title="'+(SEG_NAMES[s]||s)+' · '+m+': '+n+'">'+n+'</td>';
+    }); h+="</tr>";
+  });
+  t.innerHTML=h;
+  t.addEventListener("click", function(e){ var td=e.target.closest("td[data-seg]"); if(!td) return;
+    F.macro=td.dataset.macro; F.seg=td.dataset.seg; F.size=null; F.q=""; document.getElementById("q").value="";
+    buildChipsState(); renderCompanies(); gotoTab("companies");
+  });
+  renderBars("bars-size", SIZE_ORDER, function(v){return COS.filter(function(c){return c.size===v;}).length;},
+             function(v){return "var(--teal)";}, function(v){return v;});
+  var types=["public","private","subsidiary","state"];
+  renderBars("bars-type", types, function(v){return COS.filter(function(c){return c.type===v;}).length;},
+             function(v){return TYPE_COLOR[v];}, function(v){return TYPE_NAMES[v];});
+}
+function renderBars(id, keys, cnt, color, label){
+  var vals=keys.map(cnt); var mx=Math.max.apply(null,vals)||1; var box=document.getElementById(id); box.innerHTML="";
+  keys.forEach(function(k,i){
+    var n=vals[i]; var row=document.createElement("div"); row.className="barrow";
+    row.innerHTML='<span class="lab">'+esc(label(k))+'</span><div class="track"><div class="fill" style="width:'+Math.round(100*n/mx)+'%;background:'+color(k)+'"></div></div><span class="val">'+n+'</span>';
+    box.appendChild(row);
+  });
+}
+function buildChipsState(){
+  document.querySelectorAll("#f-macro .chip").forEach(function(x){x.classList.toggle("on",x.dataset.val===F.macro);});
+  document.querySelectorAll("#f-seg .chip").forEach(function(x){x.classList.toggle("on",x.dataset.val===F.seg);});
+  document.querySelectorAll("#f-size .chip").forEach(function(x){x.classList.toggle("on",x.dataset.val===F.size);});
+}
+function gotoTab(v){
+  document.querySelectorAll(".tab").forEach(function(t){t.classList.toggle("active",t.dataset.view===v);});
+  document.querySelectorAll(".view").forEach(function(s){s.classList.remove("active");});
+  document.getElementById("view-"+v).classList.add("active"); window.scrollTo(0,0);
+}
+
+// ---- истории ----
+function renderStories(){
+  var box=document.getElementById("st-list"); box.innerHTML="";
+  var withPosts=STORIES.map(function(g){
+    var posts=(g.posts||[]).filter(function(p){return p.status==="posted";});
+    return {company:g.company, posts:posts};
+  }).filter(function(g){return g.posts.length;}).sort(function(a,b){return b.posts.length-a.posts.length;});
+  document.getElementById("st-count").textContent = withPosts.length + " компаний с историями";
+  withPosts.forEach(function(g){
+    var d=document.createElement("details"); d.className="storyco";
+    var inner='<summary>'+esc(g.company)+'<span class="n">'+g.posts.length+' историй</span></summary>';
+    g.posts.forEach(function(p){ inner+='<div class="story">'+esc(p.text)+'</div>'; });
+    d.innerHTML=inner; box.appendChild(d);
+  });
+}
+
+// ---- новости ----
+function renderNews(){
+  var box=document.getElementById("nw-list"); box.innerHTML="";
+  document.getElementById("nw-count").textContent = NEWS.length + " опубликованных новостей";
+  NEWS.forEach(function(n){
+    var li=document.createElement("li");
+    li.innerHTML='<span class="d">'+esc(fmtDate(n.date))+'</span><span class="c">'+esc(n.company)+'</span><span>'+esc(n.title)+'</span>';
+    box.appendChild(li);
+  });
+}
+
+function fmtDate(d){ if(!d) return ""; var p=d.split("-"); return p.length===3 ? p[2]+"."+p[1]+"."+p[0] : d; }
+function esc(s){ return (s==null?"":""+s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+</script>
+</body>
+</html>

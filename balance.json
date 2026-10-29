@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-29T12:59:03+00:00",
+  "generated_at": "2026-10-29T19:37:26+00:00",
   "totals": {
     "total": 183,
-    "new": 21,
-    "posted": 155,
+    "new": 20,
+    "posted": 156,
     "blocked": 7,
     "companies": 74
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 80,
-  "published_30d": 61,
+  "published_30d": 62,
   "series": [
     {
       "date": "2026-09-30",
@@ -192,306 +192,1252 @@
     {
       "date": "2026-10-29",
       "added": 8,
-      "published": 2,
+      "published": 3,
       "width": 3
     }
   ],
   "companies": [
     {
       "name": "Össur",
-      "region": "world"
+      "region": "world",
+      "country": "Исландия",
+      "macro": "Европа",
+      "segments": [
+        "LL",
+        "SL",
+        "UL"
+      ],
+      "segment": "LL",
+      "type": "public",
+      "size": "XL",
+      "owner": "Публичная (Nasdaq Copenhagen: OSSR)",
+      "site": "ossur.com",
+      "news_count": 5,
+      "story_count": 7
     },
     {
       "name": "Ottobock",
-      "region": "world"
+      "region": "world",
+      "country": "Германия",
+      "macro": "Европа",
+      "segments": [
+        "UL",
+        "LL",
+        "OP",
+        "EXO"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "XL",
+      "owner": "Частная, миноритарий EQT",
+      "site": "ottobock.com",
+      "news_count": 22,
+      "story_count": 7
     },
     {
       "name": "Hanger Inc",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "OP",
+        "LL"
+      ],
+      "segment": "OP",
+      "type": "private",
+      "size": "XL",
+      "owner": "Patient Square Capital (private)",
+      "site": "hanger.com",
+      "news_count": 5,
+      "story_count": 8
     },
     {
       "name": "Blatchford (Endolite)",
-      "region": "world"
+      "region": "world",
+      "country": "Великобритания",
+      "macro": "Европа",
+      "segments": [
+        "LL",
+        "OI"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "L",
+      "owner": "Частная",
+      "site": "blatchford.co.uk",
+      "news_count": 0,
+      "story_count": 5
     },
     {
       "name": "Fillauer",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL",
+        "LL",
+        "SL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "L",
+      "owner": "Частная",
+      "site": "fillauer.com",
+      "news_count": 1,
+      "story_count": 5
     },
     {
       "name": "Proteor",
-      "region": "world"
+      "region": "world",
+      "country": "Франция",
+      "macro": "Европа",
+      "segments": [
+        "LL",
+        "UL",
+        "OP"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "L",
+      "owner": "Частная",
+      "site": "proteor.com",
+      "news_count": 1,
+      "story_count": 5
     },
     {
       "name": "WillowWood",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "SL",
+        "LL"
+      ],
+      "segment": "SL",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "willowwoodco.com",
+      "news_count": 1,
+      "story_count": 4
     },
     {
       "name": "Open Bionics",
-      "region": "world"
+      "region": "world",
+      "country": "Великобритания",
+      "macro": "Европа",
+      "segments": [
+        "UL",
+        "NEU"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная (VC)",
+      "site": "openbionics.com",
+      "news_count": 1,
+      "story_count": 6
     },
     {
       "name": "Coapt",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "NEU"
+      ],
+      "segment": "NEU",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "coaptengineering.com",
+      "news_count": 0,
+      "story_count": 4
     },
     {
       "name": "Vincent Systems",
-      "region": "world"
+      "region": "world",
+      "country": "Германия",
+      "macro": "Европа",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "vincentsystems.de",
+      "news_count": 1,
+      "story_count": 4
     },
     {
       "name": "Esper Bionics",
-      "region": "world"
+      "region": "world",
+      "country": "США/Украина",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL",
+        "NEU"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная (VC)",
+      "site": "esperbionics.com",
+      "news_count": 0,
+      "story_count": 5
     },
     {
       "name": "PSYONIC",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная (VC)",
+      "site": "psyonic.io",
+      "news_count": 3,
+      "story_count": 6
     },
     {
       "name": "TASKA Prosthetics",
-      "region": "world"
+      "region": "world",
+      "country": "Новая Зеландия",
+      "macro": "Азия",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "taskaprosthetics.com",
+      "news_count": 1,
+      "story_count": 4
     },
     {
       "name": "Steeper Group",
-      "region": "world"
+      "region": "world",
+      "country": "Великобритания",
+      "macro": "Европа",
+      "segments": [
+        "UL",
+        "OP"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "L",
+      "owner": "Частная",
+      "site": "steepergroup.com",
+      "news_count": 1,
+      "story_count": 5
     },
     {
       "name": "College Park Industries",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "LL",
+        "UL"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "L",
+      "owner": "Частная",
+      "site": "college-park.com",
+      "news_count": 0,
+      "story_count": 4
     },
     {
       "name": "Mobius Bionics",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "mobiusbionics.com",
+      "news_count": 1,
+      "story_count": 4
     },
     {
       "name": "Aether Biomedical",
-      "region": "world"
+      "region": "world",
+      "country": "Польша",
+      "macro": "Европа",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная (VC)",
+      "site": "aetherbiomedical.com",
+      "news_count": 0,
+      "story_count": 5
     },
     {
       "name": "Unlimited Tomorrow",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "unlimitedtomorrow.com",
+      "news_count": 0,
+      "story_count": 5
     },
     {
       "name": "BrainCo / BrainRobotics",
-      "region": "world"
+      "region": "world",
+      "country": "США/КНР",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL",
+        "NEU"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (VC)",
+      "site": "brainco.tech",
+      "news_count": 2,
+      "story_count": 6
     },
     {
       "name": "Naked Prosthetics",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "npdevices.com",
+      "news_count": 0,
+      "story_count": 4
     },
     {
       "name": "Integrum",
-      "region": "world"
+      "region": "world",
+      "country": "Швеция",
+      "macro": "Европа",
+      "segments": [
+        "OI"
+      ],
+      "segment": "OI",
+      "type": "public",
+      "size": "M",
+      "owner": "Публичная (Nasdaq First North)",
+      "site": "integrum.se",
+      "news_count": 0,
+      "story_count": 6
     },
     {
       "name": "Ортопедия Европа (Ortho Europe / Ability Matters)",
-      "region": "world"
+      "region": "world",
+      "country": "Великобритания",
+      "macro": "Европа",
+      "segments": [
+        "OP",
+        "SL"
+      ],
+      "segment": "OP",
+      "type": "private",
+      "size": "L",
+      "owner": "Частная",
+      "site": "orthoeurope.com",
+      "news_count": 0,
+      "story_count": 5
     },
     {
       "name": "Liberating Technologies (LTI)",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "subsidiary",
+      "size": "S",
+      "owner": "Дочерняя College Park",
+      "site": "liberatingtech.com",
+      "news_count": 0,
+      "story_count": 4
     },
     {
       "name": "Point Designs",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "pointdesignsllc.com",
+      "news_count": 0,
+      "story_count": 4
     },
     {
       "name": "AltBionics",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "UL",
+        "NEU"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная (VC)",
+      "site": "altbionics.com",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "Teh Lin (Tehlin)",
-      "region": "world"
+      "region": "world",
+      "country": "Тайвань",
+      "macro": "Азия",
+      "segments": [
+        "LL",
+        "UL",
+        "SL",
+        "OP"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "tehlin.com",
+      "news_count": 1,
+      "story_count": 4
     },
     {
       "name": "OYMotion",
-      "region": "world"
+      "region": "world",
+      "country": "КНР",
+      "macro": "Азия",
+      "segments": [
+        "NEU",
+        "UL"
+      ],
+      "segment": "NEU",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "oymotion.com",
+      "news_count": 4,
+      "story_count": 4
     },
     {
       "name": "Hugo Dynamics",
-      "region": "world"
+      "region": "world",
+      "country": "Южная Корея",
+      "macro": "Азия",
+      "segments": [
+        "LL",
+        "SL"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "hugodmcs.com",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "Instalimb",
-      "region": "world"
+      "region": "world",
+      "country": "Япония",
+      "macro": "Азия",
+      "segments": [
+        "LL",
+        "SL",
+        "OP"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (VC)",
+      "site": "instalimb.com",
+      "news_count": 0,
+      "story_count": 5
     },
     {
       "name": "Nabtesco",
-      "region": "world"
+      "region": "world",
+      "country": "Япония",
+      "macro": "Азия",
+      "segments": [
+        "LL",
+        "SL"
+      ],
+      "segment": "LL",
+      "type": "public",
+      "size": "XL",
+      "owner": "Публичная (TSE: 6268)",
+      "site": "mobilityassist.nabtesco.com",
+      "news_count": 1,
+      "story_count": 5
     },
     {
       "name": "BionicM",
-      "region": "world"
+      "region": "world",
+      "country": "Япония",
+      "macro": "Азия",
+      "segments": [
+        "LL"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная (VC)",
+      "site": "bionicm.com",
+      "news_count": 1,
+      "story_count": 5
     },
     {
       "name": "AOSUO (Shijiazhuang New Aosuo)",
-      "region": "world"
+      "region": "world",
+      "country": "Китай",
+      "macro": "Азия",
+      "segments": [
+        "LL",
+        "SL",
+        "OP"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "prosthetic-as.com",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "Fengxing / Goodoing",
-      "region": "world"
+      "region": "world",
+      "country": "Китай",
+      "macro": "Азия",
+      "segments": [
+        "UL",
+        "LL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "fxznss.com",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "ReWalk / Lifeward",
-      "region": "world"
+      "region": "world",
+      "country": "США/Израиль",
+      "macro": "Сев. Америка",
+      "segments": [
+        "EXO"
+      ],
+      "segment": "EXO",
+      "type": "public",
+      "size": "M",
+      "owner": "Публичная (Nasdaq: LFWD)",
+      "site": "lifeward.com",
+      "news_count": 3,
+      "story_count": 5
     },
     {
       "name": "Ekso Bionics",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "EXO"
+      ],
+      "segment": "EXO",
+      "type": "public",
+      "size": "M",
+      "owner": "Публичная (Nasdaq: EKSO)",
+      "site": "eksobionics.com",
+      "news_count": 2,
+      "story_count": 5
     },
     {
       "name": "Wandercraft",
-      "region": "world"
+      "region": "world",
+      "country": "Франция",
+      "macro": "Европа",
+      "segments": [
+        "EXO"
+      ],
+      "segment": "EXO",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (VC)",
+      "site": "wandercraft.eu",
+      "news_count": 5,
+      "story_count": 6
     },
     {
       "name": "ExoAtlet Global",
-      "region": "world"
+      "region": "world",
+      "country": "Люксембург / Ю.Корея",
+      "macro": "Европа",
+      "segments": [
+        "EXO",
+        "реаб"
+      ],
+      "segment": "EXO",
+      "type": "public",
+      "size": "M",
+      "owner": "Публичная (KOSDAQ: 439960, Cosmo Robotics)",
+      "site": "exoatlet.com",
+      "news_count": 1,
+      "story_count": 6
     },
     {
       "name": "Cyberdyne",
-      "region": "world"
+      "region": "world",
+      "country": "Япония",
+      "macro": "Азия",
+      "segments": [
+        "EXO"
+      ],
+      "segment": "EXO",
+      "type": "public",
+      "size": "L",
+      "owner": "Публичная (TSE: 7779)",
+      "site": "cyberdyne.jp",
+      "news_count": 3,
+      "story_count": 5
     },
     {
       "name": "Hocoma (DIH)",
-      "region": "world"
+      "region": "world",
+      "country": "Швейцария",
+      "macro": "Европа",
+      "segments": [
+        "EXO",
+        "реаб"
+      ],
+      "segment": "EXO",
+      "type": "subsidiary",
+      "size": "L",
+      "owner": "Часть DIH Holdings",
+      "site": "hocoma.com",
+      "news_count": 1,
+      "story_count": 5
     },
     {
       "name": "Myomo",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "NEU",
+        "ортез"
+      ],
+      "segment": "NEU",
+      "type": "public",
+      "size": "M",
+      "owner": "Публичная (NYSE: MYO)",
+      "site": "myomo.com",
+      "news_count": 3,
+      "story_count": 5
     },
     {
       "name": "Synchron",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "NEU"
+      ],
+      "segment": "NEU",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (VC)",
+      "site": "synchron.com",
+      "news_count": 1,
+      "story_count": 5
     },
     {
       "name": "Blackrock Neurotech",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "NEU"
+      ],
+      "segment": "NEU",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "blackrockneurotech.com",
+      "news_count": 0,
+      "story_count": 5
     },
     {
       "name": "Neuralink",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "NEU"
+      ],
+      "segment": "NEU",
+      "type": "private",
+      "size": "L",
+      "owner": "Частная",
+      "site": "neuralink.com",
+      "news_count": 2,
+      "story_count": 6
     },
     {
       "name": "Onward Medical",
-      "region": "world"
+      "region": "world",
+      "country": "Нидерланды",
+      "macro": "Европа",
+      "segments": [
+        "NEU"
+      ],
+      "segment": "NEU",
+      "type": "public",
+      "size": "M",
+      "owner": "Публичная (Euronext: ONWD)",
+      "site": "onwardmedical.com",
+      "news_count": 3,
+      "story_count": 5
     },
     {
       "name": "Permobil",
-      "region": "world"
+      "region": "world",
+      "country": "Швеция",
+      "macro": "Европа",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "XL",
+      "owner": "Частная (Patricia Industries)",
+      "site": "permobil.com",
+      "news_count": 4,
+      "story_count": 5
     },
     {
       "name": "Sunrise Medical",
-      "region": "world"
+      "region": "world",
+      "country": "Германия",
+      "macro": "Европа",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "XL",
+      "owner": "Частная (Platinum Equity, с 2024)",
+      "site": "sunrisemedical.com",
+      "news_count": 4,
+      "story_count": 5
     },
     {
       "name": "Invacare (Birdie Mobility)",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "L",
+      "owner": "Частная",
+      "site": "birdiemobility.com",
+      "news_count": 0,
+      "story_count": 5
     },
     {
       "name": "WHILL",
-      "region": "world"
+      "region": "world",
+      "country": "Япония",
+      "macro": "Азия",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "whill.inc",
+      "news_count": 3,
+      "story_count": 5
     },
     {
       "name": "Genny Mobility",
-      "region": "world"
+      "region": "world",
+      "country": "Швейцария/Италия",
+      "macro": "Европа",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная (Genny Factory SA)",
+      "site": "gennymobility.com",
+      "news_count": 1,
+      "story_count": 6
     },
     {
       "name": "Zimmer Biomet",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "эндопротезы"
+      ],
+      "segment": "эндопротезы",
+      "type": "public",
+      "size": "XL",
+      "owner": "Публичная (NYSE: ZBH)",
+      "site": "zimmerbiomet.com",
+      "news_count": 11,
+      "story_count": 6
     },
     {
       "name": "Stryker",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "эндопротезы"
+      ],
+      "segment": "эндопротезы",
+      "type": "public",
+      "size": "XL",
+      "owner": "Публичная (NYSE: SYK)",
+      "site": "stryker.com",
+      "news_count": 7,
+      "story_count": 5
     },
     {
       "name": "Smith+Nephew",
-      "region": "world"
+      "region": "world",
+      "country": "Великобритания",
+      "macro": "Европа",
+      "segments": [
+        "эндопротезы"
+      ],
+      "segment": "эндопротезы",
+      "type": "public",
+      "size": "XL",
+      "owner": "Публичная (LSE/NYSE: SNN)",
+      "site": "smith-nephew.com",
+      "news_count": 2,
+      "story_count": 5
     },
     {
       "name": "Enovis (DJO)",
-      "region": "world"
+      "region": "world",
+      "country": "США",
+      "macro": "Сев. Америка",
+      "segments": [
+        "эндопротезы",
+        "ортезы"
+      ],
+      "segment": "эндопротезы",
+      "type": "public",
+      "size": "XL",
+      "owner": "Публичная (NYSE: ENOV)",
+      "site": "enovis.com",
+      "news_count": 0,
+      "story_count": 6
     },
     {
       "name": "Моторика",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "UL",
+        "NEU"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "L",
+      "owner": "Частная (VC/РФПИ)",
+      "site": "motorica.org",
+      "news_count": 11,
+      "story_count": 5
     },
     {
       "name": "ЭкзоАтлет",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "EXO",
+        "реаб"
+      ],
+      "segment": "EXO",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (Сколково)",
+      "site": "exoatlet.ru",
+      "news_count": 0,
+      "story_count": 5
     },
     {
       "name": "Метиз (ГК МЕТИЗ)",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "UL",
+        "LL",
+        "SL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "",
+      "news_count": 1,
+      "story_count": 5
     },
     {
       "name": "МаксБионик",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "maxbionic.com",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "Салют Орто",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "LL",
+        "SL"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "salut-ortho.ru",
+      "news_count": 0,
+      "story_count": 2
     },
     {
       "name": "ОртоКосмос",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "OP"
+      ],
+      "segment": "OP",
+      "type": "subsidiary",
+      "size": "M",
+      "owner": "Дистрибуция (партнёр Ottobock)",
+      "site": "ortokosmos.ru",
+      "news_count": 0,
+      "story_count": 2
     },
     {
       "name": "Сколиолоджик.ру",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "OP",
+        "SL"
+      ],
+      "segment": "OP",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "scoliologic.ru",
+      "news_count": 1,
+      "story_count": 2
     },
     {
       "name": "Орто-Инновации",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "OP",
+        "UL",
+        "LL"
+      ],
+      "segment": "OP",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (сеть центров)",
+      "site": "ortomoscow.ru",
+      "news_count": 0,
+      "story_count": 2
     },
     {
       "name": "Динамика",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "OP",
+        "LL",
+        "UL"
+      ],
+      "segment": "OP",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "dynamics-orto.ru",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "Лимб (Limb Lab)",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "OP",
+        "LL",
+        "UL"
+      ],
+      "segment": "OP",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "limblab.ru",
+      "news_count": 0,
+      "story_count": 2
     },
     {
       "name": "Оттобок (Россия)",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "LL",
+        "UL",
+        "SL",
+        "OP"
+      ],
+      "segment": "LL",
+      "type": "subsidiary",
+      "size": "M",
+      "owner": "Дочерняя Ottobock (Германия)",
+      "site": "ottobock.com/ru-ru",
+      "news_count": 0,
+      "story_count": 2
     },
     {
       "name": "ЦИТО (АО ЦИТО)",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "OP",
+        "эндопротезы",
+        "SL"
+      ],
+      "segment": "OP",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (АО)",
+      "site": "cito-pro.ru",
+      "news_count": 1,
+      "story_count": 3
     },
     {
       "name": "Экспресс-Орто",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "SL",
+        "OP"
+      ],
+      "segment": "SL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "express-orto.ru",
+      "news_count": 0,
+      "story_count": 2
     },
     {
       "name": "Моспроп (Московское ПрОП)",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "OP",
+        "LL",
+        "UL",
+        "коляски"
+      ],
+      "segment": "OP",
+      "type": "state",
+      "size": "M",
+      "owner": "Госпредприятие (АО)",
+      "site": "mosprop.ru",
+      "news_count": 0,
+      "story_count": 2
     },
     {
       "name": "ЗСО (Завод спец. оборудования)",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (в ГК Моторика)",
+      "site": "zso.ru",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "Ортоника",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "ortonica.ru",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "Армед",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "armed.ru",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "Caterwil",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "caterwil.ru",
+      "news_count": 0,
+      "story_count": 3
     },
     {
       "name": "Кинез",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "LL",
+        "SL"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "kinez.ru",
+      "news_count": 1,
+      "story_count": 2
     },
     {
       "name": "Steplife",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "LL",
+        "UL",
+        "SL"
+      ],
+      "segment": "LL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "steplife.ru",
+      "news_count": 4,
+      "story_count": 3
     },
     {
       "name": "Кинезис",
-      "region": "RU"
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "коляски"
+      ],
+      "segment": "коляски",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная",
+      "site": "kinesis.ru",
+      "news_count": 0,
+      "story_count": 2
     }
   ],
   "news": [
@@ -520,7 +1466,7 @@
       "date": "2026-10-28",
       "company": "Ottobock",
       "title": "Ottobock возглавил раунд Series A финансирования для Blue Arbor Technologies на сумму $10,5 млн",
-      "status": "new",
+      "status": "posted",
       "region": "world"
     },
     {
@@ -2380,7 +3326,7 @@
         },
         {
           "text": "Владение LTI менялось дважды. В 2015 году независимую компанию купила College Park Industries (протезные стопы и UL), встроив её как R&D-подразделение. В июле 2021 года LTI приобрёл Coapt — разработчик систем распознавания паттернов ЭМГ. Сегодня LTI позиционируется как исследовательская компания в составе Coapt. Вывод для отрасли: маленький, но сильный R&D-актив дважды становился объектом стратегической покупки — компетенции ценнее оборотов.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Экономика LTI необычна для отрасли: значимую часть разработок финансируют гранты Министерства обороны США, NIH и Управления по делам ветеранов (VA). Компания фактически работает как контрактный R&D-центр по протезированию верхних конечностей. Вывод для отрасли: грантовая модель позволяет вести дорогие долгие исследования, которые не окупились бы на чисто коммерческом UL-рынке — и объясняет, почему LTI ценят именно за интеллектуальный задел.",
