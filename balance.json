@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-29T05:46:42+00:00",
+  "generated_at": "2026-10-29T12:59:03+00:00",
   "totals": {
-    "total": 175,
-    "new": 15,
-    "posted": 153,
+    "total": 183,
+    "new": 21,
+    "posted": 155,
     "blocked": 7,
     "companies": 74
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 72,
-  "published_30d": 59,
+  "added_30d": 80,
+  "published_30d": 61,
   "series": [
     {
       "date": "2026-09-30",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-10-29",
-      "added": 0,
-      "published": 0,
-      "width": null
+      "added": 8,
+      "published": 2,
+      "width": 3
     }
   ],
   "companies": [
@@ -510,6 +510,48 @@
       "region": "world"
     },
     {
+      "date": "2026-10-28",
+      "company": "University of Utah / BIOS",
+      "title": "Прямой нервный интерфейс для нейропротеза LUKE Arm протестирован в домашних условиях",
+      "status": "posted",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-28",
+      "company": "Ottobock",
+      "title": "Ottobock возглавил раунд Series A финансирования для Blue Arbor Technologies на сумму $10,5 млн",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-27",
+      "company": "OYMotion",
+      "title": "OYMotion готовится к выставке OTWorld 2026 с новой серией OHand",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-27",
+      "company": "Zimmer Biomet",
+      "title": "Zimmer Biomet запустила робот-ассистент ROSA Knee с платформой OptimiZe на индийском рынке",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-27",
+      "company": "Stryker",
+      "title": "Stryker завершила приобретение ZuriMED, компании по технологиям восстановления ротаторной манжеты плеча",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-27",
+      "company": "ScienceTimes",
+      "title": "Новая бионическая рука подключается к костям, нервам и мышцам, восстанавливая движение и осязание",
+      "status": "new",
+      "region": "world"
+    },
+    {
       "date": "2026-10-26",
       "company": "Zimmer Biomet",
       "title": "Arthritis Foundation и Zimmer Biomet запустили сообщество Comeback Club для пациентов после эндопротезирования",
@@ -524,6 +566,13 @@
       "region": "world"
     },
     {
+      "date": "2026-10-24",
+      "company": "Alt-Bionics",
+      "title": "Alt-Bionics участвует в AOPA 2026 с демонстрацией Genesis Hand",
+      "status": "new",
+      "region": "world"
+    },
+    {
       "date": "2026-10-23",
       "company": "OYMotion",
       "title": "OYMotion получила награду Most Growth Value Award на Gasgoo Awards 2026",
@@ -535,6 +584,13 @@
       "company": "Cyberdyne Inc.",
       "title": "Экзоскелет HAL показал улучшение ходьбы у пациентов с острым инсультом",
       "status": "posted",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-23",
+      "company": "Ottobock",
+      "title": "Ottobock сообщила о результатах первой половины 2026 года с улучшением маржи",
+      "status": "new",
       "region": "world"
     },
     {
@@ -806,8 +862,8 @@
     {
       "date": "2026-10-12",
       "company": "Ottobock",
-      "title": "Ottobock H1 2026: выручка €818,5 млн, органический рост 6,7%, EBITDA margin 25,3%",
-      "status": "new",
+      "title": "Ottobock H1 2026: выручка €818,5 млн, органический рост 6,7%, маржа EBITDA 25,3%",
+      "status": "posted",
       "region": "world"
     },
     {
@@ -2320,7 +2376,7 @@
         },
         {
           "text": "Технологическое ядро LTI — Boston Digital Arm, одна из первых протезных рук с микроконтроллерным управлением. Вокруг неё выстроена линейка контроллеров, электродов и батарей для миоэлектрических сборок. Смысл подхода: LTI поставляет не готовую конечность целиком, а управляющую электронику и модули, из которых протезист собирает индивидуальную UL-систему. Вывод для отрасли: ставка на программируемое управление опередила рынок и задала стандарт настраиваемых миоэлектрических протезов.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Владение LTI менялось дважды. В 2015 году независимую компанию купила College Park Industries (протезные стопы и UL), встроив её как R&D-подразделение. В июле 2021 года LTI приобрёл Coapt — разработчик систем распознавания паттернов ЭМГ. Сегодня LTI позиционируется как исследовательская компания в составе Coapt. Вывод для отрасли: маленький, но сильный R&D-актив дважды становился объектом стратегической покупки — компетенции ценнее оборотов.",
