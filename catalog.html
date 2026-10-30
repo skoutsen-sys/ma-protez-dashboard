@@ -147,6 +147,7 @@
       <div class="fgroup"><span class="flabel">Регион</span><div class="chips" id="f-macro"></div></div>
       <div class="fgroup"><span class="flabel">Сегмент</span><div class="chips" id="f-seg"></div></div>
       <div class="fgroup"><span class="flabel">Размер</span><div class="chips" id="f-size"></div></div>
+      <div class="fgroup"><span class="flabel">Тип</span><div class="chips" id="f-type"></div></div>
       <button class="reset" id="reset">сбросить</button>
     </div>
     <p class="count" id="co-count"></p>
@@ -206,6 +207,7 @@ var SEG_NAMES = {
 var SEG_ORDER = ["UL","LL","OI","SL","OP","NEU","EXO","коляски","эндопротезы","реаб"];
 var MACRO_ORDER = ["РФ","Европа","Сев. Америка","Азия","Прочее"];
 var SIZE_ORDER = ["XL","L","M","S"];
+var TYPE_ORDER = ["public","private","subsidiary","state"];
 var TYPE_NAMES = {public:"Публичная", private:"Частная", subsidiary:"Дочерняя / дистрибуция", state:"Госпредприятие"};
 var TYPE_COLOR = {public:"var(--indigo)", private:"var(--teal)", subsidiary:"var(--amber)", state:"var(--muted)"};
 
@@ -217,7 +219,7 @@ function normName(name){
 }
 
 var DATA=null, COS=[], NEWS=[], STORIES=[];
-var F = {macro:null, seg:null, size:null, q:""};
+var F = {macro:null, seg:null, size:null, type:null, q:""};
 
 fetch("balance.json?_=" + Date.now()).then(function(r){ return r.json(); }).then(function(d){
   DATA=d; COS=d.companies||[]; NEWS=(d.news||[]).filter(function(n){return n.status==="posted";});
@@ -262,10 +264,13 @@ function buildChips(){
     .forEach(function(x){ sg.appendChild(chip(x,x,"seg")); });
   var sz=document.getElementById("f-size");
   SIZE_ORDER.forEach(function(x){ sz.appendChild(chip(x,x,"size")); });
+  var tp=document.getElementById("f-type");
+  TYPE_ORDER.filter(function(x){return COS.some(function(c){return c.type===x;});})
+    .forEach(function(x){ tp.appendChild(chip(TYPE_NAMES[x],x,"type")); });
 }
 document.getElementById("q").addEventListener("input", function(e){ F.q=e.target.value.toLowerCase().trim(); renderCompanies(); });
 document.getElementById("reset").addEventListener("click", function(){
-  F={macro:null,seg:null,size:null,q:""}; document.getElementById("q").value="";
+  F={macro:null,seg:null,size:null,type:null,q:""}; document.getElementById("q").value="";
   document.querySelectorAll(".chip.on").forEach(function(x){x.classList.remove("on");});
   renderCompanies();
 });
@@ -274,6 +279,7 @@ function matches(c){
   if(F.macro && c.macro!==F.macro) return false;
   if(F.seg && c.segment!==F.seg) return false;
   if(F.size && c.size!==F.size) return false;
+  if(F.type && c.type!==F.type) return false;
   if(F.q && c.name.toLowerCase().indexOf(F.q)<0) return false;
   return true;
 }
@@ -344,7 +350,7 @@ function renderMap(){
   });
   t.innerHTML=h;
   t.addEventListener("click", function(e){ var td=e.target.closest("td[data-seg]"); if(!td) return;
-    F.macro=td.dataset.macro; F.seg=td.dataset.seg; F.size=null; F.q=""; document.getElementById("q").value="";
+    F.macro=td.dataset.macro; F.seg=td.dataset.seg; F.size=null; F.type=null; F.q=""; document.getElementById("q").value="";
     buildChipsState(); renderCompanies(); gotoTab("companies");
   });
   renderBars("bars-size", SIZE_ORDER, function(v){return COS.filter(function(c){return c.size===v;}).length;},
