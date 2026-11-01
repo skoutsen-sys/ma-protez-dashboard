@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-01T06:01:38+00:00",
+  "generated_at": "2026-11-01T13:22:24+00:00",
   "totals": {
-    "total": 185,
-    "new": 18,
-    "posted": 160,
+    "total": 196,
+    "new": 27,
+    "posted": 162,
     "blocked": 7,
     "companies": 74
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 76,
-  "published_30d": 63,
+  "added_30d": 87,
+  "published_30d": 65,
   "series": [
     {
       "date": "2026-10-03",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-01",
-      "added": 0,
-      "published": 0,
-      "width": null
+      "added": 11,
+      "published": 2,
+      "width": 3
     }
   ],
   "companies": [
@@ -817,7 +817,7 @@
       "size": "M",
       "owner": "Публичная (KOSDAQ: 439960, Cosmo Robotics)",
       "site": "exoatlet.com",
-      "news_count": 1,
+      "news_count": 2,
       "story_count": 6
     },
     {
@@ -833,7 +833,7 @@
       "size": "L",
       "owner": "Публичная (TSE: 7779)",
       "site": "cyberdyne.jp",
-      "news_count": 3,
+      "news_count": 5,
       "story_count": 5
     },
     {
@@ -1027,7 +1027,7 @@
       "size": "XL",
       "owner": "Публичная (NYSE: ZBH)",
       "site": "zimmerbiomet.com",
-      "news_count": 11,
+      "news_count": 12,
       "story_count": 6
     },
     {
@@ -1043,7 +1043,7 @@
       "size": "XL",
       "owner": "Публичная (NYSE: SYK)",
       "site": "stryker.com",
-      "news_count": 7,
+      "news_count": 9,
       "story_count": 5
     },
     {
@@ -1449,10 +1449,73 @@
       "region": "world"
     },
     {
+      "date": "2026-11-21",
+      "company": "ISPO Jordan",
+      "title": "ISPO День ортопедической науки в Иордании",
+      "status": "posted",
+      "region": "world"
+    },
+    {
       "date": "2026-11-18",
       "company": "Japan Medical Rehabilitation Equipment Association (организатор)",
       "title": "TokyoRehabilitation (HOSPEX Japan) 2026",
       "status": "posted",
+      "region": "world"
+    },
+    {
+      "date": "2026-11-08",
+      "company": "ICOPII",
+      "title": "Международная конференция ортопедических протезов и имплантационных инноваций в Дели",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-11-01",
+      "company": "ISPO Canada",
+      "title": "Конференция ортопедии, протезирования и реабилитации OPRC 2026",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-31",
+      "company": "H.C.R.",
+      "title": "53-я Международная выставка услуг и оборудования по уходу и реабилитации (H.C.R. 2026)",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-30",
+      "company": "Cyberdyne",
+      "title": "HAL остаётся в активном производстве с улучшениями батареи и датчиков",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-30",
+      "company": "Cyberdyne",
+      "title": "Cyberdyne сообщил о снижении выручки на 12,3% за финансовый год, завершившийся 31 марта 2026",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-30",
+      "company": "Stryker",
+      "title": "Stryker снизила рекомендации на 2026 год из-за замедления процедур замены тазобедренных и коленных суставов",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-29",
+      "company": "Zimmer Biomet",
+      "title": "Zimmer Biomet представит новую эру интеллектуальной ортопедической хирургии на AAHKS 2026",
+      "status": "new",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-29",
+      "company": "Stryker",
+      "title": "Stryker отчиталась о Q3 2026 результатах с органическим ростом продаж на 7,7%",
+      "status": "new",
       "region": "world"
     },
     {
@@ -1480,8 +1543,22 @@
       "date": "2026-10-28",
       "company": "Blue Arbor Technologies",
       "title": "Blue Arbor Technologies привлекла $10,5 млн Series A расширение под руководством Ottobock",
+      "status": "posted",
+      "region": "world"
+    },
+    {
+      "date": "2026-10-28",
+      "company": "ExoAtlet Global",
+      "title": "ExoAtlet Global примет участие в выставке MEDICA 2026 в Дюссельдорфе",
       "status": "new",
       "region": "world"
+    },
+    {
+      "date": "2026-10-28",
+      "company": "Московское ПрОП",
+      "title": "Московское ПрОП и Правительство Ханты-Мансийского округа подписали соглашение о сотрудничестве",
+      "status": "new",
+      "region": "RU"
     },
     {
       "date": "2026-10-27",
@@ -3428,7 +3505,7 @@
         },
         {
           "text": "OYMotion сознательно работает на двух рынках сразу: интеллектуальные бионические протезы и компоненты для робототехники, включая сочленённые мотор-редукторы и человекоподобные роботизированные кисти. Вывод для отрасли: перенос дорогой миоэлектрической и сенсорной разработки в бурно растущий сегмент гуманоидной робототехники даёт эффект масштаба, недоступный чисто протезным компаниям, и удешевляет технологии для самих ампутантов.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
