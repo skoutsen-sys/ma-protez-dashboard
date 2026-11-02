@@ -93,6 +93,7 @@
   .d{font-family:var(--mono);color:var(--muted);font-size:12px}
   .modal .story{padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.6}
   .modal .story:last-child{border-bottom:0}
+  .soon{display:inline-block;font-family:var(--mono);font-size:10.5px;color:var(--teal);border:1px solid var(--teal);border-radius:999px;padding:0 7px;margin-right:8px;vertical-align:1px}
   .empty{color:var(--muted);font-size:13.5px;font-style:italic}
 
   /* карта */
@@ -234,9 +235,18 @@ var SEG_NAMES = {
   "OI":"Остеоинтеграция", "SL":"Гильзы, лайнеры, компоненты",
   "OP":"O&P-клиники, сервис, дистрибуция", "NEU":"Нейроуправление / BCI",
   "EXO":"Экзоскелеты", "коляски":"Кресла-коляски",
-  "эндопротезы":"Эндопротезы суставов", "реаб":"Реабилитационные роботы"
+  "эндопротезы":"Эндопротезы суставов", "реаб":"Реабилитационные роботы", "ортезы":"Ортезы", "ортез":"Ортезы"
 };
 var SEG_ORDER = ["UL","LL","OI","SL","OP","NEU","EXO","коляски","эндопротезы","реаб"];
+// латинские коды для сегментов, у которых в данных русский ключ
+var SEG_CODE = { "коляски":"WCh", "эндопротезы":"Endo", "реаб":"Rehab", "ортезы":"Orth", "ортез":"Orth" };
+function segCode(s){ return SEG_CODE[s] || s; }
+// короткие подписи для кнопок фильтра (коды читателю непонятны)
+var SEG_SHORT = {
+  "UL":"Протезы рук", "LL":"Протезы ног", "OI":"Остеоинтеграция", "SL":"Гильзы и лайнеры",
+  "OP":"Клиники и сервис", "NEU":"Нейроуправление", "EXO":"Экзоскелеты", "коляски":"Коляски",
+  "эндопротезы":"Эндопротезы", "реаб":"Реабилитация"
+};
 var MACRO_ORDER = ["РФ","Европа","Сев. Америка","Азия","Прочее"];
 var SIZE_ORDER = ["XL","L","M","S"];
 var TYPE_ORDER = ["public","private","subsidiary","state"];
@@ -293,7 +303,7 @@ function buildChips(){
     .forEach(function(x){ m.appendChild(chip(x,x,"macro")); });
   var sg=document.getElementById("f-seg");
   SEG_ORDER.filter(function(x){return COS.some(function(c){return c.segment===x;});})
-    .forEach(function(x){ sg.appendChild(chip(x,x,"seg")); });
+    .forEach(function(x){ var lbl=SEG_SHORT[x]; if(lbl) lbl=segCode(x)+" — "+lbl; var c=chip(lbl||x,x,"seg"); c.title=SEG_NAMES[x]||x; sg.appendChild(c); });
   var sz=document.getElementById("f-size");
   SIZE_ORDER.forEach(function(x){ sz.appendChild(chip(x,x,"size")); });
   var tp=document.getElementById("f-type");
@@ -322,7 +332,7 @@ function renderCompanies(){
   document.getElementById("co-count").textContent = list.length + " из " + COS.length + " компаний";
   list.forEach(function(c){
     var el=document.createElement("div"); el.className="co";
-    var segs = (c.segments||[]).map(function(s){return '<span class="seg" title="'+(SEG_NAMES[s]||s)+'">'+s+'</span>';}).join("");
+    var segs = (c.segments||[]).map(function(s){return '<span class="seg" title="'+(SEG_NAMES[s]||s)+'">'+segCode(s)+'</span>';}).join("");
     el.innerHTML =
       '<div class="nm">'+esc(c.name)+'</div>'+
       '<div class="meta"><span>'+esc(c.country)+'</span><span class="badge sz sz-'+c.size+'">'+c.size+'</span>'+
@@ -338,16 +348,19 @@ function openCompany(c){
   var key=normName(c.name);
   var news=NEWS.filter(function(n){return normName(n.company)===key;});
   var grp=STORIES.filter(function(g){return normName(g.company)===key;});
-  var stories=[]; grp.forEach(function(g){ (g.posts||[]).forEach(function(p){ if(p.status==="posted") stories.push(p.text); }); });
-  var segs=(c.segments||[]).map(function(s){return '<span class="seg" title="'+(SEG_NAMES[s]||s)+'">'+s+'</span>';}).join(" ");
+  // все истории компании: сначала вышедшие в канал, затем готовые к выходу (заблокированные не показываем)
+  var stories=[]; grp.forEach(function(g){ (g.posts||[]).forEach(function(p){ if(p.status!=="blocked") stories.push(p); }); });
+  stories.sort(function(a,b){ return (a.status==="posted"?0:1)-(b.status==="posted"?0:1); });
+  var segs=(c.segments||[]).map(function(s){return '<span class="seg" title="'+(SEG_NAMES[s]||s)+'">'+segCode(s)+'</span>';}).join(" ");
   var html='<button class="x" onclick="closeModal()">×</button>'+
     '<h3>'+esc(c.name)+'</h3>'+
     '<p class="sub"><span>'+esc(c.country)+'</span>·<span class="badge sz sz-'+c.size+'">'+c.size+'</span>'+
       '<span>'+esc(TYPE_NAMES[c.type]||c.type)+'</span>'+(c.site?('·<a class="tg" target="_blank" rel="noopener" href="https://'+esc(c.site)+'">'+esc(c.site)+'</a>'):'')+'</p>'+
     '<div class="segs">'+segs+'</div>';
   html+='<div class="mh">Истории ('+stories.length+')</div>';
-  if(stories.length){ stories.forEach(function(t){ html+='<div class="story">'+esc(t)+'</div>'; }); }
-  else html+='<p class="empty">Пока нет опубликованных историй.</p>';
+  if(stories.length){ stories.forEach(function(p){
+    html+='<div class="story">'+(p.status==="posted"?'':'<span class="soon">скоро в канале</span>')+esc(p.text)+'</div>'; }); }
+  else html+='<p class="empty">Историй пока нет.</p>';
   html+='<div class="mh">Новости ('+news.length+')</div>';
   if(news.length){ html+='<ul class="mlist">'; news.forEach(function(n){ html+='<li><span class="d">'+esc(fmtDate(n.date))+'</span><span>'+newsTitle(n)+'</span></li>'; }); html+='</ul>'; }
   else html+='<p class="empty">Пока нет опубликованных новостей.</p>';
@@ -371,7 +384,7 @@ function renderMap(){
   var t=document.getElementById("matrix"); var h="<tr><th></th>";
   macros.forEach(function(m){ h+='<th>'+m+'</th>'; }); h+="</tr>";
   segs.forEach(function(s){
-    h+='<tr><th class="rowh" title="'+(SEG_NAMES[s]||s)+'">'+s+' <span style="color:var(--muted)">'+(SEG_NAMES[s]||"")+'</span></th>';
+    h+='<tr><th class="rowh" title="'+(SEG_NAMES[s]||s)+'">'+segCode(s)+' <span style="color:var(--muted)">'+(SEG_NAMES[s]||"")+'</span></th>';
     macros.forEach(function(m){
       var n=cell[s+"|"+m];
       if(!n){ h+='<td class="z" style="background:var(--panel-2);color:var(--muted)">·</td>'; return; }
@@ -415,14 +428,15 @@ function gotoTab(v){
 function renderStories(){
   var box=document.getElementById("st-list"); box.innerHTML="";
   var withPosts=STORIES.map(function(g){
-    var posts=(g.posts||[]).filter(function(p){return p.status==="posted";});
-    return {company:g.company, posts:posts};
+    var posts=(g.posts||[]).filter(function(p){return p.status!=="blocked";});
+    posts.sort(function(a,b){ return (a.status==="posted"?0:1)-(b.status==="posted"?0:1); });
+    return {company:g.company, posts:posts, done:posts.filter(function(p){return p.status==="posted";}).length};
   }).filter(function(g){return g.posts.length;}).sort(function(a,b){return b.posts.length-a.posts.length;});
   document.getElementById("st-count").textContent = withPosts.length + " компаний с историями";
   withPosts.forEach(function(g){
     var d=document.createElement("details"); d.className="storyco";
-    var inner='<summary>'+esc(g.company)+'<span class="n">'+g.posts.length+' историй</span></summary>';
-    g.posts.forEach(function(p){ inner+='<div class="story">'+esc(p.text)+'</div>'; });
+    var inner='<summary>'+esc(g.company)+'<span class="n">'+g.posts.length+' историй'+(g.done<g.posts.length?' · вышло '+g.done:'')+'</span></summary>';
+    g.posts.forEach(function(p){ inner+='<div class="story">'+(p.status==="posted"?'':'<span class="soon">скоро в канале</span>')+esc(p.text)+'</div>'; });
     d.innerHTML=inner; box.appendChild(d);
   });
 }
