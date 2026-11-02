@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-02T15:03:40+00:00",
+  "generated_at": "2026-11-02T15:49:34+00:00",
   "totals": {
     "total": 211,
-    "new": 29,
-    "posted": 165,
+    "new": 28,
+    "posted": 166,
     "blocked": 17,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 95,
-  "published_30d": 66,
+  "published_30d": 67,
   "series": [
     {
       "date": "2026-10-04",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-02",
       "added": 15,
-      "published": 2,
+      "published": 3,
       "width": null
     }
   ],
@@ -1657,7 +1657,7 @@
       "date": "2026-10-30",
       "company": "Stryker",
       "title": "Stryker снизила рекомендации на 2026 год из-за замедления процедур замены тазобедренных и коленных суставов",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.medtechdive.com/news/stryker-lowers-2026-guidance-after-slowdown-in-hip-knee-procedures/873309/"
     },
