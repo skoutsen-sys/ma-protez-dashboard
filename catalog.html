@@ -241,6 +241,8 @@ var SEG_ORDER = ["UL","LL","OI","SL","OP","NEU","EXO","коляски","эндо
 // латинские коды для сегментов, у которых в данных русский ключ
 var SEG_CODE = { "коляски":"WCh", "эндопротезы":"Endo", "реаб":"Rehab", "ортезы":"Orth", "ортез":"Orth" };
 function segCode(s){ return SEG_CODE[s] || s; }
+// компания относится ко всем своим сегментам, не только к основному (Моторика: UL и NEU)
+function hasSeg(c,s){ return (c.segments && c.segments.length ? c.segments : [c.segment]).indexOf(s) >= 0; }
 // короткие подписи для кнопок фильтра (коды читателю непонятны)
 var SEG_SHORT = {
   "UL":"Протезы рук", "LL":"Протезы ног", "OI":"Остеоинтеграция", "SL":"Гильзы и лайнеры",
@@ -302,7 +304,7 @@ function buildChips(){
   MACRO_ORDER.filter(function(x){return COS.some(function(c){return c.macro===x;});})
     .forEach(function(x){ m.appendChild(chip(x,x,"macro")); });
   var sg=document.getElementById("f-seg");
-  SEG_ORDER.filter(function(x){return COS.some(function(c){return c.segment===x;});})
+  SEG_ORDER.filter(function(x){return COS.some(function(c){return hasSeg(c,x);});})
     .forEach(function(x){ var lbl=SEG_SHORT[x]; if(lbl) lbl=segCode(x)+" — "+lbl; var c=chip(lbl||x,x,"seg"); c.title=SEG_NAMES[x]||x; sg.appendChild(c); });
   var sz=document.getElementById("f-size");
   SIZE_ORDER.forEach(function(x){ sz.appendChild(chip(x,x,"size")); });
@@ -319,7 +321,7 @@ document.getElementById("reset").addEventListener("click", function(){
 
 function matches(c){
   if(F.macro && c.macro!==F.macro) return false;
-  if(F.seg && c.segment!==F.seg) return false;
+  if(F.seg && !hasSeg(c,F.seg)) return false;
   if(F.size && c.size!==F.size) return false;
   if(F.type && c.type!==F.type) return false;
   if(F.q && c.name.toLowerCase().indexOf(F.q)<0) return false;
@@ -374,11 +376,11 @@ document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeModa
 
 // ---- карта ----
 function renderMap(){
-  var segs=SEG_ORDER.filter(function(s){return COS.some(function(c){return c.segment===s;});});
+  var segs=SEG_ORDER.filter(function(s){return COS.some(function(c){return hasSeg(c,s);});});
   var macros=MACRO_ORDER.filter(function(m){return COS.some(function(c){return c.macro===m;});});
   var max=0, cell={};
   segs.forEach(function(s){ macros.forEach(function(m){
-    var n=COS.filter(function(c){return c.segment===s && c.macro===m;}).length;
+    var n=COS.filter(function(c){return hasSeg(c,s) && c.macro===m;}).length;
     cell[s+"|"+m]=n; if(n>max) max=n;
   }); });
   var t=document.getElementById("matrix"); var h="<tr><th></th>";
