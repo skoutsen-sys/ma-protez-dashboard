@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-02T16:20:41+00:00",
+  "generated_at": "2026-11-02T23:29:24+00:00",
   "totals": {
     "total": 211,
-    "new": 28,
-    "posted": 166,
+    "new": 27,
+    "posted": 167,
     "blocked": 17,
     "companies": 83
   },
@@ -15,12 +15,6 @@
   "added_30d": 95,
   "published_30d": 67,
   "series": [
-    {
-      "date": "2026-10-04",
-      "added": 0,
-      "published": 1,
-      "width": null
-    },
     {
       "date": "2026-10-05",
       "added": 7,
@@ -192,7 +186,13 @@
     {
       "date": "2026-11-02",
       "added": 15,
-      "published": 3,
+      "published": 4,
+      "width": null
+    },
+    {
+      "date": "2026-11-03",
+      "added": 0,
+      "published": 0,
       "width": null
     }
   ],
@@ -1721,7 +1721,7 @@
       "date": "2026-10-28",
       "company": "Московское ПрОП",
       "title": "Московское ПрОП и Правительство Ханты-Мансийского округа подписали соглашение о сотрудничестве",
-      "status": "new",
+      "status": "posted",
       "region": "RU",
       "url": "https://mosprop.ru/"
     },
