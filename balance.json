@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-02T05:59:38+00:00",
+  "generated_at": "2026-11-02T12:46:49+00:00",
   "totals": {
-    "total": 196,
-    "new": 26,
-    "posted": 163,
-    "blocked": 7,
-    "companies": 74
+    "total": 205,
+    "new": 24,
+    "posted": 165,
+    "blocked": 16,
+    "companies": 80
   },
   "width": {
     "level": 3,
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 80,
-  "published_30d": 64,
+  "added_30d": 89,
+  "published_30d": 66,
   "series": [
     {
       "date": "2026-10-04",
@@ -191,8 +191,8 @@
     },
     {
       "date": "2026-11-02",
-      "added": 0,
-      "published": 0,
+      "added": 9,
+      "published": 2,
       "width": null
     }
   ],
@@ -1438,6 +1438,104 @@
       "site": "kinesis.ru",
       "news_count": 0,
       "story_count": 2
+    },
+    {
+      "name": "Армакс",
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "UL"
+      ],
+      "segment": "UL",
+      "type": "private",
+      "size": "S",
+      "owner": "Частная (технопарк «Жигулевская долина», Тольятти)",
+      "site": "",
+      "news_count": 0,
+      "story_count": 4
+    },
+    {
+      "name": "ЭндоАрт",
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "эндопротезы"
+      ],
+      "segment": "эндопротезы",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (холдинг «БСС»)",
+      "site": "endoprotez.ru",
+      "news_count": 1,
+      "story_count": 6
+    },
+    {
+      "name": "Логикс",
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "эндопротезы"
+      ],
+      "segment": "эндопротезы",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "",
+      "news_count": 1,
+      "story_count": 5
+    },
+    {
+      "name": "Анатомика",
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "эндопротезы"
+      ],
+      "segment": "эндопротезы",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная",
+      "site": "",
+      "news_count": 1,
+      "story_count": 5
+    },
+    {
+      "name": "Андроидная техника",
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "EXO",
+        "реаб"
+      ],
+      "segment": "EXO",
+      "type": "subsidiary",
+      "size": "M",
+      "owner": "Дочерняя Корпорации Роботов (51%, АФК «Система»)",
+      "site": "npo-at.com",
+      "news_count": 2,
+      "story_count": 5
+    },
+    {
+      "name": "Мадин",
+      "region": "RU",
+      "country": "RU",
+      "macro": "РФ",
+      "segments": [
+        "EXO",
+        "реаб"
+      ],
+      "segment": "EXO",
+      "type": "private",
+      "size": "M",
+      "owner": "Частная (ГК)",
+      "site": "madin.ru",
+      "news_count": 1,
+      "story_count": 5
     }
   ],
   "news": [
@@ -1446,1372 +1544,1640 @@
       "company": "Saudi International Rehab Expo",
       "title": "Saudi International Rehab Expo 2026 в Эр-Рияде",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.saudirehabexpo.com/"
     },
     {
       "date": "2026-11-21",
       "company": "ISPO Jordan",
       "title": "ISPO День ортопедической науки в Иордании",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ispoint.org/events/"
     },
     {
       "date": "2026-11-18",
       "company": "Japan Medical Rehabilitation Equipment Association (организатор)",
       "title": "TokyoRehabilitation (HOSPEX Japan) 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://en.jufair.com/exhibition/13222.html"
     },
     {
       "date": "2026-11-08",
       "company": "ICOPII",
       "title": "Международная конференция ортопедических протезов и имплантационных инноваций в Дели",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://internationalconferencealerts.com/event-icopii-delhi-in-202611-101284339"
     },
     {
       "date": "2026-11-01",
       "company": "ISPO Canada",
       "title": "Конференция ортопедии, протезирования и реабилитации OPRC 2026",
-      "status": "new",
-      "region": "world"
+      "status": "posted",
+      "region": "world",
+      "url": "https://opcanada.ca/page/OPRC_Conference_2026"
     },
     {
       "date": "2026-10-31",
       "company": "H.C.R.",
       "title": "53-я Международная выставка услуг и оборудования по уходу и реабилитации (H.C.R. 2026)",
-      "status": "new",
-      "region": "world"
+      "status": "posted",
+      "region": "world",
+      "url": "https://hcr.or.jp/en/"
     },
     {
       "date": "2026-10-30",
       "company": "Cyberdyne",
       "title": "HAL остаётся в активном производстве с улучшениями батареи и датчиков",
-      "status": "new",
-      "region": "world"
+      "status": "blocked",
+      "region": "world",
+      "url": "https://robotoverflow.com/en/robot-database/hal/"
     },
     {
       "date": "2026-10-30",
       "company": "Cyberdyne",
       "title": "Cyberdyne сообщил о снижении выручки на 12,3% за финансовый год, завершившийся 31 марта 2026",
-      "status": "new",
-      "region": "world"
+      "status": "blocked",
+      "region": "world",
+      "url": "https://www.openpr.com/news/4672553/robotic-exoskeletons-for-rehabilitation-market-advances"
     },
     {
       "date": "2026-10-30",
       "company": "Stryker",
       "title": "Stryker снизила рекомендации на 2026 год из-за замедления процедур замены тазобедренных и коленных суставов",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.medtechdive.com/news/stryker-lowers-2026-guidance-after-slowdown-in-hip-knee-procedures/873309/"
     },
     {
       "date": "2026-10-29",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet представит новую эру интеллектуальной ортопедической хирургии на AAHKS 2026",
-      "status": "new",
-      "region": "world"
+      "status": "blocked",
+      "region": "world",
+      "url": "https://www.biopharmawatch.com/news/ZBH/zimmer-biomet-intelligent-orthopedic-surgery-aahks-2026"
     },
     {
       "date": "2026-10-29",
       "company": "Stryker",
       "title": "Stryker отчиталась о Q3 2026 результатах с органическим ростом продаж на 7,7%",
-      "status": "new",
-      "region": "world"
+      "status": "blocked",
+      "region": "world",
+      "url": "https://gurufocus.com/news/9153645/stryker-reports-77-organic-sales-growth-in-q3-2026-stock-26-undervalued-syk"
     },
     {
       "date": "2026-10-28",
       "company": "University of Utah / BIOS",
       "title": "Прямой нервный интерфейс для нейропротеза LUKE Arm протестирован в домашних условиях",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://ece.utah.edu/2026/10/28/jacob-georges-direct-nerve-interface-of-thought-controlled-luke-arm-at-tested-at-home"
     },
     {
       "date": "2026-10-28",
       "company": "Ottobock",
       "title": "Ottobock возглавил раунд Series A финансирования для Blue Arbor Technologies на сумму $10,5 млн",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.crunchbase.com/organization/ottobock/news_and_analysis"
     },
     {
       "date": "2026-10-28",
       "company": "Hypershell",
       "title": "Hypershell представила AI-экзоскелет Halo с инновационными режимами для различных типов активности",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://insidehook.com/wellness-trends/hypershell-ai-powered-exoskeletons"
     },
     {
       "date": "2026-10-28",
       "company": "Blue Arbor Technologies",
       "title": "Blue Arbor Technologies привлекла $10,5 млн Series A расширение под руководством Ottobock",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.businesswire.com/news/home/20261028723707/en/"
     },
     {
       "date": "2026-10-28",
       "company": "ExoAtlet Global",
       "title": "ExoAtlet Global примет участие в выставке MEDICA 2026 в Дюссельдорфе",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.medica-tradefair.com/vis/v1/en/exhprofiles/f0D1zdCcT96UfjNlj53uew"
     },
     {
       "date": "2026-10-28",
       "company": "Московское ПрОП",
       "title": "Московское ПрОП и Правительство Ханты-Мансийского округа подписали соглашение о сотрудничестве",
       "status": "new",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://mosprop.ru/"
     },
     {
       "date": "2026-10-27",
       "company": "OYMotion",
       "title": "OYMotion готовится к выставке OTWorld 2026 с новой серией OHand",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.findhealthclinics.org/CN/Shanghai/106453389097840/OYMotion"
     },
     {
       "date": "2026-10-27",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet запустила робот-ассистент ROSA Knee с платформой OptimiZe на индийском рынке",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://vohnetwork.com/news/medical-devices/zimmer-biomet-launches-rosa-knee-with-optimize-in-india"
     },
     {
       "date": "2026-10-27",
       "company": "Stryker",
       "title": "Stryker завершила приобретение ZuriMED, компании по технологиям восстановления ротаторной манжеты плеча",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://medtechdive.com/news/stryker-completes-zurimed-takeover/872835"
     },
     {
       "date": "2026-10-27",
       "company": "ScienceTimes",
       "title": "Новая бионическая рука подключается к костям, нервам и мышцам, восстанавливая движение и осязание",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.sciencetimes.com/articles/62807/20261027/new-bionic-hand-technology-connects-human-bones-nerves-muscles-restore-movement-touch.htm"
     },
     {
       "date": "2026-10-26",
       "company": "Zimmer Biomet",
       "title": "Arthritis Foundation и Zimmer Biomet запустили сообщество Comeback Club для пациентов после эндопротезирования",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.prnewswire.com/news-releases/arthritis-foundation-and-founding-sponsor-zimmer-biomet-announce-new-community-celebrating-life-after-joint-replacement-and-inspiring-others-to-act-on-severe-joint-pain-302918770.html"
     },
     {
       "date": "2026-10-26",
       "company": "Stryker",
       "title": "Stryker завершила приобретение ZuriMED для расширения портфеля решений при ротаторной манжете",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://manilatimes.net/2026/10/26/tmt-newswire/globenewswire/stryker-completes-acquisition-of-zurimed-to-enhance-its-shoulder-offering/2453934"
     },
     {
       "date": "2026-10-24",
       "company": "Alt-Bionics",
       "title": "Alt-Bionics участвует в AOPA 2026 с демонстрацией Genesis Hand",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://aopaassembly26.eventscribe.net/fsPopup.asp?rnd=0.301948&BoothID=865104&mode=exhibitorInfo"
     },
     {
       "date": "2026-10-23",
       "company": "OYMotion",
       "title": "OYMotion получила награду Most Growth Value Award на Gasgoo Awards 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://autonews.gasgoo.com/articles/news/gasgoo-awards-2026-most-growth-value-award-2113627157859016705"
     },
     {
       "date": "2026-10-23",
       "company": "Cyberdyne Inc.",
       "title": "Экзоскелет HAL показал улучшение ходьбы у пациентов с острым инсультом",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://bioengineer.org/robotic-exoskeleton-yields-immediate-gait-gains-after-acute-stroke"
     },
     {
       "date": "2026-10-23",
       "company": "Ottobock",
       "title": "Ottobock сообщила о результатах первой половины 2026 года с улучшением маржи",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-stock-results-are-due-november-12-for-ottobock-stock/70399847"
     },
     {
       "date": "2026-10-22",
       "company": "XII International Prosthetics and Orthotics Congress",
       "title": "XII Международный конгресс протезирования и ортопедии",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://protezortezkongresi.com/en/"
     },
     {
       "date": "2026-10-22",
       "company": "ISPO Canada / OPC (Orthotics Prosthetics Canada)",
       "title": "2026 OPRC — Конференция ортопедии, протезирования и реабилитации",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.oapo.org/events/"
     },
     {
       "date": "2026-10-22",
       "company": "Myomo",
       "title": "Myomo опубликовала результаты II квартала 2026: выручка выросла на 21% до $11,7 млн",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://globenewswire.com/news-release/2026/10/22/3386747/0/en/prism-marketview-highlights-five-innovative-public-companies-supporting-strength-and-mobility-for-national-physical-therapy-month.html"
     },
     {
       "date": "2026-10-22",
       "company": "Exoskeleton Report",
       "title": "Мета-анализ подтвердил эффективность экзоскелетов при инсульте",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://exoskeletonindex.com/news/"
     },
     {
       "date": "2026-10-22",
       "company": "OYMotion",
       "title": "OYMotion достигла вех в развитии управления индивидуальными пальцами протеза в реальном времени",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://bangkokpost.com/thailand/pr/3341674/cp-group-true-showcase-frontier-tech-at-cp-innovation-exposition-2026"
     },
     {
       "date": "2026-10-21",
       "company": "Ottobock",
       "title": "Goldman Sachs снизила целевую цену акций Ottobock с EUR 88 до EUR 75",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://ad-hoc-news.de/boerse/news/corporate-news/goldman-cuts-target-to-eur-75-for-ottobock-stock/70382320"
     },
     {
       "date": "2026-10-21",
       "company": "Motorica",
       "title": "Motorica запустила локальное производство бионических рук в Индии",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://mediabrief.com/motorica-starts-bionic-hand-production-in-india/"
     },
     {
       "date": "2026-10-20",
       "company": "Steplife",
       "title": "Steplife выпустила первую в России бионическую стопу с микропроцессорным управлением",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://www.novostiitkanala.ru/news/detail.php?ID=199491"
     },
     {
       "date": "2026-10-20",
       "company": "Phantom Neuro",
       "title": "Phantom Neuro привлекла $19 млн в раунде Series A для развития нейротехнологичных протезов",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://techfundingnews.com/phantom-neuro-grabs-19m-to-fuel-ai-powered-prosthetics-that-move-like-real-limbs/"
     },
     {
       "date": "2026-10-20",
       "company": "Össur",
       "title": "Össur опубликовала финансовые результаты третьего квартала 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.finanzen.at/nachrichten/aktien/ossur-hf-vermeldete-zahlen-zum-juengsten-quartal-1036652447"
     },
     {
       "date": "2026-10-20",
       "company": "Ottobock",
       "title": "Ottobock повысил прогноз скорректированной EBITDA-маржи на 2026 год",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-aktie-unternehmen-erwartet-fuer-die-ottobock-aktie-6-00-bis-8-00-prozent-wachstum/70374105"
     },
     {
       "date": "2026-10-19",
       "company": "Dubai World Trade Centre",
       "title": "AccessAbilities Expo 2026 в Дубае",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.rehacare.com/en/global/dubai"
     },
     {
       "date": "2026-10-19",
       "company": "International Society for Prosthetics and Orthotics (ISPO)",
       "title": "AccessAbilities Expo Dubai 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://accessabilitiesexpo.com/"
     },
     {
       "date": "2026-10-19",
       "company": "Steplife",
       "title": "Финансовые результаты первого полугодия 2026: выручка 593,3 млн руб., рост на 89%",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://abn.agency/2026/07/15/steplife-uvelichila-prodazhi-v-pervom-polugodii-2026-goda-na-89/"
     },
     {
       "date": "2026-10-19",
       "company": "Ottobock",
       "title": "Ottobock улучшил показатели роста и прибыльности, скорректировав прогноз на 2026 год",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-ceo-outlines-strategy-ottobock-stock-falls-2-68-percent/70371078"
     },
     {
       "date": "2026-10-19",
       "company": "Empowered Solutions",
       "title": "Empowered Solutions вошла в финалы Selangor Triple Accelerator Programme 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.malaysiakini.com/announcement/887379-from-quantum-safe-blockchain-to-ai-built-prosthetics-12-startups-win-selangor-triple-accelerator-programme-2026"
     },
     {
       "date": "2026-10-16",
       "company": "Cyberdyne",
       "title": "Cyberdyne HAL применяется для поддержки медицинских работников",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://securities.io/healthcare-exoskeletons-care-workers"
     },
     {
       "date": "2026-10-16",
       "company": "Томский государственный университет (ТГУ)",
       "title": "ТГУ представил прототипы экзоскелетов кисти для постинсультной реабилитации",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://www.pravda.ru/news/districts/2427169-tgu-exoskeleton-rehabilitation-hand/"
     },
     {
       "date": "2026-10-16",
       "company": "RoboCT",
       "title": "RoboCT начала производство экзоскелета GoGo на новом заводе в Ухане",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://technode.com/2026/10/16/from-rehabilitation-rooms-to-everyday-steps-robocts-exoskeleton-bet/"
     },
     {
       "date": "2026-10-16",
       "company": "Steeper Group",
       "title": "Steeper Group показала инновации и сотрудничество на OTWorld 2026 и превью новинки Junior Myo",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.steepergroup.com/about-steeper/insights/steeper-showcases-innovation-and-collaboration-at/"
     },
     {
       "date": "2026-10-16",
       "company": "IndexBox",
       "title": "Прогноз рынка имплантов остеоинтеграции на 2035 год",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.indexbox.io/blog/osseointegration-implants-market-forecast-to-2035-demand-accelerates-on-rising-amputee-and-dental-reconstruction-cases/"
     },
     {
       "date": "2026-10-16",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet и Think Surgical продлили многолетний контракт на роботизированную хирургию",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.medtechdive.com/news/zimmer-and-think-surgical-pen-multi-year-extension-to-robotic-surgery-deal/833074/"
     },
     {
       "date": "2026-10-15",
       "company": "Motorika",
       "title": "ФМБА разрабатывает бионические протезы с восстановлением чувствительности",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://ria.ru/20261015/fmmba-2124761941.html"
     },
     {
       "date": "2026-10-15",
       "company": "Limber Prosthetics",
       "title": "Limber Prosthetics представила протез ноги Px1 по цене $3000",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://hoodline.com/2026/10/san-diego-startup-advertises-3d-printed-leg-for-3k/"
     },
     {
       "date": "2026-10-15",
       "company": "Моторика",
       "title": "ФМБА и Моторика разрабатывают бионические протезы, возвращающие чувствительность",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://ria.ru/20261015/fmba-2124761941.html"
     },
     {
       "date": "2026-10-14",
       "company": "Ottobock",
       "title": "Выставка ТСР в Хабаровске",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://ottobock-mobility.ru/"
     },
     {
       "date": "2026-10-14",
       "company": "ICPOE (организаторы)",
       "title": "International Conference on Prosthetics and Orthotics Engineering (ICPOE-2026)",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://allconferencealert.net/eventdetails.php?id=101066721"
     },
     {
       "date": "2026-10-14",
       "company": "Cyberdyne",
       "title": "Гибридный вспомогательный конечности (HAL) улучшает возможности ходьбы пациентов с БАС",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://medicalxpress.com/news/2026-10-wearable-cyborg-linked-longer-distances.html"
     },
     {
       "date": "2026-10-14",
       "company": "Össur (Embla Medical hf.)",
       "title": "Embla Medical (Össur) готовится к публикации квартальных результатов",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://defenseworld.net/2026/10/13/embla-medical-hf-ossff-projected-to-release-quarterly-earnings-on-tuesday.html"
     },
     {
       "date": "2026-10-14",
       "company": "Ahmed Ibrahim (independent innovator)",
       "title": "Инноватор из Гамильтона получил грант HHS DRIVE SPARK на разработку высокотехнологичного протеза кисти",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://hamiltonhealthsciences.ca/share/2026-drive-spark-winner-better-bionics"
     },
     {
       "date": "2026-10-13",
       "company": "Ministry of Health (Belarus/Russia)",
       "title": "Выставка «Медицина и здоровье» 2026 (Санкт-Петербург)",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://medicine.minskexpo.com/press-reliz-2020-9249"
     },
     {
       "date": "2026-10-13",
       "company": "Минский выставочный комплекс \"Фэлкон Клаб\"",
       "title": "32-я выставка \"Медицина и здоровье — 2026\"",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://mag.103.by/news-medbusiness/130031-ot-nejroreabilitacii-do-kosmetologii-chto-pokazhet-vystavka-medicina-i-zdorovyje-2026-v-minske/"
     },
     {
       "date": "2026-10-13",
       "company": "ACRM",
       "title": "ACRM 103-я Ежегодная Осенняя Конференция & EXPO",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://conference.acrm.org/rehab-expo/"
     },
     {
       "date": "2026-10-13",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet и Think Surgical расширили эксклюзивное дистрибьюторское соглашение",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.biospace.com/press-releases/zimmer-biomet-and-think-surgical-extend-exclusive-distribution-agreement"
     },
     {
       "date": "2026-10-12",
       "company": "Hocoma",
       "title": "Armeo Power получает награду McKnight's Tech Award за инновации в реабилитации",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://leadingage.org/12-leadingage-and-cast-members-receive-mcknights-tech-awards"
     },
     {
       "date": "2026-10-12",
       "company": "Ottobock",
       "title": "Ottobock: передовые методы в уходе за протезами верхних конечностей с применением нейротехнологий",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.ottobock.com/en/home"
     },
     {
       "date": "2026-10-12",
       "company": "Myomo",
       "title": "Myomo назначила Мэри-Кэтрин Макклур главным коммерческим директором",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://financialcontent.com/article/bizwire-2026-10-12-myomo-appoints-mary-katherine-mcclure-as-chief-commercial-officer"
     },
     {
       "date": "2026-10-12",
       "company": "Stryker",
       "title": "Stryker инвестирует $400 млн в CMR Surgical для развития мягкотканевой робототехники",
-      "status": "new",
-      "region": "world"
+      "status": "blocked",
+      "region": "world",
+      "url": "https://www.medtechdive.com/news/stryker-enters-soft-tissue-robotics-with-400m-investment-in-cmr-surgical/832751"
     },
     {
       "date": "2026-10-12",
       "company": "Ottobock",
       "title": "Ottobock H1 2026: выручка €818,5 млн, органический рост 6,7%, маржа EBITDA 25,3%",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.ottobock.com/en/media/newsroom/h1-2026-financial-results"
     },
     {
       "date": "2026-10-09",
       "company": "Ottobock",
       "title": "Ottobock отклонил обвинения в исках касательно России",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-rejects-russia-lawsuit-claims-ottobock-stock-gains-1-83-percent/70278631"
     },
     {
       "date": "2026-10-08",
       "company": "Red Flags in Common Orthopedic Conditions Conference",
       "title": "Онлайн-конференция по красным флагам в ортопедии",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://10times.com/online/prosthetics-orthotics"
     },
     {
       "date": "2026-10-08",
       "company": "Ottobock",
       "title": "Ottobock подтверждает руководство на 2026 год и готовит квартальный отчёт",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-stock-trades-at-eur-51-15-before-its-next-report/70266640"
     },
     {
       "date": "2026-10-08",
       "company": "Ottobock",
       "title": "Выставка технических средств реабилитации Ottobock во Владивостоке",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://ottobock-mobility.ru/news/"
     },
     {
       "date": "2026-10-08",
       "company": "ASHT",
       "title": "ASHT 2026 Annual Meeting в Милуоки",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://globaltradefairs.com/tradefairs/events_summit_search/cat/rehabilitation-physiotherapy/rehab-devices"
     },
     {
       "date": "2026-10-07",
       "company": "Выставка Реабилитация Казань",
       "title": "Выставка «РЕАБИЛИТАЦИЯ» в Казани 2026",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://vicoexpo.ru/rehabilitation"
     },
     {
       "date": "2026-10-07",
       "company": "Humotech",
       "title": "Humotech запустила первую мобильную клинику для тестирования протезов",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://exoskeletonreport.com/2026/10/exoskeleton-and-wearable-robotics-news-2026-week-40/"
     },
     {
       "date": "2026-10-07",
       "company": "Татэкспо (организатор)",
       "title": "Реабилитация - 2026 — Казань",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://www.exponet.ru/exhibitions/by-id/rehabilitationka/rehabilitationka2026/conditions.ru.html"
     },
     {
       "date": "2026-10-06",
       "company": "ISPO (International Society of Prosthetics and Orthotics)",
       "title": "Международная конференция World Health Expo Йоханнесбург",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://10times.com/prosthetics-orthotics"
     },
     {
       "date": "2026-10-06",
       "company": "Lifeward",
       "title": "Lifeward запустила пилот-программу ReWalk с Ottobock Care",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.openpr.com/news/4652717/robotic-exoskeletons-for-rehabilitation-market-accelerates-as"
     },
     {
       "date": "2026-10-06",
       "company": "Ottobock",
       "title": "Ottobock отчитала о росте выручки в первой половине 2026 года на 7,7%",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-stock-reports-7-7-percent-core-revenue-growth-in-h1-2026/70243458"
     },
     {
       "date": "2026-10-06",
       "company": "ЦИТО (Центр инноваций в травматологии и ортопедии)",
       "title": "Россия увеличила производство протезов на 10,5% в 2025 году",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://www1.ru/news/2026/10/06/440471-znacitelnyi-rost-proizvodstvo-protezov-uvelicilos-v-rossii-bolee-cem-na-10.html"
     },
     {
       "date": "2026-10-05",
       "company": "Stryker",
       "title": "Запуск Mako 4 SmartRobotics в Индии",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://prnewswire.com/in/news-releases/stryker-launches-mako-4-smartrobotics-in-india-advancing-the-next-generation-of-robotic-assisted-joint-replacement-302894365.html"
     },
     {
       "date": "2026-10-05",
       "company": "Ekso Bionics",
       "title": "Wandercraft приобретает Ekso Bionics",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://massdevice.com/wandercraft-acquires-exoskeleton-rival-ekso-bionics"
     },
     {
       "date": "2026-10-02",
       "company": "Ural Institute of Traumatology and Orthopedics",
       "title": "Всероссийский конгресс травматологов-ортопедов Урала в Екатеринбурге",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://med-expo.org/"
     },
     {
       "date": "2026-10-02",
       "company": "Ottobock",
       "title": "Специалисты в области экзоскелетов выбирают ремесленный сектор рынка роста",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.ottobock.com/en/media"
     },
     {
       "date": "2026-10-02",
       "company": "Mobius Bionics",
       "title": "LUKE Arm прошел первое домашнее испытание с нейроинтерфейсом прямого подключения к нерву",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://utahhospitals.org/2026/10/02/thought-controlled-luke-arm-moves-from-the-lab-into-everyday-life"
     },
     {
       "date": "2026-10-01",
       "company": "Фонд «Защитники Отечества»",
       "title": "Обсуждение создания новой научно-технологической платформы протезирования",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://rapsinews.ru/human_rights_protection_news/20261001/312245952.html"
     },
     {
       "date": "2026-10-01",
       "company": "Peking University People's Hospital",
       "title": "3D-печатные остеоинтегрированные протезы показали многообещающие результаты",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://bioengineer.org/3d-printed-bone-anchored-prosthesis-shows-promise-in-preclinical-tests/"
     },
     {
       "date": "2026-10-01",
       "company": "Stryker",
       "title": "Исследование RACER показало критику Mako в сравнении с ручной хирургией",
-      "status": "new",
-      "region": "world"
+      "status": "blocked",
+      "region": "world",
+      "url": "https://ad-hoc-news.de/boerse/news/unternehmensnachrichten/stryker-aktie-racer-studie-findet-keinen-mako-vorteil/70209249"
     },
     {
       "date": "2026-10-01",
       "company": "Wandercraft",
       "title": "Wandercraft приобрела Ekso Bionics",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.globenewswire.com/news-release/2026/10/01/3373473/0/en/wandercraft-acquires-ekso-bionics-uniting-two-pioneers-to-advance-and-expand-robotic-mobility.html"
     },
     {
       "date": "2026-10-01",
       "company": "Ptak Warsaw Expo (площадка)",
       "title": "International Trade Fair for Rehabilitation and Physiotherapy — Варшава",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.btsbioengineering.com/2026-international-trade-fair-for-rehabilitation-and-physiotherapy/"
     },
     {
       "date": "2026-09-30",
       "company": "Rehabilitation fair",
       "title": "Rehabilitation fair 2026 в Варшаве — международная выставка реабилитации и физиотерапии",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://worldexpo.pro/sector/medicina/exhibitions"
     },
     {
       "date": "2026-09-30",
       "company": "South Africa Mountain Rescue (WSAR) with exoskeleton vendor",
       "title": "Первое успешное применение экзоскелета при спасении в ЮАР",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://iol.co.za/news/environment/2026-09-28-first-successful-use-of-exoskeleton-in-south-african-rescue"
     },
     {
       "date": "2026-09-30",
       "company": "Медтехнопроект",
       "title": "В Москве запустили производство биополимерных сосудистых протезов",
       "status": "new",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://investfuture.ru/articles/v-moskve-zapustili-proizvodstvo-biopolimernyh-sosudistyh-protezov-65b54d2bab26fb63"
     },
     {
       "date": "2026-09-30",
       "company": "Psyonic",
       "title": "Psyonic запускает программу развёртывания биопротезов в развивающихся странах",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.semafor.com/article/09/30/2026/solving-for-the-hand-startup-wants-to-pay-prosthetic-users-to-teach-robots"
     },
     {
       "date": "2026-09-29",
       "company": "Fillauer",
       "title": "Fillauer запускает новую линию гидравлических стоп Traverse™",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.hanger.com/news/"
     },
     {
       "date": "2026-09-28",
       "company": "Steplife",
       "title": "Steplife открыла дочернюю компанию в Индии",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://www.cnews.ru/news/line/2026-09-28_gk_steplife_otkryla_dochernyuyu"
     },
     {
       "date": "2026-09-28",
       "company": "Steplife",
       "title": "Steplife зарегистрировала компанию в Индии и начала сборку протезов",
       "status": "blocked",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://abn.agency/2026/09/28/steplife-zaregistrirovala-kompaniyu-v-indii-i-nachala-sborku-protezov/"
     },
     {
       "date": "2026-09-28",
       "company": "Hanger Inc",
       "title": "Hanger приобретает Numotion, формируя лидера в области мобильности и помощи пациентам",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.homecaremag.com/numotion-acquired-by-op-specialist-hanger-inc/"
     },
     {
       "date": "2026-09-26",
       "company": "BrainCo",
       "title": "BrainCo расширяет программу умных протезов в Гонконге",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://en.wikipedia.org/wiki/BrainCo"
     },
     {
       "date": "2026-09-24",
       "company": "Ottobock",
       "title": "Ottobock и Hanger Inc присоединились к мероприятию Austin Advocacy Day 2026 в защиту доступа к O&P-услугам",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.prnewswire.com/news-releases/austin-advocacy-day-2026-ottobock-and-hanger-inc-aim-to-make-op-care-accessible-for-texans-enrolled-in-medicaid-302888204.html"
     },
     {
       "date": "2026-09-24",
       "company": "ORTHO 2026 (World Orthopedics Conference)",
       "title": "ORTHO 2026 — 4-я Всемирная конференция по ортопедии в Лондоне",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://orthopedics.magnusconferences.com/program/scientific-sessions/prosthetics-and-orthotics"
     },
     {
       "date": "2026-09-23",
       "company": "Düsseldorf Exhibition",
       "title": "REHACARE International 2026 в Дюссельдорфе",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.expostandservice.com/rehacare-international/"
     },
     {
       "date": "2026-09-23",
       "company": "REHACARE International (Düsseldorf)",
       "title": "REHACARE International 2026 в Дюссельдорфе",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.rehacare.com/"
     },
     {
       "date": "2026-09-23",
       "company": "Ukraine, Ministry of Digital Transformation",
       "title": "Украина запустила грантовую программу для производителей протезов",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://mezha.net/eng/news/881e33bd_ukraine_launches_grants/"
     },
     {
       "date": "2026-09-22",
       "company": "International Conference on Prosthetics and Orthotics Engineering",
       "title": "Международная конференция по инженерии протезов и ортезов в Лиссабоне",
       "status": "new",
-      "region": "world"
+      "region": "world",
+      "url": "https://internationalconferencealerts.com/eventdetails.php?id=100887824"
     },
     {
       "date": "2026-09-22",
       "company": "Моторика (Группа Моторика)",
       "title": "Моторика приобрела 50,1% акций компании Лимб",
       "status": "blocked",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://investfunds.ru/news/172525/"
     },
     {
       "date": "2026-09-18",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet объявил о выплате дивидендов и реструктуризации",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/zimmer-biomet-stock-holds-steady-after-dividend-update-and-restructuring-news/70139187"
+    },
+    {
+      "date": "2026-09-11",
+      "company": "Мадин",
+      "title": "ГК «Мадин» принимает делегацию из Ирака, уже купившую локомоторный комплекс NeuroHelper",
+      "status": "new",
+      "region": "RU",
+      "url": "https://madin.ru/press/news/gk-madin-gotovitsya-prinyat-gostey-iz-iraka/"
     },
     {
       "date": "2026-09-10",
       "company": "Hanger Inc",
       "title": "Hanger и Numotion объединяются, создавая лидера в области мобильности и оказания медицинской помощи",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://finance.yahoo.com/healthcare/articles/hanger-numotion-combine-creating-leader-150000609.html"
     },
     {
       "date": "2026-09-10",
       "company": "Моторика",
       "title": "Моторика приобрела 50,1% акционерного капитала АО ГК Лимб",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://rb.ru/news/motorika-kupila-501-akcij-gruppy-limb-kompanii-obedinyat-centry-protezirovaniya-i-inzhenernye-razrabotkii/"
     },
     {
       "date": "2026-09-10",
       "company": "Zimmer Biomet",
       "title": "Сокращение штата на 580 сотрудников в Швейцарии",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/zimmer-biomet-stock-slips-after-winterthur-job-cut-plan-and-leadership/70087495.html"
     },
     {
       "date": "2026-09-10",
       "company": "Hanger, Inc.",
       "title": "Hanger и Numotion объединяются в единого лидера в сфере мобильности и помощи пациентам",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.hanger.com/news/2026/hanger-and-numotion-to-combine-creating-a-leader-in-mobility-and-patient-care/"
     },
     {
       "date": "2026-09-10",
       "company": "Моторика",
       "title": "«Моторика» приобрела контрольный пакет «ГК Лимб»",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://abn.agency/2026/09/10/motorika-kupila-kontrolnyj-paket-gk-limb/"
     },
     {
       "date": "2026-09-09",
       "company": "Teh Lin Prosthetic & Orthopaedic Inc.",
       "title": "Участие Teh Lin на MEDICAL FAIR ASIA 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.medicalfair-asia.com/exhibitor_list/teh-lin-prosthetic-orthopaedic-inc/"
     },
     {
       "date": "2026-09-08",
       "company": "Моторика",
       "title": "Моторика номинирована на премию «Экспортер года. Сделано в России — 2026»",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://smart-lab.ru/blog/1349154.php"
     },
     {
       "date": "2026-09-08",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet объявляет о реструктуризации руководства Америки",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.stocktitan.net/news/ZBH/zimmer-biomet-announces-americas-leadership-promotions-to-accelerate-y5w7hbx3avou.html"
     },
     {
       "date": "2026-09-08",
       "company": "Zimmer Biomet",
       "title": "Реструктуризация руководства американского региона и подразделения робототехники",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.prnewswire.com/news-releases/zimmer-biomet-announces-americas-leadership-promotions-to-accelerate-commercial-transformation-302872765.html"
     },
     {
       "date": "2026-09-04",
       "company": "ONWARD Medical",
       "title": "ONWARD Medical анонсирует результаты первого полугодия 2026 года",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.globenewswire.com/news-release/2026/09/04/3356367/0/en/onward-medical-to-announce-first-half-2026-results-on-september-9-2026.html"
     },
     {
       "date": "2026-09-03",
       "company": "China Disabled Persons' Federation",
       "title": "Care & Rehabilitation Expo China (CR Expo) 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.crexpo.cn/en/about/introduction"
     },
     {
       "date": "2026-09-03",
       "company": "China National Convention Center",
       "title": "Care & Rehabilitation Expo China 2026 в Пекине",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.crexpo.cn/en"
     },
     {
       "date": "2026-09-03",
       "company": "Onward Medical",
       "title": "Первый имплант в исследовании EIGER для восстановления мобильности после спинальной травмы",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.globenewswire.com/news-release/2026/09/03/3355649/0/en/onward-medical-announces-first-implant-in-new-clinical-feasibility-study-evaluating-arc-im-system-to-restore-mobility-after-spinal-cord-injury.html"
     },
     {
       "date": "2026-09-02",
       "company": "Permobil",
       "title": "Permobil активирует встроенную связность в существующих колясках",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.permobil.com/en-us/products/power-wheelchairs/permobil-m3-corpus"
     },
     {
       "date": "2026-09-02",
       "company": "Permobil",
       "title": "Активация встроенной системы связи Permobil +Connect для силовых колясок",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.permobil.com/en-us/products/power-wheelchairs/functions/permobil-connect"
     },
     {
       "date": "2026-09-02",
       "company": "Permobil",
       "title": "Permobil включает встроенную связь в коляски серии Power Platform",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.permobil.com/en-us/products/power-wheelchairs/permobil-m-corpus-vs"
     },
     {
       "date": "2026-08-29",
       "company": "Neuralink",
       "title": "Первый канадский пациент с ALS получил имплант Telepathy, ещё двое квадриплегиков получили имплантаты в августе-сентябре",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.neurapod.com/blog/neuralink-update-2026"
     },
     {
       "date": "2026-08-26",
       "company": "Hike Medical",
       "title": "Hike Medical привлекла $22,5 млн на платформу логистики ортопротезных услуг",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://techstartups.com/2026/08/27/startup-funding-news-today-august-27-2026-instinct-breedr-agentrys-more/"
     },
     {
       "date": "2026-08-26",
       "company": "Wandercraft",
       "title": "Atalante X получила сертификацию ARCSA в Эквадоре",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://exoskeletonreport.com/2026/08/exoskeleton-report-newsletter-aug-2nd-2026-week-31/"
     },
     {
       "date": "2026-08-26",
       "company": "University of Colorado Anschutz Medical Campus / Back to Mobility",
       "title": "Остеоинтеграция признана «игровым изменением» для амптантов — клиническое исследование",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.healio.com/news/orthopedics/20260826/osseointegration-may-be-game-changer-for-select-amputees"
     },
     {
       "date": "2026-08-25",
       "company": "Boston Scientific",
       "title": "Глобальный сбой Boston Scientific",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.mddionline.com/rd/futuristic-luke-arm-to-go-on-sale"
     },
     {
       "date": "2026-08-20",
       "company": "Düsseldorf Exhibition",
       "title": "REHACARE CHINA 2026 — Rehabilitation Equipment and Solutions Expo",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://expolume.com/expo/rehacare-china/"
+    },
+    {
+      "date": "2026-08-20",
+      "company": "Анатомика",
+      "title": "«Анатомика» запустила в Татарстане производство эндопротезов тазобедренного сустава полного цикла",
+      "status": "new",
+      "region": "RU",
+      "url": "https://investfuture.ru/articles/anatomika-zapustila-v-tatarstane-proizvodstvo-endoprotezov-polnogo-tsikla-37651324"
     },
     {
       "date": "2026-08-19",
       "company": "Московский политехнический университет",
       "title": "В России разработали систему управления экзоскелетом, распознающую намерение пациента двигаться",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://togliatti24.ru/science/view/sozdana-sistema-dla-ekzoskeleta-raspoznausaa-zelanie-dvigatsa"
     },
     {
       "date": "2026-08-18",
       "company": "Össur",
       "title": "Össur продлевает партнёрство с паралимпийцем Хантером Вудхоллом до 2028 года",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://finance.yahoo.com/healthcare/articles/ssur-renews-partnership-hunter-woodhall-142300326.html"
+    },
+    {
+      "date": "2026-08-18",
+      "company": "Curexo",
+      "title": "В Москве впервые в России заменили тазобедренный сустав с помощью активного робота CUVIS",
+      "status": "blocked",
+      "region": "world",
+      "url": "https://www.comnews.ru/digital-economy/content/246948/2026-08-18/2026-w34/1012/travmatologi-sechenovskogo-universiteta-proveli-endoprotezirovanie-tazobedrennogo-sustava-pomoschyu-robota"
     },
     {
       "date": "2026-08-17",
       "company": "Hanger Inc",
       "title": "Hanger Ventures инвестирует в компанию Prosthetic Fit 360 для датчиков подгонки протезов",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.hanger.com/news/2026/hanger-ventures-announces-investment-in-prosthetic-fit-360/"
     },
     {
       "date": "2026-08-16",
       "company": "НИИ комплексных проблем сердечно-сосудистых заболеваний при кардиологическом диспансере имени Барбараша",
       "title": "Разработка транскатетерных протезов сердечных клапанов без хирургического разреза",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://ngs42.ru/text/health/2026/08/16/76591176/"
     },
     {
       "date": "2026-08-15",
       "company": "Nabtesco",
       "title": "Nabtesco передала сервис коленного модуля ALLUX 2 в Европе своему подразделению",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.machinery-market.co.uk/news/43157/Nabtesco-takes-over-service-for-the-ALLUX-2-knee-joint-in-Europe"
     },
     {
       "date": "2026-08-14",
       "company": "Teh Lin",
       "title": "Motorica получила эксклюзивное представительство продуктов TEHLIN в Индии",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.passionateinmarketing.com/motorica-has-become-an-exclusive-representative-of-tehlin-in-india-expanding-access-to-lower-limb-prosthetic-technologies/"
     },
     {
       "date": "2026-08-14",
       "company": "Неопубликовано",
       "title": "Госзакупка ТСР в Астрахани: кресла-коляски на 2026 год",
       "status": "blocked",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://astrakhan.bt.su/tender/333144850.html"
     },
     {
       "date": "2026-08-13",
       "company": "Моторика",
       "title": "«Моторика» стала эксклюзивным представителем Teh Lin (TEHLIN) в Индии, расширив доступ к протезам нижних конечностей",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://indiasaga.com/motorica-has-become-an-exclusive-representative-of-tehlin-in-india-expanding-access-to-lower-limb-prosthetic-technologies/"
     },
     {
       "date": "2026-08-13",
       "company": "Wandercraft",
       "title": "Французский экзоскелет Eve от Wandercraft получил разрешение FDA для персонального использования",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.yahoo.com/news/science/articles/wandercraft-self-balancing-exoskeleton-wins-110923172.html"
     },
     {
       "date": "2026-08-13",
       "company": "Ottobock",
       "title": "Ottobock за I полугодие 2026: выручка +7,7%, маржа EBITDA 25,3%",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.eqs-news.com/news/corporate/ottobock-strongly-increases-revenue-in-the-first-half-of-the-year-and-significantly-improves-its-margin/472b7a2f-2202-4403-b831-e7c1046bdcf4_en"
     },
     {
       "date": "2026-08-11",
       "company": "Wandercraft",
       "title": "Wandercraft получил FDA-допуск на Eve — первый в мире самобалансирующийся личный экзоскелет",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.manilatimes.net/2026/08/11/tmt-newswire/globenewswire/wandercraft-receives-fda-clearance-for-eve-the-worlds-first-self-balancing-personal-exoskeleton-for-eligible-wheelchair-users-living-with-spinal-cord-injuries-at-any-level/2403113"
     },
     {
       "date": "2026-08-05",
       "company": "ReWalk / Lifeward",
       "title": "Lifeward запустила пилот с Ottobock Care для доступа к ReWalk 7",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.globenewswire.com/news-release/2026/08/05/3339262/32993/en/Lifeward-Launches-Pilot-Program-with-Ottobock-Care-to-Expand-National-Access-to-ReWalk-Personal-Exoskeleton.html"
     },
     {
       "date": "2026-08-05",
       "company": "Myomo",
       "title": "Myomo: рекордный Q2 2026 — 255 заказов MyoPro, выручка $11,7 млн (+21%)",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://lasvegassun.com/news/2026/aug/05/myomo-reports-second-quarter-2026-financial-and-op/"
     },
     {
       "date": "2026-08-04",
       "company": "Метиз (ГК МЕТИЗ)",
       "title": "ГК «Метиз» представила отечественный микропроцессорный коленный модуль",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://www.vedomosti.ru/society/articles/2026/08/04/1218581-rossiya-importozamestila-proizvodstvo-innovatsionnih-modulei-dlya-protezov"
     },
     {
       "date": "2026-08-04",
       "company": "Кинез",
       "title": "Российские инженеры представили электронный коленный модуль «Кинез-1» для протезов бедра",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://www.cnews.ru/news/line/2026-08-04_ne_dumat_o_kazhdom_shage"
     },
     {
       "date": "2026-07-23",
       "company": "OYMotion",
       "title": "OYMotion представила реабилитационный экзоскелет для нижних конечностей на WAIC 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://exoskeletonreport.com/2026/07/exoskeleton-report-newsletter-july-25-2026-week-30/"
     },
     {
       "date": "2026-07-23",
       "company": "Össur",
       "title": "Embla Medical (Össur) за Q2 2026: продажи $259 млн, чистая прибыль +39%",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://news.cision.com/embla-medical-hf-/r/embla-medical-hf--interim-report-q2-2026,c4376266"
     },
     {
       "date": "2026-07-17",
       "company": "BrainCo / BrainRobotics",
       "title": "BrainCo представил платформу brain-to-robot и обновлённую бионическую кисть на WAIC 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.prnewswire.com/news-releases/brainco-debuts-worlds-first-integrated-brain-to-robot-ai-rd-platform-at-waic-2026-302828515.html"
     },
     {
       "date": "2026-07-16",
       "company": "Stryker",
       "title": "Stryker вывел на рынок США ручной хирургический робот Mako RPS для эндопротезирования колена",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.stryker.com/us/en/about/news/2026/stryker-expands-mako-robotics-portfolio.html"
     },
     {
       "date": "2026-07-15",
       "company": "WHILL",
       "title": "WHILL представила ультралёгкую карбоновую электроколяску Modo Breeze за $1999",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://whill.inc/us/whill-introduces-the-modo-breeze-a-carbon-fiber-ultralight-electric-wheelchair/"
     },
     {
       "date": "2026-07-13",
       "company": "Ottobock",
       "title": "Ottobock выводит коленный модуль dynion explore для подростков",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.webdisclosure.com/press-release/ottobock-se-co-kgaa-etr-dynion-explore-new-prosthetic-knee-joint-for-adolescents-xihjHQULotA"
     },
     {
       "date": "2026-07-10",
       "company": "Моторика",
       "title": "«Моторика» запустила серийное производство протеза локтя",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://mercora.ru/news/motorika-zapustit-vypusk-pervogo-rossiyskogo-bionicheskogo-2026-07-10"
     },
     {
       "date": "2026-07-08",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet покупает бизнес обезболивания iovera у Pacira (до $140 млн)",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.medtechdive.com/news/zimmer-to-buy-pacira-pain-relief-device-for-up-to-140m/824101/"
     },
     {
       "date": "2026-07-07",
       "company": "Proteor",
       "title": "PROTEOR запускает микропроцессорный коленный модуль QUATTRO 2",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.prnewswire.com/news-releases/proteor-launches-quattro-2-in-the-us-worldwide-september-1-2026-302818963.html"
     },
     {
       "date": "2026-07-07",
       "company": "ReWalk / Lifeward",
       "title": "Lifeward привлекла до $11,2 млн для коммерческой экспансии",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.stocktitan.net/news/LFWD/"
     },
     {
       "date": "2026-07-07",
       "company": "Ottobock",
       "title": "Ottobock приобретает испанскую Fesia Technology (FES-нейроортезы)",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.medicaldevice-network.com/news/ottobock-expands-neuro-orthotics-portfolio-with-fesia-technology-acquisition/"
     },
     {
       "date": "2026-06-25",
       "company": "Wandercraft",
       "title": "Wandercraft назначила National Seating & Mobility эксклюзивным CRT-дистрибьютором Eve",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.manilatimes.net/2026/06/25/tmt-newswire/globenewswire/wandercraft-names-national-seating-mobility-the-exclusive-crt-distribution-partner-for-eve-personal-exoskeleton/2372910"
     },
     {
       "date": "2026-06-24",
       "company": "Sunrise Medical",
       "title": "Sunrise Medical выпустила лёгкую складную коляску QUICKIE QS3 X",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.sunrisemedical-group.com/latest-news"
     },
     {
       "date": "2026-06-23",
       "company": "WillowWood",
       "title": "CVC Catalyst выкупает контрольную долю в WillowWood",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.cvc.com/media/news/2026/cvc-catalyst-to-acquire-majority-stake-in-willowwood-from-blue-sea-capital-the-arbogast-family-and-management/"
     },
     {
       "date": "2026-06-19",
       "company": "Ottobock",
       "title": "Ottobock продаёт бизнес инвалидных колясок Human Mobility компании DHCare",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.ottobock.com/en/media/newsroom/ottobock-sells-its-human-mobility-wheelchair-business"
     },
     {
       "date": "2026-06-16",
       "company": "Cyberdyne",
       "title": "В Малайзии открылся крупнейший в ЮВА нейро-роботический центр с 65 экзоскелетами HAL",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.cyberdyne.jp/en/news/25805.html"
     },
     {
       "date": "2026-06-16",
       "company": "PSYONIC",
       "title": "PSYONIC и ABB Robotics объединяют данные пользователей протезов для робототехники",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.therobotreport.com/psyonic-abb-robotics-partner-apply-human-touch-data-robot-dexterity/"
     },
     {
       "date": "2026-06-08",
       "company": "Smith+Nephew",
       "title": "Smith+Nephew провёл первые клинические операции на роботе нового поколения CORI XT",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.smith-nephew.com/en/news/2026/06/08/first-clinical-cases-with-the-next-generation-cori-xt"
     },
     {
       "date": "2026-06-03",
       "company": "WHILL",
       "title": "WHILL развернула автономный сервис мобильности в аэропорту Хитроу",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.newswire.com/news/whill-expands-global-autonomous-mobility-network-with-heathrow-airport-launch"
     },
     {
       "date": "2026-06-02",
       "company": "BrainCo / BrainRobotics",
       "title": "BrainCo фиксирует бум продаж бионических кистей за счёт производителей роботов",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-02/chinese-bionic-hand-maker-sees-humanoid-robot-led-sales-boom"
     },
     {
       "date": "2026-06-02",
       "company": "TASKA Prosthetics",
       "title": "TASKA обновила флагманскую кисть CX — до 35% больше силы хвата",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.taskaprosthetics.com/news/"
     },
     {
       "date": "2026-05-26",
       "company": "Onward Medical",
       "title": "ONWARD: первый имплант ARC-IM в исследовании Empower BP и старт домашнего ARC-EX",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.globenewswire.com/news-release/2026/05/26/3300755/0/en/ONWARD-Medical-Reports-First-Quarter-2026-Results-with-Strong-Commercial-Momentum-and-Key-Clinical-Milestones.html"
     },
     {
       "date": "2026-05-23",
       "company": "Open Bionics",
       "title": "Open Bionics впервые примерил бионическую руку Hero Flex выше локтя",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://3dprintingindustry.com/news/open-bionics-expands-hero-flex-to-above-elbow-amputees-with-first-clinical-fitting-in-new-york-251754/"
     },
     {
       "date": "2026-05-22",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet получил FDA-допуск на расширенную версию робота ROSA Shoulder",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://hub.zimmerbiomet.com/Zimmer-Biomet-Receives-U-S-FDA-510-k-Clearance-for-Expanded-Capabilities-of-its-Robotic-Shoulder-System"
     },
     {
       "date": "2026-05-22",
       "company": "Steeper",
       "title": "Steeper провёл на OTWorld 2026 воркшоп по верхним конечностям с TASKA",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ot-world.com/exhibitors-products/exhibitor/otworld/steeper-group-holdings-limited/7709"
     },
     {
       "date": "2026-05-21",
       "company": "Моторика",
       "title": "Старт разработки интерфейса мозг–протез с прямым подключением к нервам",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://runews24.ru/science/21/05/2026/novyij-interfejs-mozg-protez-v-rossii-startovala-razrabotka-sensornoj-obyortki-dlya-nervov"
     },
     {
       "date": "2026-05-21",
       "company": "Sunrise Medical",
       "title": "Sunrise Medical запустила складную коляску QUICKIE QS7 X",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.sunrisemedical-group.com/sunrise-medical-launches-quickie-qs7-x"
     },
     {
       "date": "2026-05-19",
       "company": "Vincent Systems",
       "title": "Vincent Systems представил экзоскелет LUNAneo1 на OTWorld 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.ot-world.com/exhibitors-products/product/otworld/425281/176821"
     },
     {
       "date": "2026-05-18",
       "company": "Genny Mobility",
       "title": "Genny обновила самобалансирующуюся коляску: линейка Genny Zero",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.startupselfie.net/2026/05/18/genny-zero-self-balancing-mobility-device/"
     },
     {
       "date": "2026-05-15",
       "company": "Моторика",
       "title": "«Моторика» привлекла 1 млрд ₽ льготного финансирования в МСП Банке",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://rb.ru/news/motorika-privlekla-1-mlrd-lgotnogo-finansirovaniya-sredstva-napravyat-na-razvitie-proizvodstva-i-nejrotehnologij/"
+    },
+    {
+      "date": "2026-05-15",
+      "company": "Логикс",
+      "title": "«Логикс медицинские системы» нарастила выручку на 82% и открыла новый цех в Академгородке",
+      "status": "new",
+      "region": "RU",
+      "url": "https://www.kommersant.ru/doc/8670193"
     },
     {
       "date": "2026-05-14",
       "company": "Össur",
       "title": "Össur и Challenged Athletes Foundation выделяют 125 спортивных протезных грантов",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://finance.yahoo.com/sectors/healthcare/articles/challenged-athletes-foundation-ssur-advance-152100746.html"
     },
     {
       "date": "2026-05-13",
       "company": "Ottobock",
       "title": "Ottobock покупает Patient Care бизнес Blatchford в Норвегии за ~110 млн евро",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.ottobock.com/en/media/newsroom/ottobock-continues-strategic-expansion-of-its-patient-care-network-with-acquisition"
     },
     {
       "date": "2026-05-11",
       "company": "Ottobock",
       "title": "Ottobock представляет новинки на OTWorld 2026: michelangelo, iconiq, C-Brace Interim",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.ottobock.com/en/media/newsroom/ottobock-at-otworld-2026"
     },
     {
       "date": "2026-05-11",
       "company": "ExoAtlet Global",
       "title": "ExoAtlet вышла на биржу: Cosmo Robotics провела IPO на KOSDAQ",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://exoskeletonreport.com/2026/05/exoatlet-parent-cosmo-robotics-completes-ipo-and-begins-trading-on-kosdaq/"
     },
     {
       "date": "2026-05-05",
       "company": "Ekso Bionics",
       "title": "Ekso Bionics завершила обратное слияние → ChronoScale, экзо-бизнес на продажу",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/141/applied-digital-to-spin-out-cloud-business-proposes"
     },
     {
       "date": "2026-05-04",
       "company": "ReWalk / Lifeward",
       "title": "Lifeward представила на ASIA 2026 долгосрочные данные по безопасности экзоскелета ReWalk",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.globenewswire.com/news-release/2026/05/04/3286636/0/en/lifeward-announces-new-rewalk-data-presented-at-asia-2026-conference-demonstrating-a-comprehensive-longitudinal-safety-analysis-for-a-powered-exoskeleton.html"
     },
     {
       "date": "2026-04-30",
       "company": "Synchron",
       "title": "Synchron вошёл в TIME100 Most Influential Companies 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://time.com/collection/time100-most-influential-companies/2026/synchron/"
     },
     {
       "date": "2026-04-28",
       "company": "Zimmer Biomet",
       "title": "Zimmer Biomet завершил набор в исследование автономного робота mBôs в Индии",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.biospace.com/press-releases/zimmer-biomet-announces-first-quarter-2026-financial-results"
     },
     {
       "date": "2026-04-27",
       "company": "Сколиолоджик.ру",
       "title": "«Сколиолоджик.ру» участвует в международной выставке",
       "status": "blocked",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://scoliologic.ru/blog/"
     },
     {
       "date": "2026-04-20",
       "company": "Ottobock",
       "title": "SUITX by Ottobock на Hannover Messe 2026: экзоскелет IX BACK VOLTON",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.ottobock.com/en/media/newsroom/smart-exoskeletons-and-digital-ergonomics"
     },
     {
       "date": "2026-04-08",
       "company": "Hanger Inc",
       "title": "Hanger и Университет Хартфорда открыли совместный центр O&P в Коннектикуте",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.hanger.com/news/2026/hanger-and-university-of-hartford-unveil-groundbreaking-collaborative-orthotics-and-prosthetics-facility-in-rocky-hill-connecticut/"
     },
     {
       "date": "2026-04-01",
       "company": "Моторика",
       "title": "«Моторика» представила первый российский модуль локтя",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://rb.ru/news/motorika-predstavila-pervyj-rossijskij-modul-loktya-dlya-lyudej-s-amputaciej-ego-mozhno-kupit-za-schyot-gosudarstva/"
     },
     {
       "date": "2026-04-01",
       "company": "Sunrise Medical",
       "title": "QUICKIE Q300 M Mini теперь с электроникой Dynamic Controls LiNX",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.sunrisemedical.com/company-information/press-releases/2026/april/quickie-q300-m-mini-now-available-with-dynamic-con"
     },
     {
       "date": "2026-03-27",
       "company": "BionicM",
       "title": "BionicM и Brooks Rehabilitation сравнят Bio Leg с микропроцессорными коленями",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.prnewswire.com/news-releases/bionicm-and-brooks-rehabilitation-launch-clinical-study-comparing-powered-bio-leg-to-microprocessor-knees-302726889.html"
+    },
+    {
+      "date": "2026-03-25",
+      "company": "Curexo",
+      "title": "Робот для эндопротезирования колена CUVIS-joint получил допуск FDA",
+      "status": "blocked",
+      "region": "world",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K252037"
     },
     {
       "date": "2026-03-24",
       "company": "Neuralink",
       "title": "Neuralink запустил клиническое исследование VOICE по восстановлению речи",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.neurapod.com/blog/elon-musks-neuralink-successfully-begins-voice-human-trial-for-speech-restoration"
     },
     {
       "date": "2026-03-19",
       "company": "Hanger Inc",
       "title": "Hanger приобретает Liberating Technologies (LTI)",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://corporate.hanger.com/news/2026/hanger-announces-acquisition-of-liberating-technologies-inc/"
     },
     {
       "date": "2026-03-16",
       "company": "PSYONIC",
       "title": "PSYONIC и NVIDIA официально объявили о сотрудничестве на GTC 2026",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.psyonic.io/news/press-release-psyonic-amp-nvidia-officially-announce-collaboration-at-nvidia-gtc-2026"
     },
     {
       "date": "2026-03-16",
       "company": "Permobil",
       "title": "Permobil выпустил обновлённые титановые кресла TiLite TR и ZR",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.permobil.com/en-us/media-center/press-releases/permobil-launches-the-new-tilite-tr-zr"
     },
     {
       "date": "2026-03-16",
       "company": "Sunrise Medical",
       "title": "Sunrise Medical представила противопролежневую подушку JAY LitePro",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.sunrisemedical.com/company-information/press-releases/2026/march/new-adjustable-skin-protection-cushion-sets-benchm"
     },
     {
       "date": "2026-03-07",
       "company": "Stryker",
       "title": "Stryker показал Mako 4 и полный релиз Mako Shoulder на AAOS 2026",
       "status": "blocked",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.massdevice.com/stryker-new-additions-mako-triathlon-aaos/"
     },
     {
       "date": "2026-03-03",
       "company": "Smith+Nephew",
       "title": "Smith+Nephew: первые случаи CORI SHOULDER и новинки на AAOS 2026",
       "status": "blocked",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.smith-nephew.com/en/news/2026/03/03/sn-to-showcase-advanced-orthopaedic-handheld-robotics"
     },
     {
       "date": "2026-03-01",
       "company": "Моторика",
       "title": "Motorica представила Omni Hand — первый бионический протез на оптических сенсорах",
       "status": "posted",
-      "region": "RU"
+      "region": "RU",
+      "url": "https://www.digitalhealthnews.com/motorica-launches-world-s-first-bionic-hand-prosthesis-powered-by-optical-sensors"
     },
     {
       "date": "2026-03-01",
       "company": "WHILL",
       "title": "WHILL представила складную карбоновую электроколяску Model C Lite",
       "status": "blocked",
-      "region": "world"
+      "region": "world",
+      "url": "https://whill.inc/gb/news/whill-unveils-new-foldable-lightweight-carbon-electric-wheelchair-integrating-japanese-technology-and-quality"
     },
     {
       "date": "2026-02-26",
       "company": "Ottobock",
       "title": "Ottobock инвестировал в Blue Arbor Technologies и нейроинтерфейс RESTORE",
       "status": "posted",
-      "region": "world"
+      "region": "world",
+      "url": "https://www.massdevice.com/blue-arbor-ottobock-partner-neuromuscular-interface/"
+    },
+    {
+      "date": "2026-02-06",
+      "company": "Curexo",
+      "title": "Curexo закрыла 2025 год рекордной выручкой 74,5 млрд вон",
+      "status": "blocked",
+      "region": "world",
+      "url": "https://www.medigatenews.com/news/2672975731"
+    },
+    {
+      "date": "2026-01-23",
+      "company": "Андроидная техника",
+      "title": "Владелец «Андроидной техники» — «Корпорация Роботов» — остаётся у АФК «Система» после продажи «Элемента» Сберу",
+      "status": "new",
+      "region": "RU",
+      "url": "https://www.comnews.ru/content/243404/2026-01-23/2026-w04/1010/sber-priobrel-dolyu-pao-element"
+    },
+    {
+      "date": "2025-11-27",
+      "company": "Андроидная техника",
+      "title": "«Андроидная техника» запустила серийный выпуск комплекса «Юниор» для абилитации детей с ДЦП",
+      "status": "new",
+      "region": "RU",
+      "url": "https://corprobo.ru/news/27112025"
+    },
+    {
+      "date": "2025-10-01",
+      "company": "ЭндоАрт",
+      "title": "Холдинг «БСС» купил дистрибьюторов «Медимпульс» и «Симплант» для продвижения эндопротезов «ЭндоАрт»",
+      "status": "new",
+      "region": "RU",
+      "url": "https://pharmvestnik.ru/content/news/Holding-BSS-kupil-dvuh-distributorov-medizdelii.html"
     }
   ],
   "stories": [
@@ -3475,7 +3841,7 @@
         },
         {
           "text": "Инженерная репутация Teh Lin строилась на гидравлических протезных узлах — одна из таких разработок получила золото на международной выставке изобретений в ФРГ. Позже компания внедрила у себя технологию гильз M.A.S. под руководством известного протезиста Марло Ортиса. Вывод для отрасли: сочетание собственной механики (гидравлика для нижних конечностей, LL) и лицензированных методик гильзования вывело азиатского производителя на уровень мировых стандартов посадки и походки.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Продуктовый охват Teh Lin широкий: узлы для нижних (LL) и верхних (UL) конечностей, гильзы и полный спектр O&P-компонентов. Компания эволюционирует от простого производителя к поставщику комплексных решений и обучению. Отдельно развивается платформа TL OLINK+, встраивающая 3D-печать в процесс изготовления гильз и сопровождения пациента. Вывод для отрасли: вертикаль от компонента до цифрового сервиса — та же логика контроля цепочки, что и у западных лидеров.",
@@ -4546,7 +4912,163 @@
           "status": "new"
         }
       ]
+    },
+    {
+      "company": "Армакс",
+      "region": "RU",
+      "posts": [
+        {
+          "text": "Разбираем «Армакс» — тольяттинского производителя тяговых протезов пальцев. Точка отсчёта — около 2020 года: в марте 2023-го компания рассказала «Российской газете», что первые изделия создала тремя годами ранее. «Армакс» — резидент технопарка «Жигулевская долина», проект сопровождало Агентство по привлечению инвестиций Самарской области, генеральный директор — Михаил Закроев. Вывод для отрасли: частичная ампутация кисти — массовая, но малозаметная ниша, и региональный стартап может занять её дешёвым серийным изделием, не конкурируя с бионикой.",
+          "status": "new"
+        },
+        {
+          "text": "Технологическая основа «Армакса» — патент на полезную модель RU214249U1 «Тяговый протез пальца»: заявка подана 30 мая 2022 года, правообладатель — ООО «Армакс». Палец движется за счёт тяги от сохранившихся суставов, без электроники. Подгонка простая: протез опускают в горячую воду, материал размягчается и после остывания повторяет форму культи. В 2022 году компания испытала металлические образцы под высокие нагрузки, в 2023-м добавила деталь для самостоятельной подгонки. Вывод: механика без электроники остаётся рабочим ответом для пальцевых ампутаций.",
+          "status": "new"
+        },
+        {
+          "text": "Модель продаж у «Армакса» нетипична для протезного рынка: изделие не требует визита к протезисту и продаётся на Ozon. Компания делает ставку на невысокую цену, короткий срок изготовления и малый вес. Производство ведётся вместе с соседом по технопарку — компанией «Прототип» с парком 3D-принтеров: 100–150 протезов в неделю, при росте спроса заявлялось до 2000. Материалы российские. Вывод для отрасли: маркетплейс как канал сбыта простых ТСР — эксперимент, за которым стоит следить.",
+          "status": "new"
+        },
+        {
+          "text": "В открытых источниках у «Армакса» почти нет следов бизнеса: выручки, госконтрактов и новостей после 2023 года поиск не находит. Компания работает в рознице прямых продаж, а не в системе закупок СФР, где обращаются основные деньги рынка. Итог: «Армакс» — пример недорогого протеза для частичной ампутации кисти с продажей напрямую пациенту. Сигнал для отрасли полезный, но по масштабу это пока нишевый игрок.",
+          "status": "new"
+        }
+      ]
+    },
+    {
+      "company": "ЭндоАрт",
+      "region": "RU",
+      "posts": [
+        {
+          "text": "Разбираем «ЭндоАрт» — петербургского производителя эндопротезов тазобедренного сустава из фармхолдинга «БСС». Точка отсчёта — 2017 год: тогда зарегистрировано ООО «ЭндоАрт», а в сентябре 2024 года в Санкт-Петербурге запущен завод полного цикла, построенный примерно за полгода. До 2022 года зависимость России от импорта эндопротезов крупных суставов превышала 90%. Вывод для отрасли: фармхолдинги начинают заходить в ортопедические импланты как в новый растущий сегмент импортозамещения.",
+          "status": "new"
+        },
+        {
+          "text": "Продукт «ЭндоАрт» — титановые эндопротезы тазобедренного сустава цементной и бесцементной фиксации, компания заявляет запатентованную технологию покрытий. По словам гендиректора Юлии Гуккиной, технологические процессы импортозамещены на 100%, материалы — примерно на 70%, сертификация критичных материалов шла параллельно запуску. Первая линия занимает 1500 кв. м, ещё около 800 кв. м отведено под лаборатории. Вывод для отрасли: узким местом локализации остаются не станки, а сертифицированные материалы.",
+          "status": "new"
+        },
+        {
+          "text": "Владелец «ЭндоАрт» — фармхолдинг «БСС» Эдуарда Захрабекова: выручка холдинга в 2024 году превысила 68 млрд руб., чистая прибыль около 2 млрд руб. Стартовые инвестиции первого этапа завода — 1 млрд руб. Для такого владельца эндопротезы — диверсификация, а не основной бизнес, что даёт проекту длинные деньги без привлечения внешнего капитала. Вывод для отрасли: в эндопротезировании появляется игрок с ресурсами крупной фармы, способный выдержать долгий выход на окупаемость.",
+          "status": "new"
+        },
+        {
+          "text": "Масштаб: проектная мощность первой линии — 35 тыс. комплектов эндопротезов ТБС в год. По оценке компании, в России ежегодно выполняется 180–200 тыс. операций эндопротезирования, то есть завод способен закрыть около трети потребности. В июле 2025 года предприятие прошло проверку Росздравнадзора и включено в реестр российских производителей медицинской продукции Минпромторга. Вывод для отрасли: статус отечественного производителя открывает «ЭндоАрт» преференции в госзакупках, где и сосредоточен основной спрос.",
+          "status": "new"
+        },
+        {
+          "text": "Ключевая сделка — октябрь 2025 года: «Эдифарм» из «БСС» купила 100% дистрибьютора «Медимпульс» (выручка 2024 года — 1,48 млрд руб.) и 25% «Симпланта» (605,9 млн руб.); эксперты оценили сделку в 1–1,2 млрд руб. Обе компании будут продвигать продукцию «ЭндоАрт». Вывод для отрасли: производитель покупает готовые каналы сбыта и связи с клиниками вместо того, чтобы годами строить их с нуля, — это ускоряет вытеснение импортных брендов.",
+          "status": "new"
+        },
+        {
+          "text": "Итог: «ЭндоАрт» — один из крупнейших по заявленной мощности отечественных производителей эндопротезов ТБС с собственным дистрибуционным контуром. Планы на 2026 год — ревизионные системы ТБС, новые ножки с биоактивными покрытиями и первый отечественный эндопротез коленного сустава; выпуск коленного изделия на момент публикаций не подтверждён. Вывод для отрасли: если коленный эндопротез выйдет в серию, конкуренция в самом дефицитном сегменте рынка резко усилится.",
+          "status": "new"
+        }
+      ]
+    },
+    {
+      "company": "Логикс",
+      "region": "RU",
+      "posts": [
+        {
+          "text": "Разбираем «Логикс медицинские системы» — новосибирского производителя эндопротезов суставов и онкологических имплантатов. Точка отсчёта — 2018 год: компания зарегистрирована в Новосибирске, владельцы в равных долях — Игорь Красовский и Андрей Панченко. Производство размещено в Академгородке, в экосистеме «Академпарка». Вывод для отрасли: сибирский научный кластер даёт базу для нишевых производителей имплантатов, растущих без поддержки крупных холдингов.",
+          "status": "new"
+        },
+        {
+          "text": "Продуктовая линейка «Логикс» — эндопротезы коленного, тазобедренного и локтевого суставов, а также детские онкологические имплантаты из титановых сплавов, кобальт-хромового сплава и СВМПЭ. Мощность — до 1,5 тыс. серийных и более 1 тыс. индивидуальных изделий в год. В марте 2026 года получены два регистрационных удостоверения на первичное эндопротезирование коленного и тазобедренного суставов. Вывод для отрасли: сочетание серийных изделий и индивидуальных онкоимплантатов закрывает нишу, которую крупные заводы не обслуживают.",
+          "status": "new"
+        },
+        {
+          "text": "Финансы: по данным Rusprofile, выручка «Логикс» в 2025 году составила 222,9 млн руб. против 122,2 млн годом ранее (+82,4%), чистая прибыль выросла с 3 до 42,8 млн руб. В проект детских онкологических имплантатов на первом этапе вложено более 50 млн руб., на втором компания рассчитывает на средства Фонда развития промышленности. Вывод для отрасли: малый производитель имплантатов способен выйти на рентабельность около 19% при опоре на собственные средства.",
+          "status": "new"
+        },
+        {
+          "text": "Масштаб: производственные площади «Логикс» — 1,8 тыс. кв. м, открыт новый цех в Академгородке, после строительства новой очереди «Академпарка» планируется ещё один цех около 2 тыс. кв. м. К концу 2026 года выпуск серийных изделий должен вырасти вдвое, до 3 тыс. в год. Продукция поставляется более чем в 120 российских клиник. Вывод для отрасли: рост мощностей идёт ступенчато, вслед за подтверждённым спросом клиник.",
+          "status": "new"
+        },
+        {
+          "text": "Итог: «Логикс» — растущий нишевый игрок с широкой линейкой суставов и онкоимплантатов и экспортной стратегией. В 2026 году начаты первые поставки в Китай, в планах — Казахстан, Беларусь, Узбекистан, Вьетнам и Индия. Вывод для отрасли: российские производители эндопротезов начинают смотреть на экспорт, в том числе на рынок крупнейшего азиатского конкурента, а не только на импортозамещение внутри страны.",
+          "status": "new"
+        }
+      ]
+    },
+    {
+      "company": "Анатомика",
+      "region": "RU",
+      "posts": [
+        {
+          "text": "Разбираем «Анатомику» — казанского производителя ортопедических имплантатов, вышедшего в эндопротезирование. Точка отсчёта — 2015 год: компания создана для выпуска имплантатов для травматологии, а в 2019 году запустила в Казани производство пластин, винтов и стержней для остеосинтеза из титана и медицинской стали. Вывод для отрасли: путь от поставщика к производителю остеосинтеза и затем к эндопротезам — рабочая модель роста для региональных игроков.",
+          "status": "new"
+        },
+        {
+          "text": "Технология: в августе 2026 года «Анатомика» запустила производство эндопротезов тазобедренного сустава полного цикла — головки, чашки, ножки, вкладыши и костные винты из титановых сплавов и сверхвысокомолекулярного полиэтилена. Локализация комплекта — 80%, по данным ФРП, срок службы изделий — 15 лет и более. Вывод для отрасли: компания выпускает весь комплект ТБС, а не отдельные компоненты, что упрощает клиникам переход с импорта.",
+          "status": "new"
+        },
+        {
+          "text": "Деньги: проект остеосинтеза 2019 года стоил 95,2 млн руб., из них 42,1 млн — льготный заём ФРП и 18,1 млн — средства Инвестиционно-венчурного фонда Татарстана. Проект эндопротезов в 2026 году — уже 461 млн руб., из них 180 млн заём ФРП и 20 млн от фонда республики. Вывод для отрасли: компания прошла две волны льготного госфинансирования, и каждый следующий проект почти впятеро крупнее предыдущего.",
+          "status": "new"
+        },
+        {
+          "text": "Масштаб: новое производство размещено в промышленном парке «Зеленодольск» в Татарстане, мощность — около 20 тыс. комплектов эндопротезов в год. Для сравнения, мощность казанской площадки остеосинтеза в 2019 году заявлялась от 98 тыс. единиц продукции в год. Директор компании — Азат Замалиев. Вывод для отрасли: Татарстан формирует собственный кластер ортопедических имплантатов при поддержке федеральных и региональных фондов.",
+          "status": "new"
+        },
+        {
+          "text": "Итог: на проектной мощности «Анатомика» рассчитывает занять 10% российского рынка эндопротезов тазобедренного сустава, объём которого компания оценивает примерно в 180 тыс. комплектов в год. Вместе с другими новыми заводами это заметно увеличивает отечественное предложение ТБС. Вывод для отрасли: сегмент тазобедренных эндопротезов быстро насыщается локальными производителями, и конкуренция смещается в цену, регистрации и каналы сбыта.",
+          "status": "new"
+        }
+      ]
+    },
+    {
+      "company": "Андроидная техника",
+      "region": "RU",
+      "posts": [
+        {
+          "text": "Разбираем «Андроидную технику» — магнитогорско-московское НПО, известное прежде всего антропоморфным роботом FEDOR. Точка отсчёта — 2009 год, когда было зарегистрировано АО (корпоративные публикации Магнитогорска ведут историю предприятия с 2005 года). В 2019 году FEDOR слетал на МКС на «Союз МС-14». Сегодня в компании около 200 специалистов, на счету более 150 робототехнических комплексов для медицины, образования и космоса. Вывод для отрасли: в реабилитационную робототехнику приходят команды с опытом сложной мехатроники и сервоприводов, а не только медтех-стартапы.",
+          "status": "new"
+        },
+        {
+          "text": "Ключевой медицинский продукт — роботизированный комплекс «Юниор» для абилитации детей с двигательными нарушениями кистей рук, в том числе с ДЦП. Регистрационное удостоверение Г004-00110-00/03648924 получено 31.10.2025, серийный выпуск объявлен 27.11.2025. По данным производителя, один тренажёр рассчитан на абилитацию до 500 пациентов в год. Вывод для отрасли: детская реабилитация кисти получает отечественное серийное изделие с РУ, что открывает ему путь в госзакупки и оснащение реабилитационных отделений.",
+          "status": "new"
+        },
+        {
+          "text": "Владение. В июле 2025 года АО «Корпорация Роботов», тогда робототехническое направление ГК «Элемент», купило 51% НПО, 49% остались у менеджмента; сумма не раскрывалась. Исполнительный директор НПО Евгений Дудоров стал исполнительным директором «Корпорации Роботов». В январе 2026 года при продаже доли АФК «Система» в «Элементе» Сберу «Корпорация Роботов» была выведена из сделки и осталась под контролем АФК. Выручка НПО в открытых источниках не найдена. Вывод для отрасли: за медицинской линейкой стоит крупный промышленный холдинг, а не венчурные деньги.",
+          "status": "new"
+        },
+        {
+          "text": "Масштаб. Плановая мощность по «Юниору» — 200 комплектов в год: для нишевого детского реабилитационного изделия это заметный объём, сопоставимый с потребностью сети региональных реабилитационных центров. Параллельно площадка в Магнитогорске определена базой «Корпорации Роботов» для выпуска электродвигателей и сервоприводов. Данных о госконтрактах и экспорте по «Юниору» в открытых источниках пока нет. Вывод для отрасли: собственная компонентная база (приводы) — потенциальное ценовое преимущество перед импортными тренажёрами кисти.",
+          "status": "new"
+        },
+        {
+          "text": "Итог. «Андроидная техника» — пример перехода космической и промышленной робототехники в медицину: компания с историей FEDOR вывела на рынок зарегистрированный детский комплекс и опирается на ресурсы «Корпорации Роботов», которая объединяет также «Эйдос Робототехнику» и ГК «Фотомеханика». Для профильных игроков это новый конкурент с серийной мощностью и сильным акционером в сегменте роботизированной реабилитации верхней конечности. Ключевой вопрос ближайших лет — клиническая доказательная база и реальные поставки в учреждения.",
+          "status": "new"
+        }
+      ]
+    },
+    {
+      "company": "Мадин",
+      "region": "RU",
+      "posts": [
+        {
+          "text": "Разбираем ГК «Мадин» — нижегородского производителя реабилитационного и физиотерапевтического оборудования, одного из немногих в России с серийным медицинским экзоскелетом. Точка отсчёта для экзо-направления — 2021 год: в феврале стартовал промышленный выпуск экзоскелета нижних конечностей E-Helper, 22.04.2021 получено РУ РЗН 2021/14120. Разработчик — НПФ «Реабилитационные технологии» (руководитель Александр Емельянов). Вывод для отрасли: экзоскелет вырос внутри компании с широкой реабилитационной линейкой и каналами продаж в клиники.",
+          "status": "new"
+        },
+        {
+          "text": "Технологии. E-Helper рассчитан на пациентов весом до 110 кг и ростом 150–190 см, до 8 часов автономной работы, поддерживает подъём по лестнице, раздельную настройку мощности для гемипареза и оценку спастичности по усилиям двигателей. Версия E-Helper FES со встроенной 8/16-канальной функциональной электростимуляцией и ЭМГ получила РУ РЗН 2023/21369 (20.10.2023). Локомоторный комплекс NeuroHelper — экзоскелет на тредмиле с разгрузкой и виртуальной средой «Мадис», РУ РЗН 2024/22069 (19.02.2024). Вывод для отрасли: российский ответ на связку «экзоскелет + тредмил + ФЭС» уже зарегистрирован.",
+          "status": "new"
+        },
+        {
+          "text": "Бизнес. Ядро группы — ООО НПФ «Реабилитационные технологии»: собственные площади более 3000 кв. м, около 100 рабочих мест, из них 20 ИТР, полный цикл производства. Помимо экзоскелетов — перчатка «Аника» с биологической обратной связью, тредмилы «Реатерра», подвесные системы «Экзарта», вертикализаторы, физиотерапия; бренд «Экзарта» развивается также как сеть реабилитационных центров, есть обучающая «Международная Академия Медицинской Реабилитации». E-Helper и NeuroHelper входят в стандарты оснащения по приказу 788н. Выручка в открытых источниках не найдена. Вывод для отрасли: экзоскелет продаётся как часть комплексного оснащения отделения.",
+          "status": "new"
+        },
+        {
+          "text": "Масштаб и экспорт. К январю 2022 года было изготовлено 10 экзоскелетов E-Helper: они работали в российских клиниках и в одном учреждении Казахстана, готовилась партия в Узбекистан. В Шымкенте (реабилитационный центр) E-Helper закуплен в России, персонал обучали российские специалисты. В 2026 году компания сообщила о покупке комплекса NeuroHelper иракской стороной и визите делегации из Ирака. Вывод для отрасли: российские реабилитационные экзоскелеты находят спрос в СНГ и на Ближнем Востоке, где важна цена и сервис.",
+          "status": "new"
+        },
+        {
+          "text": "Итог. «Мадин» занимает позицию поставщика полного контура роботизированной реабилитации нижних конечностей отечественного производства: экзоскелет, его FES-версия и локомоторный комплекс с РУ, плюс сопутствующее оборудование и учебный центр. Сильные стороны — включение в приказ 788н и заявленная ценовая доступность (по словам разработчика, E-Helper в разы дешевле конкурентов). Открытые вопросы — объёмы выпуска после 2022 года и независимая клиническая база. Для рынка это заметный внутренний конкурент импортным локомоторным системам.",
+          "status": "new"
+        }
+      ]
     }
   ],
-  "stories_cycles": 74
+  "stories_cycles": 80
 }

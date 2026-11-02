@@ -15,12 +15,24 @@
     --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     --mono:ui-monospace,"Cascadia Code","JetBrains Mono","SFMono-Regular",Menlo,Consolas,monospace;
   }
-  @media (prefers-color-scheme:dark){:root{
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
     --paper:#0d1117; --panel:#151b24; --panel-2:#1b2330; --ink:#e8edf3; --muted:#98a4b2;
     --line:#26303f; --teal:#2bc3d2; --indigo:#8b97ff; --amber:#e6ad55; --warn:#f0865c;
     --good:#4ccb92; --block:#f0658a;
-    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28);
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28); color-scheme:dark;
   }}
+  /* в Telegram тему задаёт клиент (colorScheme) */
+  :root[data-theme="dark"]{
+    --paper:#0d1117; --panel:#151b24; --panel-2:#1b2330; --ink:#e8edf3; --muted:#98a4b2;
+    --line:#26303f; --teal:#2bc3d2; --indigo:#8b97ff; --amber:#e6ad55; --warn:#f0865c;
+    --good:#4ccb92; --block:#f0658a;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28); color-scheme:dark;
+  }
+  /* в Telegram — компактнее сверху, без лишних отступов */
+  html.in-tg .wrap{padding-top:14px}
+  html.in-tg .tg-only-hide{display:none}
+  ul.feed a, ul.mlist a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)}
+  ul.feed a:hover, ul.mlist a:hover{color:var(--teal)}
   *{box-sizing:border-box}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
   .wrap{max-width:1080px;margin:0 auto;padding:30px 20px 72px}
@@ -126,7 +138,7 @@
 <div class="wrap">
   <p class="eyebrow">Атлас отрасли · O&P</p>
   <h1>Компании протезирования и реабилитации</h1>
-  <p class="lede">Каталог отслеживаемых компаний, их истории и новости из канала — в одном месте,
+  <p class="lede tg-only-hide">Каталог отслеживаемых компаний, их истории и новости из канала — в одном месте,
      с картой отрасли в разрезе продуктов, географии и размера.</p>
   <div class="topbar">
     <a class="tg" href="https://t.me/MA_Prosthetics" target="_blank" rel="noopener">→ канал «Бионика и реабилитация»</a>
@@ -194,8 +206,28 @@
 
 <script>
 // ---- Telegram Mini App (безвредно вне Telegram) ----
-(function(){ try { var tg = window.Telegram && window.Telegram.WebApp;
-  if (tg) { tg.ready(); tg.expand && tg.expand(); } } catch(e){} })();
+var TG = null;
+(function(){ try {
+  var tg = window.Telegram && window.Telegram.WebApp;
+  if (!tg || !tg.platform || tg.platform === "unknown") return;   // открыт не в Telegram
+  TG = tg; document.documentElement.classList.add("in-tg");
+  function applyTheme(){
+    document.documentElement.dataset.theme = tg.colorScheme === "dark" ? "dark" : "light";
+    var bg = getComputedStyle(document.documentElement).getPropertyValue("--paper").trim();
+    try { tg.setHeaderColor(bg); tg.setBackgroundColor(bg); } catch(e){}
+  }
+  applyTheme(); tg.onEvent("themeChanged", applyTheme);
+  tg.BackButton.onClick(function(){ closeModal(); });
+  tg.ready(); tg.expand && tg.expand();
+} catch(e){} })();
+
+// Внешние ссылки внутри Telegram открываем через клиент (иначе — пустой экран/ничего).
+document.addEventListener("click", function(e){
+  var a = e.target.closest && e.target.closest("a[href]"); if (!a || !TG) return;
+  var href = a.getAttribute("href"); if (!/^https?:/i.test(href)) return;
+  e.preventDefault(); e.stopPropagation();
+  if (/^https?:\/\/t\.me\//i.test(href)) TG.openTelegramLink(href); else TG.openLink(href);
+}, true);
 
 var SEG_NAMES = {
   "UL":"Протезы рук / бионика кисти", "LL":"Протезы ног / коленные модули",
@@ -317,12 +349,13 @@ function openCompany(c){
   if(stories.length){ stories.forEach(function(t){ html+='<div class="story">'+esc(t)+'</div>'; }); }
   else html+='<p class="empty">Пока нет опубликованных историй.</p>';
   html+='<div class="mh">Новости ('+news.length+')</div>';
-  if(news.length){ html+='<ul class="mlist">'; news.forEach(function(n){ html+='<li><span class="d">'+esc(fmtDate(n.date))+'</span><span>'+esc(n.title)+'</span></li>'; }); html+='</ul>'; }
+  if(news.length){ html+='<ul class="mlist">'; news.forEach(function(n){ html+='<li><span class="d">'+esc(fmtDate(n.date))+'</span><span>'+newsTitle(n)+'</span></li>'; }); html+='</ul>'; }
   else html+='<p class="empty">Пока нет опубликованных новостей.</p>';
   document.getElementById("modal").innerHTML=html;
   document.getElementById("overlay").classList.add("on");
+  if (TG) TG.BackButton.show();
 }
-function closeModal(){ document.getElementById("overlay").classList.remove("on"); }
+function closeModal(){ document.getElementById("overlay").classList.remove("on"); if (TG) TG.BackButton.hide(); }
 document.getElementById("overlay").addEventListener("click", function(e){ if(e.target.id==="overlay") closeModal(); });
 document.addEventListener("keydown", function(e){ if(e.key==="Escape") closeModal(); });
 
@@ -400,11 +433,14 @@ function renderNews(){
   document.getElementById("nw-count").textContent = NEWS.length + " опубликованных новостей";
   NEWS.forEach(function(n){
     var li=document.createElement("li");
-    li.innerHTML='<span class="d">'+esc(fmtDate(n.date))+'</span><span class="c">'+esc(n.company)+'</span><span>'+esc(n.title)+'</span>';
+    li.innerHTML='<span class="d">'+esc(fmtDate(n.date))+'</span><span class="c">'+esc(n.company)+'</span><span>'+newsTitle(n)+'</span>';
     box.appendChild(li);
   });
 }
 
+function newsTitle(n){
+  return /^https?:/i.test(n.url||"") ? '<a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(n.title)+'</a>' : esc(n.title);
+}
 function fmtDate(d){ if(!d) return ""; var p=d.split("-"); return p.length===3 ? p[2]+"."+p[1]+"."+p[0] : d; }
 function esc(s){ return (s==null?"":""+s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
 </script>
