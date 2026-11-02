@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Архитектура · Бионика и реабилитация</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Как устроен автономный Telegram-канал «Бионика и реабилитация»: сбор, очередь, публикация, бот, дашборд и Атлас отрасли.">
+<style>
+  /* Та же палитра и шрифты, что у монитора и Атласа. Одна колонка: схема → узлы → расписание → действия → журнал */
+  :root {
+    --paper:#f5f6f8; --panel:#ffffff; --panel-2:#eef1f5; --ink:#1b2027; --muted:#5b6572;
+    --line:#dce0e7; --teal:#0d8a99; --teal-soft:#e0f2f4; --indigo:#3f57c9; --indigo-soft:#e8ebfa;
+    --amber:#c07d16; --amber-soft:#f8eedd;
+    --shadow:0 1px 2px rgba(20,28,40,.06),0 6px 18px rgba(20,28,40,.05);
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,"Cascadia Code","JetBrains Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#0d1117; --panel:#151b24; --panel-2:#1b2330; --ink:#e8edf3; --muted:#98a4b2;
+    --line:#26303f; --teal:#2bc3d2; --teal-soft:#153338; --indigo:#8b97ff; --indigo-soft:#232848;
+    --amber:#e6ad55; --amber-soft:#3a2c17;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28); color-scheme:dark;
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:30px 20px 72px;display:grid;gap:34px}
+  .wrap>*{min-width:0}
+  nav.sections{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+  nav.sections a{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:9px 12px;border-bottom:2px solid transparent;margin-bottom:-1px}
+  nav.sections a:hover{color:var(--ink)}
+  nav.sections a.on{color:var(--teal);border-bottom-color:var(--teal)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
+  h1{font-size:clamp(22px,4vw,32px);line-height:1.1;margin:0 0 10px;font-weight:680;letter-spacing:-.02em;text-wrap:balance}
+  h2{font-size:13px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 14px}
+  h3{font-size:15px;margin:0}
+  p{margin:0}
+  .lede{font-size:15px;color:var(--muted);max-width:66ch}
+  a{color:var(--teal)}
+  code{font-family:var(--mono);font-size:.86em}
+  .note{font-size:12.5px;color:var(--muted);border-left:3px solid var(--line);padding-left:12px;margin-top:12px;max-width:80ch}
+  .diagram{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:14px;overflow-x:auto}
+  .diagram svg{display:block;min-width:860px;width:100%;height:auto}
+  .legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:10px;font-size:12.5px;color:var(--muted)}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+  .nodes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:14px}
+  .node{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:8px;align-content:start;min-width:0}
+  .tag{justify-self:start;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px}
+  .t-gh{background:var(--teal-soft);color:var(--teal)} .t-ext{background:var(--indigo-soft);color:var(--indigo)} .t-out{background:var(--amber-soft);color:var(--amber)}
+  .node p{font-size:13.5px;color:var(--muted)}
+  .node ul{margin:0;padding-left:18px;font-size:13.5px;display:grid;gap:3px}
+  .tbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+  th,td{text-align:left;padding:9px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:var(--mono);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  tr:last-child td{border-bottom:0}
+  td.t{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:24px}
+  .cols>*{min-width:0}
+  ol.steps{margin:0;padding-left:22px;display:grid;gap:7px;font-size:13.5px}
+  footer{color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="sections">
+  <a href="./">Монитор</a>
+  <a href="catalog.html">Атлас отрасли</a>
+  <a class="on" href="architecture.html">Архитектура</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Системная карта · @MA_Prosthetics</p>
+  <h1>Как устроен канал «Бионика и реабилитация»</h1>
+  <p class="lede">Автономный конвейер новостей индустрии протезирования и реабилитации: сбор через Anthropic API, очередь в GitHub, публикация в Telegram по расписанию, бот управления, монитор и Атлас отрасли (он же Telegram Mini App). Своего сервера нет: всё работает в GitHub Actions, GitHub Pages и n8n.</p>
+  <p class="note">Цифры (число компаний, новостей, историй, ширина сбора) здесь намеренно не приводятся — актуальные значения на вкладках «Монитор» и «Атлас отрасли».</p>
+</header>
+
+<section>
+  <h2>Схема конвейера</h2>
+  <div class="diagram">
+  <svg viewBox="0 0 920 470" role="img" aria-label="Схема: источники, сборщик, данные в репозитории, публикатор, дашборд, n8n, Telegram, GitHub Pages">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--muted)"/></marker></defs>
+    <style>
+      .bx{stroke-width:1.5}
+      .gh{fill:var(--teal-soft);stroke:var(--teal)} .ex{fill:var(--indigo-soft);stroke:var(--indigo)} .ou{fill:var(--amber-soft);stroke:var(--amber)}
+      .ttl{font:600 14px var(--sans);fill:var(--ink)} .sub{font:11.5px var(--mono);fill:var(--muted)}
+      .ln{stroke:var(--muted);stroke-width:1.4;fill:none} .ld{stroke:var(--muted);stroke-width:1.4;fill:none;stroke-dasharray:5 4}
+      .lb{font:11px var(--mono);fill:var(--muted)} .grp{fill:none;stroke:var(--line);stroke-width:1.2;stroke-dasharray:3 3}
+    </style>
+    <rect class="grp" x="190" y="18" width="440" height="436" rx="12"/>
+    <text class="lb" x="204" y="38">GitHub · репозиторий MA-protez (приватный)</text>
+
+    <rect class="bx ex" x="16" y="62" width="150" height="70" rx="8"/><text class="ttl" x="30" y="90">Веб-источники</text><text class="sub" x="30" y="110">СМИ, сайты компаний</text>
+    <rect class="bx ex" x="16" y="182" width="150" height="70" rx="8"/><text class="ttl" x="30" y="210">Anthropic API</text><text class="sub" x="30" y="230">Haiku + web_search</text>
+    <rect class="bx ex" x="16" y="320" width="150" height="96" rx="8"/><text class="ttl" x="30" y="348">n8n</text><text class="sub" x="30" y="368">будильник publish</text><text class="sub" x="30" y="386">бот MA-bot</text><text class="sub" x="30" y="404">(только админ)</text>
+
+    <rect class="bx gh" x="210" y="56" width="190" height="80" rx="8"/><text class="ttl" x="224" y="84">harvest.yml</text><text class="sub" x="224" y="104">harvest.py · ширина 1–7</text><text class="sub" x="224" y="122">раз в 2 дня, ~05:19 МСК</text>
+    <rect class="bx gh" x="420" y="56" width="190" height="98" rx="8"/><text class="ttl" x="434" y="84">Данные в репо</text><text class="sub" x="434" y="104">news_queue.jsonl</text><text class="sub" x="434" y="122">companies.md</text><text class="sub" x="434" y="140">facts.jsonl · promo.json</text>
+    <rect class="bx gh" x="210" y="186" width="190" height="80" rx="8"/><text class="ttl" x="224" y="214">publish.yml</text><text class="sub" x="224" y="234">дедуп → publish.py</text><text class="sub" x="224" y="252">новости·истории·промо</text>
+    <rect class="bx gh" x="420" y="186" width="190" height="80" rx="8"/><text class="ttl" x="434" y="214">dashboard.yml</text><text class="sub" x="434" y="234">build_balance.py</text><text class="sub" x="434" y="252">push + каждые 2 ч</text>
+    <rect class="bx gh" x="210" y="330" width="400" height="104" rx="8"/><text class="ttl" x="224" y="356">Ручные инструменты (workflow_dispatch)</text><text class="sub" x="224" y="378">check.yml — проверить ссылку, добавить, опубликовать</text><text class="sub" x="224" y="396">facts.yml — опубликовать / снять историю</text><text class="sub" x="224" y="414">publish.yml — --list / --id / --block / count</text>
+
+    <rect class="bx ou" x="690" y="150" width="214" height="98" rx="8"/><text class="ttl" x="704" y="178">GitHub Pages</text><text class="sub" x="704" y="198">Монитор (index.html)</text><text class="sub" x="704" y="216">Атлас (catalog.html)</text><text class="sub" x="704" y="234">Архитектура</text>
+    <rect class="bx ou" x="690" y="290" width="214" height="98" rx="8"/><text class="ttl" x="704" y="318">Telegram</text><text class="sub" x="704" y="338">канал @MA_Prosthetics</text><text class="sub" x="704" y="356">бот @MA_Prosthetics_bot</text><text class="sub" x="704" y="374">Mini App …/atlas</text>
+
+    <path class="ln" d="M166 97 H180 V122 H210" marker-end="url(#ar)"/>
+    <path class="ln" d="M166 217 H185 V110 H210" marker-end="url(#ar)"/>
+    <path class="ln" d="M400 96 H420" marker-end="url(#ar)"/><text class="lb" x="403" y="88">дедуп</text>
+    <path class="ln" d="M470 154 V170 H305 V186" marker-end="url(#ar)"/>
+    <path class="ln" d="M540 154 V186" marker-end="url(#ar)"/>
+    <path class="ln" d="M610 216 H690" marker-end="url(#ar)"/><text class="lb" x="616" y="208">DASH_PAT</text>
+    <path class="ln" d="M305 266 V300 H660 V320 H690" marker-end="url(#ar)"/><text class="lb" x="560" y="294">sendMessage</text>
+    <path class="ld" d="M797 248 V290" marker-end="url(#ar)"/><text class="lb" x="804" y="274">Mini App</text>
+    <path class="ld" d="M166 340 H192 V240 H210" marker-end="url(#ar)"/><text class="lb" x="30" y="300">dispatch каждые 30 мин</text>
+    <path class="ld" d="M166 392 H200 V382 H210" marker-end="url(#ar)"/>
+  </svg>
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--teal-soft);border:1px solid var(--teal)"></i>GitHub Actions и данные</span>
+    <span><i style="background:var(--indigo-soft);border:1px solid var(--indigo)"></i>Внешние сервисы</span>
+    <span><i style="background:var(--amber-soft);border:1px solid var(--amber)"></i>Что видит читатель</span>
+    <span>Пунктир — запуск по команде (n8n, бот, Mini App)</span>
+  </div>
+</section>
+
+<section>
+  <h2>Узлы системы</h2>
+  <div class="nodes">
+    <div class="node"><span class="tag t-gh">Сбор</span><h3>Сборщик harvest</h3>
+      <p>Ищет события по компаниям из <code>companies.md</code> и по темам отрасли, классифицирует и пишет в очередь.</p>
+      <ul>
+        <li>Haiku 4.5 + серверный web_search (платный, отдельный биллинг Anthropic)</li>
+        <li>«Ширина» 1–7: компании → отрасль → выставки → лица → наука/клиника → регуляторика/рынок РФ → смежные</li>
+        <li>Авто-режим по буферу: меньше 15 новых — шире, больше 40 — уже</li>
+        <li>Текст без кириллицы или с иероглифами переводится на русский; служебная разметка вырезается</li>
+        <li>Не берёт хирургических роботов (Mako, ROSA, CUVIS, VELYS, da Vinci, CMR): сегмент не отслеживается</li>
+      </ul></div>
+    <div class="node"><span class="tag t-gh">Данные</span><h3>Очередь и справочники</h3>
+      <p>Единственный источник правды — репозиторий.</p>
+      <ul>
+        <li><code>news_queue.jsonl</code> — новости, статусы new / posted / blocked</li>
+        <li><code>facts.jsonl</code> — серии «История компании» (3–8 постов на компанию)</li>
+        <li><code>companies.md</code> — отслеживаемые компании (мир + РФ); формат фиксирован, его читает сборщик</li>
+        <li><code>promo.json</code> — повторяющийся пост про Атлас: текст, кнопка, даты</li>
+        <li><code>harvest_state.json</code> — текущая ширина сбора и история</li>
+      </ul></div>
+    <div class="node"><span class="tag t-gh">Защита</span><h3>Дедуп</h3>
+      <p>Одно событие из разных СМИ не должно выйти дважды.</p>
+      <ul>
+        <li>При записи: точная ссылка; та же компания + похожий заголовок по датам</li>
+        <li>Общее латинское имя собственное (продукт, купленная компания) ± 3 дня</li>
+        <li>Сделка двух компаний: обе названы в обоих заголовках ± 3 дня</li>
+        <li>Перед публикацией — шаг «Dedup queue» (<code>dedup_scan.py --apply</code>)</li>
+      </ul></div>
+    <div class="node"><span class="tag t-gh">Публикация</span><h3>Публикатор</h3>
+      <p><code>publish.py --auto</code> держит дневную норму. Пост — HTML с эмодзи, хэштегами и строкой «дата · источник».</p>
+      <ul>
+        <li>Новости: ceil(new/10) в день, равномерно 09:23–19:23 МСК, свежие вперёд</li>
+        <li>Истории: 2 в день, 11:23 и 16:23 МСК, по списку приоритета компаний</li>
+        <li>Промо Атласа: по датам из <code>promo.json</code>, ~13:23 МСК, с кнопкой «Открыть Атлас»</li>
+        <li>Ручные публикации помечаются и не съедают плановые слоты</li>
+      </ul></div>
+    <div class="node"><span class="tag t-ext">Внешнее</span><h3>n8n</h3>
+      <p>Точный будильник вместо ненадёжного GitHub-cron и бот управления.</p>
+      <ul>
+        <li>Каждые 30 минут (:23 и :53, 9–19 МСК) запускает publish.yml через GitHub API</li>
+        <li>Бот @MA_Prosthetics_bot: компании, новости (публикация, блок), ширина сбора, истории</li>
+        <li>Бот отвечает только администратору; остальным — ссылка на Атлас и канал</li>
+      </ul></div>
+    <div class="node"><span class="tag t-out">Витрины</span><h3>Монитор, Атлас, Архитектура</h3>
+      <p><code>build_balance.py</code> собирает <code>balance.json</code>; dashboard.yml публикует страницы в публичный репозиторий на GitHub Pages.</p>
+      <ul>
+        <li>Обновление сразу при правке страниц или данных и по расписанию раз в 2 часа</li>
+        <li>Монитор — баланс очереди, ширина сбора, истории</li>
+        <li>Атлас — каталог компаний с фильтрами, карта «продукты × география», истории (вышедшие и «скоро в канале»), новости со ссылками на источники</li>
+        <li>Атлас работает и как Telegram Mini App: тема Telegram, кнопка «Назад», ссылки через клиент</li>
+      </ul></div>
+  </div>
+</section>
+
+<section class="cols">
+  <div>
+    <h2>Расписание</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Время (МСК)</th><th>Что</th><th>Кто запускает</th></tr></thead>
+      <tbody>
+        <tr><td class="t">~05:19, через день</td><td>Сбор новостей</td><td>GitHub-cron</td></tr>
+        <tr><td class="t">09:23–19:53, :23/:53</td><td>Проверка нормы, пост</td><td>n8n</td></tr>
+        <tr><td class="t">11:23, 16:23</td><td>История компании</td><td>тот же publish</td></tr>
+        <tr><td class="t">~13:23 по датам</td><td>Промо Атласа</td><td>тот же publish</td></tr>
+        <tr><td class="t">при правке + 2 ч</td><td>Монитор, Атлас, Архитектура</td><td>push / GitHub-cron</td></tr>
+      </tbody></table></div>
+  </div>
+  <div>
+    <h2>Типовые действия</h2>
+    <ol class="steps">
+      <li>Опубликовать или снять новость — бот или publish.yml (<code>id</code> / <code>block</code>).</li>
+      <li>Проверить пропущенную ссылку — check.yml (<code>add</code>, <code>publish</code>).</li>
+      <li>Сменить ширину сбора — бот, «Широта сбора».</li>
+      <li>Добавить компанию — скилл <code>ma-add-company</code> в Claude Code.</li>
+      <li>Поменять промо-пост или даты — <code>promo.json</code>.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2>Журнал изменений архитектуры</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Дата</th><th>Изменение</th></tr></thead>
+    <tbody>
+      <tr><td class="t">02.11.2026</td><td>Раздел «Архитектура» перенесён в дашборд. Атлас как Telegram Mini App (t.me/MA_Prosthetics_bot/atlas); промо-пост по расписанию; бот закрыт белым списком; витрины публикуются сразу при правке; хирургические роботы исключены из сбора; усилен дедуп (сделки двух компаний, общие имена собственные).</td></tr>
+      <tr><td class="t">29.10.2026</td><td>Атлас отрасли O&amp;P: каталог компаний и карта отрасли на GitHub Pages; очистка служебной разметки в текстах.</td></tr>
+      <tr><td class="t">20.10.2026</td><td>Перевод на русский вместо отбраковки иноязычных новостей.</td></tr>
+      <tr><td class="t">02.10.2026</td><td>Усиленная эвристика дедупа и шаг «Dedup queue» перед публикацией.</td></tr>
+      <tr><td class="t">16.09.2026</td><td>«Истории компаний» в мониторе.</td></tr>
+      <tr><td class="t">21.08.2026</td><td>Живой монитор на GitHub Pages.</td></tr>
+      <tr><td class="t">20.08.2026</td><td>Ступенчатая «ширина» сбора и бот-кнопка; экономия API (Haiku, раз в 2 дня).</td></tr>
+      <tr><td class="t">14.08.2026</td><td>Публикацию запускает n8n вместо GitHub-cron; ручные публикации и check-news.</td></tr>
+      <tr><td class="t">12.08.2026</td><td>Запуск: репозиторий, сборщик, публикатор, первый пост.</td></tr>
+    </tbody></table></div>
+</section>
+
+<footer>Страница обновляется вместе с изменениями конвейера. Канал: <a href="https://t.me/MA_Prosthetics" target="_blank" rel="noopener">t.me/MA_Prosthetics</a> · Атлас: <a href="https://t.me/MA_Prosthetics_bot/atlas" target="_blank" rel="noopener">t.me/MA_Prosthetics_bot/atlas</a></footer>
+</div>
+</body>
+</html>

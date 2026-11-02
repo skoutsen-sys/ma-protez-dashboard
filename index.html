@@ -30,6 +30,10 @@
   .updated{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
   a.tg{font-family:var(--mono);font-size:13px;color:var(--teal);text-decoration:none}
   a.tg:hover{text-decoration:underline}
+  nav.sections{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin:0 0 22px}
+  nav.sections a{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:9px 12px;border-bottom:2px solid transparent;margin-bottom:-1px}
+  nav.sections a:hover{color:var(--ink)}
+  nav.sections a.on{color:var(--teal);border-bottom-color:var(--teal)}
 
   .stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
   .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;box-shadow:var(--shadow);min-width:104px}
@@ -86,6 +90,11 @@
 </head>
 <body>
 <div class="wrap">
+  <nav class="sections">
+    <a class="on" href="./">Монитор</a>
+    <a href="catalog.html">Атлас отрасли</a>
+    <a href="architecture.html">Архитектура</a>
+  </nav>
   <p class="eyebrow">Монитор · баланс очереди</p>
   <h1>Приход ↔ публикация новостей</h1>
   <p class="lede">Живые данные конвейера канала «Бионика и реабилитация». Обновляются автоматически из репозитория; кнопкой «Обновить» можно перезапросить вручную.</p>
