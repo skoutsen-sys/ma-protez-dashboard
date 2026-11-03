@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-03T09:10:03+00:00",
+  "generated_at": "2026-11-03T16:13:52+00:00",
   "totals": {
-    "total": 211,
-    "new": 26,
-    "posted": 168,
+    "total": 219,
+    "new": 32,
+    "posted": 170,
     "blocked": 17,
     "companies": 83
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 95,
-  "published_30d": 68,
+  "added_30d": 103,
+  "published_30d": 70,
   "series": [
     {
       "date": "2026-10-05",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-03",
-      "added": 0,
-      "published": 1,
-      "width": null
+      "added": 8,
+      "published": 3,
+      "width": 3
     }
   ],
   "companies": [
@@ -231,7 +231,7 @@
       "size": "XL",
       "owner": "Частная, миноритарий EQT",
       "site": "ottobock.com",
-      "news_count": 22,
+      "news_count": 23,
       "story_count": 7
     },
     {
@@ -416,7 +416,7 @@
       "size": "M",
       "owner": "Частная",
       "site": "taskaprosthetics.com",
-      "news_count": 1,
+      "news_count": 3,
       "story_count": 4
     },
     {
@@ -867,7 +867,7 @@
       "size": "M",
       "owner": "Публичная (NYSE: MYO)",
       "site": "myomo.com",
-      "news_count": 3,
+      "news_count": 4,
       "story_count": 5
     },
     {
@@ -1436,7 +1436,7 @@
       "size": "S",
       "owner": "Частная",
       "site": "steplife.ru",
-      "news_count": 4,
+      "news_count": 5,
       "story_count": 3
     },
     {
@@ -1614,12 +1614,44 @@
       "url": "https://en.jufair.com/exhibition/13222.html"
     },
     {
+      "date": "2026-11-12",
+      "company": "Ottobock",
+      "title": "Оттобок объявит результаты третьего квартала 2026 года",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-leads-usd-10-5-million-blue-arbor-round-while-ottobock-stock-sits-below-eur-49-00/70427102"
+    },
+    {
       "date": "2026-11-08",
       "company": "ICOPII",
       "title": "Международная конференция ортопедических протезов и имплантационных инноваций в Дели",
       "status": "posted",
       "region": "world",
       "url": "https://internationalconferencealerts.com/event-icopii-delhi-in-202611-101284339"
+    },
+    {
+      "date": "2026-11-02",
+      "company": "TASKA Prosthetics",
+      "title": "TASKA Prosthetics открывает американскую базу операций в Солт-Лейк-Сити",
+      "status": "posted",
+      "region": "world",
+      "url": "https://opedge.com/taska-prosthetics-establishing-us-operations/"
+    },
+    {
+      "date": "2026-11-02",
+      "company": "TASKA Prosthetics",
+      "title": "TASKA Prosthetics назначила нового коммерческого директора для американского рынка",
+      "status": "new",
+      "region": "world",
+      "url": "https://opedge.com/taska-prosthetics-names-commercial-director/"
+    },
+    {
+      "date": "2026-11-02",
+      "company": "Myomo",
+      "title": "Myomo объявила о финансовых результатах третьего квартала 2026",
+      "status": "new",
+      "region": "world",
+      "url": "https://stockhouse.com/news/press-releases/2026/11/02/myomo-to-report-third-quarter-2026-financial-results-on-november-9"
     },
     {
       "date": "2026-11-01",
@@ -1678,6 +1710,14 @@
       "url": "https://gurufocus.com/news/9153645/stryker-reports-77-organic-sales-growth-in-q3-2026-stock-26-undervalued-syk"
     },
     {
+      "date": "2026-10-29",
+      "company": "Angel Robotics",
+      "title": "Экзоскелет Angel Suit H10 получил регистрацию в Таиланде",
+      "status": "new",
+      "region": "world",
+      "url": "https://exoskeletonreport.com/2026/11/exoskeleton-report-weekly-newsletter-archive-october-week-44-2026/"
+    },
+    {
       "date": "2026-10-28",
       "company": "University of Utah / BIOS",
       "title": "Прямой нервный интерфейс для нейропротеза LUKE Arm протестирован в домашних условиях",
@@ -1724,6 +1764,30 @@
       "status": "posted",
       "region": "RU",
       "url": "https://mosprop.ru/"
+    },
+    {
+      "date": "2026-10-28",
+      "company": "Орто-Инновации Москва",
+      "title": "Совет пациентам: как выбрать комфортный формат общения после ампутации",
+      "status": "new",
+      "region": "RU",
+      "url": "https://ortomoscow.ru/"
+    },
+    {
+      "date": "2026-10-28",
+      "company": "Steplife",
+      "title": "Steplife расширяет экспорт: импорт немецких протезов в Россию вырос на треть",
+      "status": "new",
+      "region": "RU",
+      "url": "https://novayagazeta.eu/articles/2026/10/28/rf-zakupila-v-frg-protezy-i-iskusstvennye-sustavy-na-79-mln-evro-pochti-na-tret-bolshe-chem-godom-ranee-news"
+    },
+    {
+      "date": "2026-10-28",
+      "company": "Blue Arbor Technologies",
+      "title": "Стартап Blue Arbor Technologies привлёк $10,5 млн инвестиций для нейромышечных интерфейсов протезов",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.techcentury.com/2026/10/28/ann-arbor-biotech-firm-raises-10-5-million-for-better-control-of-prosthetics/"
     },
     {
       "date": "2026-10-27",
@@ -3979,7 +4043,7 @@
       "posts": [
         {
           "text": "Разбираем Hugo Dynamics (휴고다이나믹스) — южнокорейскую компанию в области ассистивных технологий и протезирования нижних конечностей (LL). Штаб-квартира расположена в Сувоне (район Ёнтхон, провинция Кёнги) — крупном технологическом кластере Кореи. Компания позиционирует себя как разработчика решений, помогающих преодолевать физические ограничения в повседневной жизни. Вывод для отрасли: Корея, сильная в электронике и 3D-производстве, закономерно порождает нишевых игроков в цифровом протезировании.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Ключевое направление Hugo Dynamics — Digital Socket, цифровое изготовление протезной гильзы. Это ответ на главную боль LL-протезирования: посадка и комфорт культи, которые в классической технологии зависят от ручного мастерства протезиста. Цифровой подход обещает повторяемость и точность геометрии гильзы. Вывод для отрасли: гильза — самый индивидуальный и самый проблемный узел протеза, и именно её оцифровка сейчас главный фронт конкуренции по всему миру.",
