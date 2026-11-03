@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Мультипликаторы · Бионика и реабилитация</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  /* Раздел дашборда: мультипликаторы публичных компаний. Палитра как у монитора и Атласа */
+  :root {
+    --paper:#f5f6f8; --panel:#ffffff; --panel-2:#eef1f5; --ink:#1b2027; --muted:#5b6572;
+    --line:#dce0e7; --teal:#0d8a99; --warn:#c0491f;
+    --shadow:0 1px 2px rgba(20,28,40,.06),0 6px 18px rgba(20,28,40,.05);
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,"Cascadia Code","JetBrains Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#0d1117; --panel:#151b24; --panel-2:#1b2330; --ink:#e8edf3; --muted:#98a4b2;
+    --line:#26303f; --teal:#2bc3d2; --warn:#f0865c;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.28); color-scheme:dark;
+  }}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:30px 20px 72px}
+  nav.sections{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin:0 0 22px}
+  nav.sections a{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:9px 12px;border-bottom:2px solid transparent;margin-bottom:-1px}
+  nav.sections a:hover{color:var(--ink)}
+  nav.sections a.on{color:var(--teal);border-bottom-color:var(--teal)}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
+  h1{font-size:clamp(22px,4vw,32px);line-height:1.1;margin:0 0 12px;font-weight:680;letter-spacing:-.02em}
+  h2{font-size:13px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:26px 0 12px}
+  /* мультипликаторы */
+  .mlede{font-size:13.5px;color:var(--muted);margin:0 0 6px;max-width:80ch}
+  .mtbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+  .mtbl table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:760px}
+  .mtbl th,.mtbl td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+  .mtbl th:first-child,.mtbl td:first-child{text-align:left}
+  .mtbl th{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--muted)}
+  .mtbl td{font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:13px}
+  .mtbl td:first-child{font-family:var(--sans);font-size:13.5px}
+  .mtbl td .tk{display:block;font-family:var(--mono);font-size:11px;color:var(--muted)}
+  .mtbl tr.grp td{background:var(--panel-2);font-weight:650;font-family:var(--sans)}
+  .mtbl tr.avg td{color:var(--muted);font-size:12.5px}
+  .mtbl tr.hrow th{background:var(--panel);border-bottom:1px solid var(--line)}
+  .mtbl .mx{font-weight:650;color:var(--ink)}
+  .mtbl .na{color:var(--muted)} .mtbl .neg{color:var(--warn)}
+  .mnotes{font-size:12px;color:var(--muted);display:grid;gap:6px;margin-top:14px;max-width:90ch}
+  .mnotes a{color:var(--teal)}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="sections">
+    <a href="./">Монитор</a>
+    <a href="catalog.html">Атлас отрасли</a>
+    <a class="on" href="multiples.html">Мультипликаторы</a>
+    <a href="architecture.html">Архитектура</a>
+  </nav>
+  <p class="eyebrow">Рынок · публичные компании</p>
+  <h1>Мультипликаторы</h1>
+  <p class="mlede" id="m-lede">Публичные компании из списка канала. Суммы — в млрд долларов США.</p>
+  <h2>Средние по сегментам</h2>
+  <div class="mtbl"><table id="m-summary"></table></div>
+  <h2>По компаниям</h2>
+  <div class="mtbl"><table id="m-detail"></table></div>
+  <div class="mnotes" id="m-notes"></div>
+</div>
+<script>
+var SEG_ORDER = ["UL","LL","OI","SL","OP","NEU","EXO","коляски","эндопротезы","реаб"];
+var SEG_SHORT = {
+  "UL":"Протезы рук", "LL":"Протезы ног", "OI":"Остеоинтеграция", "SL":"Гильзы и лайнеры",
+  "OP":"Клиники и сервис", "NEU":"Нейроуправление", "EXO":"Экзоскелеты", "коляски":"Коляски",
+  "эндопротезы":"Эндопротезы", "реаб":"Реабилитация"
+};
+var SEG_CODE = { "коляски":"WCh", "эндопротезы":"Endo", "реаб":"Rehab", "ортезы":"Orth", "ортез":"Orth" };
+function segCode(s){ return SEG_CODE[s] || s; }
+function fmtDate(d){ if(!d) return ""; var p=d.split("-"); return p.length===3 ? p[2]+"."+p[1]+"."+p[0] : d; }
+function esc(s){ return (s==null?"":""+s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+var COS = [];   // компании Атласа (для основного сегмента) — из balance.json
+fetch("balance.json?_=" + Date.now()).then(function(r){ return r.json(); }).then(function(d){ COS = d.companies || []; })
+  .catch(function(){}).then(renderMult);
+
+// ---- мультипликаторы (multiples.json обновляется 1-го числа каждого месяца) ----
+// формат: ≥10 — целое; 1–10 — один знак; <1 — два знака (малые компании в $ млрд)
+function mfmt(v, unit){
+  if (v == null || isNaN(v)) return '<span class="na">—</span>';
+  var a = Math.abs(v), s;
+  if (a >= 9.95) s = Math.round(v).toLocaleString("ru-RU");
+  else if (a >= 0.995) s = v.toFixed(1).replace(".", ",");      // 0,997 → «1,0», а не «1,00»
+  else if (a >= 0.01) s = v.toFixed(2).replace(".", ",");
+  else s = (v < 0 ? "-" : "") + "<0,01";
+  s = s.replace("-", "−");
+  return (v < 0 ? '<span class="neg">' + s + '</span>' : s) + (unit || "");
+}
+function mratio(ev, base){ return (ev != null && base != null && base > 0) ? ev / base : null; }
+function mavg(a){ a = a.filter(function(x){ return x != null; }); return a.length ? a.reduce(function(s,x){return s+x;},0)/a.length : null; }
+function mshort(s){ return (s||"").split(" (")[0].split(";")[0].trim(); }
+function renderMult(){
+  fetch("multiples.json?_=" + Date.now()).then(function(r){ return r.json(); }).then(function(M){
+    var segOf = {}; COS.forEach(function(c){ segOf[c.name] = c.segment; });
+    var rows = (M.companies||[]).filter(function(r){ return r.listed !== false; }).map(function(r){
+      var e = mratio(r.ev_usd_bn, r.ebitda_usd_bn);
+      return Object.assign({}, r, { seg: segOf[r.company] || r.segment || "—",
+        evRev: mratio(r.ev_usd_bn, r.revenue_usd_bn), evEbitda: (e != null && e <= 100) ? e : null });
+    });
+    var groups = {}; rows.forEach(function(r){ (groups[r.seg] = groups[r.seg] || []).push(r); });
+    var order = SEG_ORDER.filter(function(s){ return groups[s]; });
+    function segLabel(s){ return SEG_SHORT[s] ? segCode(s) + " — " + SEG_SHORT[s] : s; }
+    document.getElementById("m-lede").innerHTML = 'Публичные компании из списка канала. Суммы — в млрд долларов США. MCap и EV — по котировкам на <b>' + esc(M.as_of || "") +
+      '</b>. EV/выручка и EV/EBITDA — <b>LTM</b>: выручка и EBITDA за 12 месяцев, закончившихся на дату последней опубликованной отчётности (колонка «Период LTM»: «по 30.06.2026» — июль 2025 – июнь 2026).';
+    var sh = '<tr><th>Сегмент</th><th>Компаний</th><th>MCap, сумма</th><th>EV / выручка LTM, среднее</th><th>EV / EBITDA LTM, среднее</th></tr>';
+    // шапка колонок повторяется над каждым сегментом
+    var hdr = '<tr class="hrow"><th>Компания</th><th>Период LTM</th><th>MCap</th><th>EV</th><th>Выручка LTM</th><th>EBITDA LTM</th><th>EV / выручка LTM</th><th>EV / EBITDA LTM</th></tr>';
+    var h = '';
+    order.forEach(function(s){
+      var g = groups[s].sort(function(a,b){ return (b.mcap_usd_bn||0) - (a.mcap_usd_bn||0); });
+      var er = g.map(function(r){ return r.evRev; }), ee = g.map(function(r){ return r.evEbitda; });
+      sh += '<tr><td>' + esc(segLabel(s)) + '</td><td>' + g.length + '</td><td>' + mfmt(g.reduce(function(t,r){ return t + (r.mcap_usd_bn||0); }, 0)) + '</td><td class="mx">' +
+        mfmt(mavg(er),"x") + '</td><td class="mx">' + mfmt(mavg(ee),"x") + '</td></tr>';
+      h += '<tr class="grp"><td colspan="8">' + esc(segLabel(s)) + '</td></tr>' + hdr;
+      g.forEach(function(r){
+        h += '<tr><td>' + esc(r.company) + '<span class="tk">' + esc(mshort(r.exchange) + (r.ticker ? ": " + mshort(r.ticker) : "")) + '</span></td>' +
+          '<td>' + esc(r.ltm_end ? "по " + fmtDate(r.ltm_end) : mshort(r.revenue_period)) + '</td><td>' + mfmt(r.mcap_usd_bn) + '</td><td>' + mfmt(r.ev_usd_bn) + '</td>' +
+          '<td>' + mfmt(r.revenue_usd_bn) + '</td><td>' + mfmt(r.ebitda_usd_bn) + '</td><td class="mx">' + mfmt(r.evRev,"x") + '</td>' +
+          '<td class="mx">' + (r.ebitda_usd_bn != null && r.evEbitda == null ? '<span class="na">н/з</span>' : mfmt(r.evEbitda,"x")) + '</td></tr>';
+      });
+      h += '<tr class="avg"><td colspan="6">среднее по сегменту</td><td class="mx">' + mfmt(mavg(er),"x") + '</td><td class="mx">' + mfmt(mavg(ee),"x") + '</td></tr>';
+    });
+    document.getElementById("m-summary").innerHTML = sh;
+    document.getElementById("m-detail").innerHTML = h;
+    document.getElementById("m-notes").innerHTML =
+      '<p>EV = капитализация + долг − денежные средства. Сегмент — основной сегмент компании в Атласе. EV/EBITDA при отрицательной или околонулевой EBITDA (выше 100x) не имеет смысла — «н/з», в средние не входит. Данные обновляются 1-го числа каждого месяца.</p>' +
+      '<p>Источники: биржевые данные и отчётность компаний (stockanalysis.com, IR-сайты), курсы валют на дату котировки. Справочная информация, не инвестиционная рекомендация.</p>';
+  }).catch(function(){ document.getElementById("m-detail").innerHTML = '<tr><td>Данные о мультипликаторах пока не загружены.</td></tr>'; });
+}
+
+</script>
+</body>
+</html>

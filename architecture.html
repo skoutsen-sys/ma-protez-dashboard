@@ -65,6 +65,7 @@
 <nav class="sections">
   <a href="./">Монитор</a>
   <a href="catalog.html">Атлас отрасли</a>
+  <a href="multiples.html">Мультипликаторы</a>
   <a class="on" href="architecture.html">Архитектура</a>
 </nav>
 
@@ -100,7 +101,7 @@
     <rect class="bx gh" x="420" y="186" width="190" height="80" rx="8"/><text class="ttl" x="434" y="214">dashboard.yml</text><text class="sub" x="434" y="234">build_balance.py</text><text class="sub" x="434" y="252">push + каждые 2 ч</text>
     <rect class="bx gh" x="210" y="330" width="400" height="104" rx="8"/><text class="ttl" x="224" y="356">Ручные инструменты (workflow_dispatch)</text><text class="sub" x="224" y="378">check.yml — проверить ссылку, добавить, опубликовать</text><text class="sub" x="224" y="396">facts.yml — опубликовать / снять историю</text><text class="sub" x="224" y="414">publish.yml — --list / --id / --block / count</text>
 
-    <rect class="bx ou" x="690" y="150" width="214" height="98" rx="8"/><text class="ttl" x="704" y="178">GitHub Pages</text><text class="sub" x="704" y="198">Монитор (index.html)</text><text class="sub" x="704" y="216">Атлас (catalog.html)</text><text class="sub" x="704" y="234">Архитектура</text>
+    <rect class="bx ou" x="690" y="150" width="214" height="114" rx="8"/><text class="ttl" x="704" y="178">GitHub Pages</text><text class="sub" x="704" y="198">Монитор (index.html)</text><text class="sub" x="704" y="216">Атлас (catalog.html)</text><text class="sub" x="704" y="234">Мультипликаторы</text><text class="sub" x="704" y="252">Архитектура</text>
     <rect class="bx ou" x="690" y="290" width="214" height="98" rx="8"/><text class="ttl" x="704" y="318">Telegram</text><text class="sub" x="704" y="338">канал @MA_Prosthetics</text><text class="sub" x="704" y="356">бот @MA_Prosthetics_bot</text><text class="sub" x="704" y="374">Mini App …/atlas</text>
 
     <path class="ln" d="M166 97 H180 V122 H210" marker-end="url(#ar)"/>
@@ -110,7 +111,7 @@
     <path class="ln" d="M540 154 V186" marker-end="url(#ar)"/>
     <path class="ln" d="M610 216 H690" marker-end="url(#ar)"/><text class="lb" x="616" y="208">DASH_PAT</text>
     <path class="ln" d="M305 266 V300 H660 V320 H690" marker-end="url(#ar)"/><text class="lb" x="560" y="294">sendMessage</text>
-    <path class="ld" d="M797 248 V290" marker-end="url(#ar)"/><text class="lb" x="804" y="274">Mini App</text>
+    <path class="ld" d="M797 264 V290" marker-end="url(#ar)"/><text class="lb" x="804" y="281">Mini App</text>
     <path class="ld" d="M166 340 H192 V240 H210" marker-end="url(#ar)"/><text class="lb" x="30" y="300">dispatch каждые 30 мин</text>
     <path class="ld" d="M166 392 H200 V382 H210" marker-end="url(#ar)"/>
   </svg>
@@ -168,14 +169,14 @@
         <li>Бот @MA_Prosthetics_bot: компании, новости (публикация, блок), ширина сбора, истории</li>
         <li>Бот отвечает только администратору; остальным — ссылка на Атлас и канал</li>
       </ul></div>
-    <div class="node"><span class="tag t-out">Витрины</span><h3>Монитор, Атлас, Архитектура</h3>
+    <div class="node"><span class="tag t-out">Витрины</span><h3>Монитор, Атлас, Мультипликаторы, Архитектура</h3>
       <p><code>build_balance.py</code> собирает <code>balance.json</code>; dashboard.yml публикует страницы в публичный репозиторий на GitHub Pages.</p>
       <ul>
         <li>Обновление сразу при правке страниц или данных и по расписанию раз в 2 часа</li>
         <li>Монитор — баланс очереди, ширина сбора, истории</li>
         <li>Атлас — каталог компаний с фильтрами, карта «продукты × география», истории (вышедшие и «скоро в канале»), новости со ссылками на источники</li>
         <li>Атлас работает и как Telegram Mini App: тема Telegram, кнопка «Назад», ссылки через клиент</li>
-        <li>Мультипликаторы публичных компаний (EV/выручка, EV/EBITDA LTM, MCap) — <code>multiples.json</code>, обновляет <code>multiples.yml</code> 1-го числа месяца из Yahoo Finance</li>
+        <li>Мультипликаторы — отдельная вкладка дашборда (<code>multiples.html</code>): EV/выручка, EV/EBITDA LTM, MCap публичных компаний; <code>multiples.json</code> обновляет <code>multiples.yml</code> 1-го числа месяца из Yahoo Finance</li>
       </ul></div>
   </div>
 </section>
@@ -190,7 +191,7 @@
         <tr><td class="t">09:23–19:53, :23/:53</td><td>Проверка нормы, пост</td><td>n8n</td></tr>
         <tr><td class="t">11:23, 16:23</td><td>История компании</td><td>тот же publish</td></tr>
         <tr><td class="t">~13:23 по датам</td><td>Промо Атласа</td><td>тот же publish</td></tr>
-        <tr><td class="t">при правке + 2 ч</td><td>Монитор, Атлас, Архитектура</td><td>push / GitHub-cron</td></tr>
+        <tr><td class="t">при правке + 2 ч</td><td>Все страницы дашборда</td><td>push / GitHub-cron</td></tr>
         <tr><td class="t">1-го числа, ~09:00</td><td>Мультипликаторы</td><td>GitHub-cron → дашборд</td></tr>
       </tbody></table></div>
   </div>
@@ -211,6 +212,7 @@
   <div class="tbl"><table>
     <thead><tr><th>Дата</th><th>Изменение</th></tr></thead>
     <tbody>
+      <tr><td class="t">03.11.2026</td><td>«Мультипликаторы» перенесены из Атласа (и Mini App) в отдельную вкладку дашборда — multiples.html.</td></tr>
       <tr><td class="t">02.11.2026</td><td>Атлас: вкладка «Мультипликаторы» — EV/выручка и EV/EBITDA LTM, MCap по публичным компаниям, средние по сегментам; ежемесячное обновление (refresh_multiples.py + multiples.yml, Yahoo Finance), после него дашборд публикуется по workflow_run.</td></tr>
       <tr><td class="t">02.11.2026</td><td>Атлас: фильтр «Сегмент» и карта отрасли учитывают все сегменты компании, а не только основной (Моторика — и UL, и NEU).</td></tr>
       <tr><td class="t">02.11.2026</td><td>Раздел «Архитектура» перенесён в дашборд. Атлас как Telegram Mini App (t.me/MA_Prosthetics_bot/atlas); промо-пост по расписанию; бот закрыт белым списком; витрины публикуются сразу при правке; хирургические роботы исключены из сбора; усилен дедуп (сделки двух компаний, общие имена собственные).</td></tr>

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-02T23:29:24+00:00",
+  "generated_at": "2026-11-03T06:32:26+00:00",
   "totals": {
     "total": 211,
-    "new": 27,
-    "posted": 167,
+    "new": 26,
+    "posted": 168,
     "blocked": 17,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 95,
-  "published_30d": 67,
+  "published_30d": 68,
   "series": [
     {
       "date": "2026-10-05",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-03",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1713,7 +1713,7 @@
       "date": "2026-10-28",
       "company": "ExoAtlet Global",
       "title": "ExoAtlet Global примет участие в выставке MEDICA 2026 в Дюссельдорфе",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.medica-tradefair.com/vis/v1/en/exhprofiles/f0D1zdCcT96UfjNlj53uew"
     },
