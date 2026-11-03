@@ -31,6 +31,11 @@
   /* в Telegram — компактнее сверху, без лишних отступов */
   html.in-tg .wrap{padding-top:14px}
   html.in-tg .tg-only-hide{display:none}
+  /* меню разделов дашборда — только на сайте, в Telegram Mini App скрыто (tg-only-hide) */
+  nav.sections{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin:0 0 22px}
+  nav.sections a{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--muted);text-decoration:none;padding:9px 12px;border-bottom:2px solid transparent;margin-bottom:-1px}
+  nav.sections a:hover{color:var(--ink)}
+  nav.sections a.on{color:var(--teal);border-bottom-color:var(--teal)}
   ul.feed a, ul.mlist a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--muted)}
   ul.feed a:hover, ul.mlist a:hover{color:var(--teal)}
   *{box-sizing:border-box}
@@ -137,6 +142,12 @@
 </head>
 <body>
 <div class="wrap">
+  <nav class="sections tg-only-hide">
+    <a href="./">Монитор</a>
+    <a class="on" href="catalog.html">Атлас отрасли</a>
+    <a href="multiples.html">Мультипликаторы</a>
+    <a href="architecture.html">Архитектура</a>
+  </nav>
   <p class="eyebrow">Атлас отрасли · O&P</p>
   <h1>Компании протезирования и реабилитации</h1>
   <p class="lede tg-only-hide">Каталог отслеживаемых компаний, их истории и новости из канала — в одном месте,
