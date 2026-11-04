@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T12:06:39+00:00",
+  "generated_at": "2026-11-04T15:41:41+00:00",
   "totals": {
     "total": 219,
-    "new": 29,
-    "posted": 173,
+    "new": 28,
+    "posted": 174,
     "blocked": 17,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 96,
-  "published_30d": 71,
+  "published_30d": 72,
   "series": [
     {
       "date": "2026-10-06",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-04",
       "added": 0,
-      "published": 2,
+      "published": 3,
       "width": null
     }
   ],
@@ -1785,7 +1785,7 @@
       "date": "2026-10-28",
       "company": "Blue Arbor Technologies",
       "title": "Стартап Blue Arbor Technologies привлёк $10,5 млн инвестиций для нейромышечных интерфейсов протезов",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.techcentury.com/2026/10/28/ann-arbor-biotech-firm-raises-10-5-million-for-better-control-of-prosthetics/"
     },
@@ -4051,7 +4051,7 @@
         },
         {
           "text": "Помимо Digital Socket, в портфеле Hugo Dynamics заявлены продукты под марками RoFT, HeraFT, EZHEAM и Limenover — линейка протезных и ассистивных решений для повседневного использования. Публичных данных о компании пока немного. Вывод для отрасли: Hugo Dynamics — из тех молодых азиатских брендов, за которыми стоит следить именно в сегменте цифровых гильз, где технологический разрыв с ручным протезированием только начинает сокращаться.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
