@@ -97,7 +97,7 @@
 
     <rect class="bx gh" x="210" y="56" width="190" height="80" rx="8"/><text class="ttl" x="224" y="84">harvest.yml</text><text class="sub" x="224" y="104">harvest.py · ширина 1–7</text><text class="sub" x="224" y="122">раз в 2 дня, ~05:19 МСК</text>
     <rect class="bx gh" x="420" y="56" width="190" height="98" rx="8"/><text class="ttl" x="434" y="84">Данные в репо</text><text class="sub" x="434" y="104">news_queue.jsonl</text><text class="sub" x="434" y="122">companies.md</text><text class="sub" x="434" y="140">facts.jsonl · promo.json</text>
-    <rect class="bx gh" x="210" y="186" width="190" height="80" rx="8"/><text class="ttl" x="224" y="214">publish.yml</text><text class="sub" x="224" y="234">дедуп → publish.py</text><text class="sub" x="224" y="252">новости·истории·промо</text>
+    <rect class="bx gh" x="210" y="186" width="190" height="80" rx="8"/><text class="ttl" x="224" y="214">publish.yml</text><text class="sub" x="224" y="234">дедуп+Haiku → publish.py</text><text class="sub" x="224" y="252">новости·истории·промо</text>
     <rect class="bx gh" x="420" y="186" width="190" height="80" rx="8"/><text class="ttl" x="434" y="214">dashboard.yml</text><text class="sub" x="434" y="234">build_balance.py</text><text class="sub" x="434" y="252">push + каждые 2 ч</text>
     <rect class="bx gh" x="210" y="330" width="400" height="104" rx="8"/><text class="ttl" x="224" y="356">Ручные инструменты (workflow_dispatch)</text><text class="sub" x="224" y="378">check.yml — проверить ссылку, добавить, опубликовать</text><text class="sub" x="224" y="396">facts.yml — опубликовать / снять историю</text><text class="sub" x="224" y="414">publish.yml — --list / --id / --block / count</text>
 
@@ -154,6 +154,7 @@
         <li>Сделка двух компаний: обе названы в обоих заголовках ± 3 дня</li>
         <li>Одна сумма сделки («10,5 млн») у той же компании (или названной в тексте) ± 3 дня</li>
         <li>Перед публикацией — шаг «Dedup queue» (<code>dedup_scan.py --apply</code>)</li>
+        <li>Смысловая проверка (<code>llm_dedup.py</code>, Haiku): кандидат против постов канала за 45 дней. Модель вызывается, только если были посты о той же компании. Вердикты: новое → пост; повтор → blocked; новые важные детали → пост «К новости про …: новые детали» ответом на исходный. Сбой API — обычная публикация</li>
       </ul></div>
     <div class="node"><span class="tag t-gh">Публикация</span><h3>Публикатор</h3>
       <p><code>publish.py --auto</code> держит дневную норму. Пост — HTML с эмодзи, хэштегами и строкой «дата · источник».</p>
@@ -213,6 +214,7 @@
   <div class="tbl"><table>
     <thead><tr><th>Дата</th><th>Изменение</th></tr></thead>
     <tbody>
+      <tr><td class="t">04.11.2026</td><td>Гибридный дедуп: перед публикацией Haiku сравнивает новость с постами за 45 дней (только при похожих по компании); повторы блокируются, важные новые детали выходят постом-дополнением. Бэктест — workflow <code>dedup-backtest</code>.</td></tr>
       <tr><td class="t">04.11.2026</td><td>Дедуп: правило «одна сумма сделки ± 3 дня» — ловит пересказы одной сделки разными словами (четвёртый пост про Blue Arbor 04.11).</td></tr>
       <tr><td class="t">03.11.2026</td><td>В Атласе на сайте — меню разделов дашборда (Монитор · Атлас · Мультипликаторы · Архитектура); в Telegram Mini App оно скрыто.</td></tr>
       <tr><td class="t">03.11.2026</td><td>«Мультипликаторы» перенесены из Атласа (и Mini App) в отдельную вкладку дашборда — multiples.html.</td></tr>
