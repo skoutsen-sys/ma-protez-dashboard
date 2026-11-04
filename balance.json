@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T02:19:32+00:00",
+  "generated_at": "2026-11-04T12:06:39+00:00",
   "totals": {
     "total": 219,
-    "new": 31,
-    "posted": 171,
+    "new": 29,
+    "posted": 173,
     "blocked": 17,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 96,
-  "published_30d": 69,
+  "published_30d": 71,
   "series": [
     {
       "date": "2026-10-06",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-04",
       "added": 0,
-      "published": 0,
+      "published": 2,
       "width": null
     }
   ],
@@ -1641,7 +1641,7 @@
       "date": "2026-11-02",
       "company": "TASKA Prosthetics",
       "title": "TASKA Prosthetics назначила нового коммерческого директора для американского рынка",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://opedge.com/taska-prosthetics-names-commercial-director/"
     },
@@ -1713,7 +1713,7 @@
       "date": "2026-10-29",
       "company": "Angel Robotics",
       "title": "Экзоскелет Angel Suit H10 получил регистрацию в Таиланде",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://exoskeletonreport.com/2026/11/exoskeleton-report-weekly-newsletter-archive-october-week-44-2026/"
     },
@@ -4047,7 +4047,7 @@
         },
         {
           "text": "Ключевое направление Hugo Dynamics — Digital Socket, цифровое изготовление протезной гильзы. Это ответ на главную боль LL-протезирования: посадка и комфорт культи, которые в классической технологии зависят от ручного мастерства протезиста. Цифровой подход обещает повторяемость и точность геометрии гильзы. Вывод для отрасли: гильза — самый индивидуальный и самый проблемный узел протеза, и именно её оцифровка сейчас главный фронт конкуренции по всему миру.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Помимо Digital Socket, в портфеле Hugo Dynamics заявлены продукты под марками RoFT, HeraFT, EZHEAM и Limenover — линейка протезных и ассистивных решений для повседневного использования. Публичных данных о компании пока немного. Вывод для отрасли: Hugo Dynamics — из тех молодых азиатских брендов, за которыми стоит следить именно в сегменте цифровых гильз, где технологический разрыв с ручным протезированием только начинает сокращаться.",
