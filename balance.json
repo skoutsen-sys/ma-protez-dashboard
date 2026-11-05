@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-05T09:28:46+00:00",
+  "generated_at": "2026-11-05T18:00:08+00:00",
   "totals": {
-    "total": 219,
-    "new": 26,
-    "posted": 176,
+    "total": 225,
+    "new": 29,
+    "posted": 179,
     "blocked": 17,
     "companies": 83
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 96,
-  "published_30d": 72,
+  "added_30d": 102,
+  "published_30d": 75,
   "series": [
     {
       "date": "2026-10-07",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-05",
-      "added": 0,
-      "published": 1,
-      "width": null
+      "added": 6,
+      "published": 4,
+      "width": 3
     }
   ],
   "companies": [
@@ -717,7 +717,7 @@
       "size": "S",
       "owner": "Частная (VC)",
       "site": "bionicm.com",
-      "news_count": 1,
+      "news_count": 2,
       "story_count": 5
     },
     {
@@ -867,7 +867,7 @@
       "size": "M",
       "owner": "Публичная (NYSE: MYO)",
       "site": "myomo.com",
-      "news_count": 4,
+      "news_count": 5,
       "story_count": 5
     },
     {
@@ -1043,7 +1043,7 @@
       "size": "XL",
       "owner": "Публичная (NYSE: ZBH)",
       "site": "zimmerbiomet.com",
-      "news_count": 12,
+      "news_count": 13,
       "story_count": 6
     },
     {
@@ -1630,6 +1630,38 @@
       "url": "https://internationalconferencealerts.com/event-icopii-delhi-in-202611-101284339"
     },
     {
+      "date": "2026-11-05",
+      "company": "Zimmer Biomet",
+      "title": "Zimmer Biomet повысила прогноз роста выручки и EPS на 2026 год",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.tradingkey.com/news/transcripts/262275328-"
+    },
+    {
+      "date": "2026-11-05",
+      "company": "CU Anschutz",
+      "title": "Новые рекомендации для остеоинтегрированных протезов конечностей",
+      "status": "posted",
+      "region": "world",
+      "url": "https://medicalxpress.com/news/2026-11-bone-anchored-prosthetic-limbs.html"
+    },
+    {
+      "date": "2026-11-04",
+      "company": "LOOP (Uniformed Services University of the Health Sciences)",
+      "title": "Два исследования остеоинтеграции в проекте LOOP установили базовые показатели для боевых ранений",
+      "status": "posted",
+      "region": "world",
+      "url": "https://news.usuhs.edu/2026/11/warfighter-amputee-recovery-two-loop-trials.html"
+    },
+    {
+      "date": "2026-11-03",
+      "company": "Myomo",
+      "title": "Myomo объявляет об участии в 17-й ежегодной конференции Craig Hallum Alpha Select",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.biospace.com/press-releases/myomo-to-attend-the-17th-annual-craig-hallum-alpha-select-conference"
+    },
+    {
       "date": "2026-11-02",
       "company": "TASKA Prosthetics",
       "title": "TASKA Prosthetics открывает американскую базу операций в Солт-Лейк-Сити",
@@ -1652,6 +1684,14 @@
       "status": "posted",
       "region": "world",
       "url": "https://stockhouse.com/news/press-releases/2026/11/02/myomo-to-report-third-quarter-2026-financial-results-on-november-9"
+    },
+    {
+      "date": "2026-11-02",
+      "company": "Hanger Inc.",
+      "title": "Hanger объявляет об приобретении Bionic Power, расширяя доступ к инновационным решениям мобильности с Agilik™ MPKAFO",
+      "status": "new",
+      "region": "world",
+      "url": "https://corporate.hanger.com/news/2026/hanger-announces-acquisition-of-bionic-power-expanding-access-to-innovative-mobility-solutions-with-the-agilik-mpkafo/"
     },
     {
       "date": "2026-11-01",
@@ -1716,6 +1756,14 @@
       "status": "posted",
       "region": "world",
       "url": "https://exoskeletonreport.com/2026/11/exoskeleton-report-weekly-newsletter-archive-october-week-44-2026/"
+    },
+    {
+      "date": "2026-10-29",
+      "company": "BionicM",
+      "title": "BionicM привлекает $5,46 млн на производство моторизованных протезов ног",
+      "status": "new",
+      "region": "world",
+      "url": "https://opedge.com/bionicm-raises-5m-for-mpk-production/"
     },
     {
       "date": "2026-10-28",
@@ -4065,7 +4113,7 @@
         },
         {
           "text": "Технология Instalimb — автоматизированное проектирование протеза с помощью ИИ и специализированного 3D-CAD плюс печать на 3D-принтерах, заточенных под протезы и ортезы. Компания заявляет сокращение стоимости и сроков изготовления примерно в десять раз против классического метода. Вывод для отрасли: связка ИИ-дизайн плюс аддитивное производство превращает индивидуальный протез из ручного ремесла в масштабируемый технологический процесс — ключ к массовой доступности.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "География Instalimb растёт от точечных пилотов к международной сети: работа на Филиппинах с 2019 года, в Индии — с 2022-го, более 2500 обслуженных пользователей. Модель — прямое присутствие в странах с высокой потребностью и низкой платёжеспособностью. Вывод для отрасли: вместо экспорта дорогих компонентов Instalimb локализует само производство протезов на местах — это меняет экономику доступа к протезированию в Глобальном Юге.",
