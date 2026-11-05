@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-05T00:53:02+00:00",
+  "generated_at": "2026-11-05T07:13:59+00:00",
   "totals": {
     "total": 219,
-    "new": 27,
-    "posted": 175,
+    "new": 26,
+    "posted": 176,
     "blocked": 17,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 96,
-  "published_30d": 71,
+  "published_30d": 72,
   "series": [
     {
       "date": "2026-10-07",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-05",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1769,7 +1769,7 @@
       "date": "2026-10-28",
       "company": "Орто-Инновации Москва",
       "title": "Совет пациентам: как выбрать комфортный формат общения после ампутации",
-      "status": "new",
+      "status": "posted",
       "region": "RU",
       "url": "https://ortomoscow.ru/"
     },
