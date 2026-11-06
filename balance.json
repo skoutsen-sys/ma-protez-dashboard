@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-06T15:54:48+00:00",
+  "generated_at": "2026-11-06T21:28:56+00:00",
   "totals": {
     "total": 225,
-    "new": 27,
-    "posted": 181,
+    "new": 26,
+    "posted": 182,
     "blocked": 17,
     "companies": 83
   },
@@ -13,14 +13,8 @@
     "max": 7
   },
   "added_30d": 94,
-  "published_30d": 75,
+  "published_30d": 74,
   "series": [
-    {
-      "date": "2026-10-08",
-      "added": 0,
-      "published": 2,
-      "width": null
-    },
     {
       "date": "2026-10-09",
       "added": 4,
@@ -192,7 +186,13 @@
     {
       "date": "2026-11-06",
       "added": 0,
-      "published": 2,
+      "published": 3,
+      "width": null
+    },
+    {
+      "date": "2026-11-07",
+      "added": 0,
+      "published": 0,
       "width": null
     }
   ],
@@ -1761,7 +1761,7 @@
       "date": "2026-10-29",
       "company": "BionicM",
       "title": "BionicM привлекает $5,46 млн на производство моторизованных протезов ног",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://opedge.com/bionicm-raises-5m-for-mpk-production/"
     },
