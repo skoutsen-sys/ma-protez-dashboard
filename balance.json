@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-05T23:37:43+00:00",
+  "generated_at": "2026-11-06T06:42:13+00:00",
   "totals": {
     "total": 225,
-    "new": 29,
-    "posted": 179,
+    "new": 28,
+    "posted": 180,
     "blocked": 17,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 94,
-  "published_30d": 73,
+  "published_30d": 74,
   "series": [
     {
       "date": "2026-10-08",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-06",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1657,7 +1657,7 @@
       "date": "2026-11-03",
       "company": "Myomo",
       "title": "Myomo объявляет об участии в 17-й ежегодной конференции Craig Hallum Alpha Select",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.biospace.com/press-releases/myomo-to-attend-the-17th-annual-craig-hallum-alpha-select-conference"
     },
