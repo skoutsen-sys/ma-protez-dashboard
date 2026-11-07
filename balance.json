@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-07T08:46:17+00:00",
+  "generated_at": "2026-11-07T16:25:04+00:00",
   "totals": {
     "total": 225,
-    "new": 25,
-    "posted": 183,
+    "new": 23,
+    "posted": 185,
     "blocked": 17,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 94,
-  "published_30d": 75,
+  "published_30d": 77,
   "series": [
     {
       "date": "2026-10-09",
@@ -192,8 +192,8 @@
     {
       "date": "2026-11-07",
       "added": 0,
-      "published": 1,
-      "width": null
+      "published": 3,
+      "width": 3
     }
   ],
   "companies": [
@@ -1889,7 +1889,7 @@
       "date": "2026-10-24",
       "company": "Alt-Bionics",
       "title": "Alt-Bionics участвует в AOPA 2026 с демонстрацией Genesis Hand",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://aopaassembly26.eventscribe.net/fsPopup.asp?rnd=0.301948&BoothID=865104&mode=exhibitorInfo"
     },
@@ -1913,7 +1913,7 @@
       "date": "2026-10-23",
       "company": "Ottobock",
       "title": "Ottobock сообщила о результатах первой половины 2026 года с улучшением маржи",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-stock-results-are-due-november-12-for-ottobock-stock/70399847"
     },
@@ -4985,7 +4985,7 @@
       "posts": [
         {
           "text": "Разбираем Nabtesco — редкий случай в отрасли: протезное направление здесь часть промышленного гиганта. Nabtesco Corporation (Япония, торгуется на TSE, тикер 6268) — крупный производитель прецизионных редукторов и компонентов для робототехники, авиации, ж/д и автоматики. Протезы делает её подразделение Mobility Assist. Вывод: сильная инженерная база концерна работает и на нишевый протезный продукт.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Ключевой продукт Nabtesco в протезировании — коленный модуль ALLUX 2. Это микропроцессорное колено с 4-осевой полицентрической (4-bar) механикой и управляемым процессором гидравлическим цилиндром: плавная фаза переноса на разной скорости ходьбы. Режимы (ходьба, велосипед, блокировка, ограничение угла) переключаются через смартфон. Технически — прямой конкурент C-Leg и Rheo Knee.",
