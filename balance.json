@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-08T13:04:02+00:00",
+  "generated_at": "2026-11-08T13:33:43+00:00",
   "totals": {
-    "total": 225,
-    "new": 21,
-    "posted": 187,
-    "blocked": 17,
+    "total": 240,
+    "new": 31,
+    "posted": 188,
+    "blocked": 21,
     "companies": 83
   },
   "width": {
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 90,
-  "published_30d": 77,
+  "added_30d": 105,
+  "published_30d": 78,
   "series": [
     {
       "date": "2026-10-10",
@@ -191,8 +191,8 @@
     },
     {
       "date": "2026-11-08",
-      "added": 0,
-      "published": 2,
+      "added": 15,
+      "published": 3,
       "width": 3
     }
   ],
@@ -212,7 +212,7 @@
       "size": "XL",
       "owner": "Публичная (Nasdaq Copenhagen: OSSR)",
       "site": "ossur.com",
-      "news_count": 5,
+      "news_count": 6,
       "story_count": 7
     },
     {
@@ -301,7 +301,7 @@
       "size": "L",
       "owner": "Частная",
       "site": "proteor.com",
-      "news_count": 1,
+      "news_count": 2,
       "story_count": 5
     },
     {
@@ -717,7 +717,7 @@
       "size": "S",
       "owner": "Частная (VC)",
       "site": "bionicm.com",
-      "news_count": 2,
+      "news_count": 3,
       "story_count": 5
     },
     {
@@ -784,7 +784,7 @@
       "size": "M",
       "owner": "Публичная (Nasdaq: EKSO)",
       "site": "eksobionics.com",
-      "news_count": 2,
+      "news_count": 3,
       "story_count": 5
     },
     {
@@ -800,7 +800,7 @@
       "size": "M",
       "owner": "Частная (VC)",
       "site": "wandercraft.eu",
-      "news_count": 5,
+      "news_count": 6,
       "story_count": 6
     },
     {
@@ -915,7 +915,7 @@
       "size": "L",
       "owner": "Частная",
       "site": "neuralink.com",
-      "news_count": 2,
+      "news_count": 4,
       "story_count": 6
     },
     {
@@ -1436,7 +1436,7 @@
       "size": "S",
       "owner": "Частная",
       "site": "steplife.ru",
-      "news_count": 5,
+      "news_count": 6,
       "story_count": 3
     },
     {
@@ -1567,7 +1567,7 @@
       "size": "M",
       "owner": "Частная (инвесторы Фонд НТИ, фонд «Восход», частные инвесторы; резидент Сколково)",
       "site": "neiry.ru",
-      "news_count": 3,
+      "news_count": 5,
       "story_count": 5
     },
     {
@@ -1590,12 +1590,28 @@
   ],
   "news": [
     {
+      "date": "2027-03-22",
+      "company": "ISPO (International Society for Prosthetics and Orthotics)",
+      "title": "ISPO 21-й Всемирный конгресс 2027 в Бангкоке — глобальная конференция по протезированию и ортопедии",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.ispo-congress.com/"
+    },
+    {
       "date": "2026-12-02",
       "company": "Saudi International Rehab Expo",
       "title": "Saudi International Rehab Expo 2026 в Эр-Рияде",
       "status": "posted",
       "region": "world",
       "url": "https://www.saudirehabexpo.com/"
+    },
+    {
+      "date": "2026-11-25",
+      "company": "orto Medical Care / FEDOP",
+      "title": "Orto Medical Care 2026 — профессиональная ярмарка ортопедии и протезирования в Мадриде",
+      "status": "new",
+      "region": "world",
+      "url": "https://ortomedicalcare.com/"
     },
     {
       "date": "2026-11-21",
@@ -1622,12 +1638,60 @@
       "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-leads-usd-10-5-million-blue-arbor-round-while-ottobock-stock-sits-below-eur-49-00/70427102"
     },
     {
+      "date": "2026-11-11",
+      "company": "Wandercraft",
+      "title": "Wandercraft объявляет участие в съезде AAPM&R (11–14 ноября 2026) с демонстрацией Atalante и EVE",
+      "status": "new",
+      "region": "world",
+      "url": "https://de.wandercraft.eu/news"
+    },
+    {
+      "date": "2026-11-11",
+      "company": "Ekso Bionics",
+      "title": "Ekso Bionics участвует в AAPM&R 2026 (11–14 ноября) с показом экзоскелетных решений",
+      "status": "new",
+      "region": "world",
+      "url": "https://eksobionics.com/news-and-events/"
+    },
+    {
       "date": "2026-11-08",
       "company": "ICOPII",
       "title": "Международная конференция ортопедических протезов и имплантационных инноваций в Дели",
       "status": "posted",
       "region": "world",
       "url": "https://internationalconferencealerts.com/event-icopii-delhi-in-202611-101284339"
+    },
+    {
+      "date": "2026-11-08",
+      "company": "Össur",
+      "title": "Össur провела официальный запуск Power Knee в Ливингстоне (Шотландия)",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.linkedin.com/posts/katy-farr-59828919_look-forward-to-welcoming-you-to-%C3%B6ssur-scotland-activity-7118611988045250561-84-B"
+    },
+    {
+      "date": "2026-11-07",
+      "company": "Neuralink",
+      "title": "Илон Маск заявил, что Neuralink в ближайшие годы поможет людям снова ходить и работать руками",
+      "status": "blocked",
+      "region": "world",
+      "url": "https://teslanorth.com/2026/11/07/musk-neuralink-walk-hands-coming-years/"
+    },
+    {
+      "date": "2026-11-06",
+      "company": "Neuralink",
+      "title": "Neuralink сообщил об имплантации интерфейса мозг‑компьютер в домашнюю кошку",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.teslarati.org/neuralink-reports-first-brain-computer-interface-implant-in-a-domestic-cat-thor/index.html"
+    },
+    {
+      "date": "2026-11-06",
+      "company": "STEPLIFE (ООО Степлайф)",
+      "title": "Steplife публикует вакансию интернет-маркетолога (обновление вакансий — ноябрь 2026)",
+      "status": "blocked",
+      "region": "RU",
+      "url": "https://remote-job.ru/search?companyName=STEPLIFE+%28%D0%9E%D0%9E%D0%9E+%D0%A1%D1%82%D0%B5%D0%BF%D0%BB%D0%B0%D0%B9%D1%84%29"
     },
     {
       "date": "2026-11-05",
@@ -1646,6 +1710,14 @@
       "url": "https://medicalxpress.com/news/2026-11-bone-anchored-prosthetic-limbs.html"
     },
     {
+      "date": "2026-11-05",
+      "company": "Neiry (АО «Нейрореволюция»)",
+      "title": "Neiry проводит ежегодную конференцию Neiry.RoundB (5 ноября 2026)",
+      "status": "new",
+      "region": "RU",
+      "url": "https://t.me/s/itakblet?after=717"
+    },
+    {
       "date": "2026-11-04",
       "company": "LOOP (Uniformed Services University of the Health Sciences)",
       "title": "Два исследования остеоинтеграции в проекте LOOP установили базовые показатели для боевых ранений",
@@ -1654,12 +1726,36 @@
       "url": "https://news.usuhs.edu/2026/11/warfighter-amputee-recovery-two-loop-trials.html"
     },
     {
+      "date": "2026-11-04",
+      "company": "Neiry",
+      "title": "Neiry открывает вакансии по международному выводу продуктов (объявление от 4 ноября 2026)",
+      "status": "blocked",
+      "region": "RU",
+      "url": "https://www.rabotajob.ru/companies/neiry/"
+    },
+    {
       "date": "2026-11-03",
       "company": "Myomo",
       "title": "Myomo объявляет об участии в 17-й ежегодной конференции Craig Hallum Alpha Select",
       "status": "posted",
       "region": "world",
       "url": "https://www.biospace.com/press-releases/myomo-to-attend-the-17th-annual-craig-hallum-alpha-select-conference"
+    },
+    {
+      "date": "2026-11-03",
+      "company": "BrainCo",
+      "title": "Компания BrainCo рассматривает расширение бизнеса за пределы нейротеха и протезирования",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.moneycontrol.com/news/business/neuralinks-china-rival-targets-obesity-with-electronic-glp-1-14067616.html"
+    },
+    {
+      "date": "2026-11-03",
+      "company": "PROTEOR",
+      "title": "PROTEOR представила два новых протезных стопа EXONEO CORE и HOPPER OUTSIDER",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.prnewswire.com/news-releases/proteor-expands-prosthetic-foot-portfolio-with-the-launch-of-exoneo-core-and-hopper-outsider-302928123.html"
     },
     {
       "date": "2026-11-02",
@@ -1694,12 +1790,36 @@
       "url": "https://corporate.hanger.com/news/2026/hanger-announces-acquisition-of-bionic-power-expanding-access-to-innovative-mobility-solutions-with-the-agilik-mpkafo/"
     },
     {
+      "date": "2026-11-02",
+      "company": "Группа компаний «МЕТИЗ»",
+      "title": "ГК «МЕТИЗ» показала разработки для протезирования на выставке и семинарах во Вьетнаме",
+      "status": "new",
+      "region": "RU",
+      "url": "https://riamo.ru/news/ekonomika/podmoskovnaja-kompaniya-metiz-predstavila-razrabotki-dlja-protezov-vo-vetname/"
+    },
+    {
+      "date": "2026-11-02",
+      "company": "BionicM",
+      "title": "BionicM привлекла первую закрытую часть серии B на сумму ¥710 млн для масштабирования производства приводных протезов",
+      "status": "new",
+      "region": "world",
+      "url": "https://roundos.ai/funding/deals/bionicm-series-b-first-close-2026-11-02"
+    },
+    {
       "date": "2026-11-01",
       "company": "ISPO Canada",
       "title": "Конференция ортопедии, протезирования и реабилитации OPRC 2026",
       "status": "posted",
       "region": "world",
       "url": "https://opcanada.ca/page/OPRC_Conference_2026"
+    },
+    {
+      "date": "2026-11-01",
+      "company": "Ottobock SE & Co. KGaA",
+      "title": "Аналитика: Ottobock анонсирована к публикации квартального отчёта и квартального обновления на 12 ноября 2026",
+      "status": "blocked",
+      "region": "world",
+      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-stock-heads-toward-november-12-quarterly-update/70441925"
     },
     {
       "date": "2026-10-31",
@@ -4993,7 +5113,7 @@
         },
         {
           "text": "Бизнес-логика Nabtesco в протезах. Для диверсифицированного концерна (редукторы, гидравлика, точная механика) коленный модуль — естественная синергия: гидравлика и прецизионная механика у компании в ДНК. Протезное направление невелико в общей выручке, но опирается на промышленные компетенции и R&D материнской компании — это устойчивее, чем у чистого стартапа.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Как Nabtesco выходит на рынки протезов — через партнёров и собственные сервисные структуры. В США модуль ALLUX распространяет Proteor; в Европе обслуживание ALLUX 2 в 2026 году перешло к Nabtesco Precision Europe (Дюссельдорф). Модель «свой продукт плюс локальные дистрибьюторы и сервис» типична для компонентного игрока, продающего через протезные мастерские.",
