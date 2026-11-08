@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-08T13:33:43+00:00",
+  "generated_at": "2026-11-08T13:36:46+00:00",
   "totals": {
     "total": 240,
-    "new": 31,
+    "new": 32,
     "posted": 188,
-    "blocked": 21,
+    "blocked": 20,
     "companies": 83
   },
   "width": {
@@ -1673,7 +1673,7 @@
       "date": "2026-11-07",
       "company": "Neuralink",
       "title": "Илон Маск заявил, что Neuralink в ближайшие годы поможет людям снова ходить и работать руками",
-      "status": "blocked",
+      "status": "new",
       "region": "world",
       "url": "https://teslanorth.com/2026/11/07/musk-neuralink-walk-hands-coming-years/"
     },
