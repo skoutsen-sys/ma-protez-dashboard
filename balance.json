@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-08T08:58:21+00:00",
+  "generated_at": "2026-11-08T13:04:02+00:00",
   "totals": {
     "total": 225,
-    "new": 22,
-    "posted": 186,
+    "new": 21,
+    "posted": 187,
     "blocked": 17,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 90,
-  "published_30d": 76,
+  "published_30d": 77,
   "series": [
     {
       "date": "2026-10-10",
@@ -192,8 +192,8 @@
     {
       "date": "2026-11-08",
       "added": 0,
-      "published": 1,
-      "width": null
+      "published": 2,
+      "width": 3
     }
   ],
   "companies": [
@@ -2393,7 +2393,7 @@
       "date": "2026-10-01",
       "company": "Wandercraft",
       "title": "Wandercraft приобрела Ekso Bionics",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.globenewswire.com/news-release/2026/10/01/3373473/0/en/wandercraft-acquires-ekso-bionics-uniting-two-pioneers-to-advance-and-expand-robotic-mobility.html"
     },

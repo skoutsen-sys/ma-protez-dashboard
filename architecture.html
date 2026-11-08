@@ -72,7 +72,7 @@
 <header>
   <p class="eyebrow">Системная карта · @MA_Prosthetics</p>
   <h1>Как устроен канал «Бионика и реабилитация»</h1>
-  <p class="lede">Автономный конвейер новостей индустрии протезирования и реабилитации: сбор через Anthropic API, очередь в GitHub, публикация в Telegram по расписанию, бот управления, монитор и Атлас отрасли (он же Telegram Mini App). Своего сервера нет: всё работает в GitHub Actions, GitHub Pages и n8n.</p>
+  <p class="lede">Автономный конвейер новостей индустрии протезирования и реабилитации: сбор через LLM (ChatGPT API, запасной — Anthropic; выбор в <code>scripts/llm.py</code>), очередь в GitHub, публикация в Telegram по расписанию, бот управления, монитор и Атлас отрасли (он же Telegram Mini App). Своего сервера нет: всё работает в GitHub Actions, GitHub Pages и n8n.</p>
   <p class="note">Цифры (число компаний, новостей, историй, ширина сбора) здесь намеренно не приводятся — актуальные значения на вкладках «Монитор» и «Атлас отрасли».</p>
 </header>
 
@@ -92,12 +92,12 @@
     <text class="lb" x="204" y="38">GitHub · репозиторий MA-protez (приватный)</text>
 
     <rect class="bx ex" x="16" y="62" width="150" height="70" rx="8"/><text class="ttl" x="30" y="90">Веб-источники</text><text class="sub" x="30" y="110">СМИ, сайты компаний</text>
-    <rect class="bx ex" x="16" y="182" width="150" height="70" rx="8"/><text class="ttl" x="30" y="210">Anthropic API</text><text class="sub" x="30" y="230">Haiku + web_search</text>
+    <rect class="bx ex" x="16" y="182" width="150" height="70" rx="8"/><text class="ttl" x="30" y="210">LLM · llm.py</text><text class="sub" x="30" y="230">gpt-5-mini + web_search</text>
     <rect class="bx ex" x="16" y="320" width="150" height="96" rx="8"/><text class="ttl" x="30" y="348">n8n</text><text class="sub" x="30" y="368">будильник publish</text><text class="sub" x="30" y="386">бот MA-bot</text><text class="sub" x="30" y="404">(только админ)</text>
 
     <rect class="bx gh" x="210" y="56" width="190" height="80" rx="8"/><text class="ttl" x="224" y="84">harvest.yml</text><text class="sub" x="224" y="104">harvest.py · ширина 1–7</text><text class="sub" x="224" y="122">раз в 2 дня, ~05:19 МСК</text>
     <rect class="bx gh" x="420" y="56" width="190" height="98" rx="8"/><text class="ttl" x="434" y="84">Данные в репо</text><text class="sub" x="434" y="104">news_queue.jsonl</text><text class="sub" x="434" y="122">companies.md</text><text class="sub" x="434" y="140">facts.jsonl · promo.json</text>
-    <rect class="bx gh" x="210" y="186" width="190" height="80" rx="8"/><text class="ttl" x="224" y="214">publish.yml</text><text class="sub" x="224" y="234">дедуп+Haiku → publish.py</text><text class="sub" x="224" y="252">новости·истории·промо</text>
+    <rect class="bx gh" x="210" y="186" width="190" height="80" rx="8"/><text class="ttl" x="224" y="214">publish.yml</text><text class="sub" x="224" y="234">дедуп+LLM → publish.py</text><text class="sub" x="224" y="252">новости·истории·промо</text>
     <rect class="bx gh" x="420" y="186" width="190" height="80" rx="8"/><text class="ttl" x="434" y="214">dashboard.yml</text><text class="sub" x="434" y="234">build_balance.py</text><text class="sub" x="434" y="252">push + каждые 2 ч</text>
     <rect class="bx gh" x="210" y="330" width="400" height="104" rx="8"/><text class="ttl" x="224" y="356">Ручные инструменты (workflow_dispatch)</text><text class="sub" x="224" y="378">check.yml — проверить ссылку, добавить, опубликовать</text><text class="sub" x="224" y="396">facts.yml — опубликовать / снять историю</text><text class="sub" x="224" y="414">publish.yml — --list / --id / --block / count</text>
 
@@ -130,7 +130,7 @@
     <div class="node"><span class="tag t-gh">Сбор</span><h3>Сборщик harvest</h3>
       <p>Ищет события по компаниям из <code>companies.md</code> и по темам отрасли, классифицирует и пишет в очередь.</p>
       <ul>
-        <li>Haiku 4.5 + серверный web_search (платный, отдельный биллинг Anthropic)</li>
+        <li>LLM через <code>scripts/llm.py</code>: OpenAI gpt-5-mini + встроенный web_search (с 08.11.2026; запасной — Anthropic Haiku 4.5, переменная <code>LLM_PROVIDER</code>)</li>
         <li>«Ширина» 1–7: компании → отрасль → выставки → лица → наука/клиника → регуляторика/рынок РФ → смежные</li>
         <li>Авто-режим по буферу: меньше 15 новых — шире, больше 40 — уже</li>
         <li>Текст без кириллицы или с иероглифами переводится на русский; служебная разметка вырезается</li>
@@ -151,7 +151,7 @@
       <ul>
         <li>Ступень 1 — правила при записи в очередь (<code>append_news.py</code>)</li>
         <li>Ступень 2 — те же правила по всей очереди перед публикацией (<code>dedup_scan.py</code>)</li>
-        <li>Ступень 3 — смысловая проверка Haiku против постов за 45 дней (<code>llm_dedup.py</code>), только для спорных</li>
+        <li>Ступень 3 — смысловая проверка LLM против постов за 45 дней (<code>llm_dedup.py</code>), только для спорных</li>
         <li>Подробно — раздел «Защита от дублей» ниже</li>
       </ul></div>
     <div class="node"><span class="tag t-gh">Публикация</span><h3>Публикатор</h3>
@@ -182,8 +182,8 @@
 </section>
 
 <section>
-  <h2>Защита от дублей: сначала формальные признаки, потом Anthropic</h2>
-  <p class="lede">Одно событие пересказывают десятки СМИ разными словами. Дешёвые правила отсекают очевидные повторы, а модель Haiku смотрит только спорные случаи — так дедуп почти ничего не стоит.</p>
+  <h2>Защита от дублей: сначала формальные признаки, потом LLM</h2>
+  <p class="lede">Одно событие пересказывают десятки СМИ разными словами. Дешёвые правила отсекают очевидные повторы, а модель (LLM) смотрит только спорные случаи — так дедуп почти ничего не стоит.</p>
   <div class="tbl" style="margin-top:14px"><table>
     <thead><tr><th>Ступень</th><th>Когда и где</th><th>Что проверяет</th><th>Итог</th></tr></thead>
     <tbody>
@@ -193,8 +193,8 @@
       <tr><td class="t">2. Правила</td><td>Перед каждой публикацией, шаг «Dedup queue», <code>dedup_scan.py --apply</code></td>
         <td>Те же правила по всей очереди: ищет группы записей об одном событии.</td>
         <td>В группе остаётся одна запись, лишние → <code>blocked</code>. Бесплатно.</td></tr>
-      <tr><td class="t">3. Anthropic</td><td>В момент отправки поста, <code>llm_dedup.py</code> из <code>publish.py</code></td>
-        <td>Сначала фильтр без API: есть ли в канале за <b>45 дней</b> посты о той же компании (или она названа в тексте, или общее имя в заголовке). Нет — пост выходит без запроса. Есть — Haiku сравнивает новость с этими постами (до 25) по смыслу.</td>
+      <tr><td class="t">3. LLM</td><td>В момент отправки поста, <code>llm_dedup.py</code> из <code>publish.py</code></td>
+        <td>Сначала фильтр без API: есть ли в канале за <b>45 дней</b> посты о той же компании (или она названа в тексте, или общее имя в заголовке). Нет — пост выходит без запроса. Есть — LLM сравнивает новость с этими постами (до 25) по смыслу.</td>
         <td>Вердикт модели (ниже). Запрос — доли цента; нужен примерно для 60% новостей.</td></tr>
     </tbody></table></div>
   <div class="cols" style="margin-top:14px">
@@ -217,7 +217,7 @@
       </ol>
     </div>
   </div>
-  <p class="note">Модель — claude-haiku-4-5 (как в сборщике). Пример: сделка Ottobock → Blue Arbor вышла 4 раза; со ступенью 3 второй и третий пост стали бы «новыми деталями» ($10,5 млн, итог раунда $15,5 млн), четвёртый — отсеян.</p>
+  <p class="note">Модель — как в сборщике: gpt-5-mini (OpenAI), запасная — claude-haiku-4-5. Пример: сделка Ottobock → Blue Arbor вышла 4 раза; со ступенью 3 второй и третий пост стали бы «новыми деталями» ($10,5 млн, итог раунда $15,5 млн), четвёртый — отсеян.</p>
 </section>
 
 <section class="cols">
@@ -251,6 +251,7 @@
   <div class="tbl"><table>
     <thead><tr><th>Дата</th><th>Изменение</th></tr></thead>
     <tbody>
+      <tr><td class="t">08.11.2026</td><td>LLM вынесена в один модуль <code>scripts/llm.py</code>; основной провайдер — ChatGPT API (gpt-5-mini для сбора и дедупа, gpt-5 для проверки ссылки), Anthropic — запасной (<code>LLM_PROVIDER</code>). Причина: организация Anthropic заблокирована до верификации, сбор 07.11 дал 0 новостей.</td></tr>
       <tr><td class="t">05.11.2026</td><td>Отдельный раздел «Защита от дублей»: три ступени (правила при записи, правила по очереди, Anthropic при отправке), вердикты и контроль.</td></tr>
       <tr><td class="t">04.11.2026</td><td>Гибридный дедуп: перед публикацией Haiku сравнивает новость с постами за 45 дней (только при похожих по компании); повторы блокируются, важные новые детали выходят постом-дополнением. Бэктест — workflow <code>dedup-backtest</code>.</td></tr>
       <tr><td class="t">04.11.2026</td><td>Дедуп: правило «одна сумма сделки ± 3 дня» — ловит пересказы одной сделки разными словами (четвёртый пост про Blue Arbor 04.11).</td></tr>
