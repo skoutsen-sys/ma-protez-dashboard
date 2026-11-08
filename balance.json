@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-08T13:36:46+00:00",
+  "generated_at": "2026-11-08T16:39:33+00:00",
   "totals": {
     "total": 240,
-    "new": 32,
-    "posted": 188,
+    "new": 31,
+    "posted": 189,
     "blocked": 20,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 105,
-  "published_30d": 78,
+  "published_30d": 79,
   "series": [
     {
       "date": "2026-10-10",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-08",
       "added": 15,
-      "published": 3,
+      "published": 4,
       "width": 3
     }
   ],
@@ -1609,7 +1609,7 @@
       "date": "2026-11-25",
       "company": "orto Medical Care / FEDOP",
       "title": "Orto Medical Care 2026 — профессиональная ярмарка ортопедии и протезирования в Мадриде",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://ortomedicalcare.com/"
     },
