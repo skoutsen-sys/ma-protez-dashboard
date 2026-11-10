@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-10T04:06:07+00:00",
+  "generated_at": "2026-11-10T12:38:01+00:00",
   "totals": {
     "total": 254,
-    "new": 40,
-    "posted": 194,
-    "blocked": 20,
+    "new": 34,
+    "posted": 196,
+    "blocked": 24,
     "companies": 83
   },
   "width": {
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 117,
-  "published_30d": 80,
+  "published_30d": 82,
   "series": [
     {
       "date": "2026-10-12",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-10",
       "added": 0,
-      "published": 0,
+      "published": 2,
       "width": null
     }
   ],
@@ -1649,7 +1649,7 @@
       "date": "2026-11-23",
       "company": "EFSTM / ICPOE-26 (организатор)",
       "title": "Международная конференция по инженерии протезирования и ортопедии (Милан, 23–24 ноября 2026)",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://efstm.com/event/index.php?id=100954252"
     },
@@ -1673,7 +1673,7 @@
       "date": "2026-11-14",
       "company": "APOSM / организаторы Xiamen International Convention and Exhibition Center",
       "title": "Азиатская конференция и выставка по протезированию и ортопедии (Xiamen, 14–16 ноября 2026)",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.globalomp.com/expo/30083"
     },
@@ -1785,7 +1785,7 @@
       "date": "2026-11-05",
       "company": "Integrum AB (publ)",
       "title": "Integrum — главный спонсор и организатор обучающей сессии по OPRA на конгрессе GCCO 2026",
-      "status": "new",
+      "status": "blocked",
       "region": "world",
       "url": "https://storage.mfn.se/af71711e-f32a-4af2-befa-f2a9e7bcd169/integrum-legacy-sponsor-of-the-gcco-2026-hosts-opra-surgical-training-and-leads-symposium-on-the-ukrainian-experience.pdf"
     },
@@ -1793,7 +1793,7 @@
       "date": "2026-11-05",
       "company": "Lifeward Ltd.",
       "title": "Lifeward назначила Джоша Хекстера исполняющим обязанности генерального директора и Рами Авирама финансовым директором",
-      "status": "new",
+      "status": "blocked",
       "region": "world",
       "url": "https://ir.rewalk.com/static-files/c2b1f8f1-ab6b-47bc-abc4-21c02977b731"
     },
@@ -1849,7 +1849,7 @@
       "date": "2026-11-03",
       "company": "ЭкзоАтлет",
       "title": "Опубликован тендер на техобслуживание экзоскелета ExoAtlet 1 в Амурской области",
-      "status": "new",
+      "status": "blocked",
       "region": "RU",
       "url": "https://zakupki.tochka.com/search/32616540424/"
     },
@@ -2657,7 +2657,7 @@
       "date": "2026-09-30",
       "company": "Медтехнопроект",
       "title": "В Москве запустили производство биополимерных сосудистых протезов",
-      "status": "new",
+      "status": "blocked",
       "region": "RU",
       "url": "https://investfuture.ru/articles/v-moskve-zapustili-proizvodstvo-biopolimernyh-sosudistyh-protezov-65b54d2bab26fb63"
     },
@@ -5243,7 +5243,7 @@
       "posts": [
         {
           "text": "Разбираем BionicM — японский стартап, бросающий вызов грандам в коленных модулях. Основана в 2018 году как спин-офф Токийского университета; основатель — Сунь Сяоцзюнь, сам пользователь протеза, пришедший из робототехники. Ставка компании: перенести технологии человекоподобных роботов в протез ноги.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Продукт BionicM — Bio Leg, первый японский АКТИВНЫЙ (моторизованный) коленный модуль. В отличие от пассивных микропроцессорных коленей, которые лишь регулируют сопротивление, Bio Leg имеет электромотор и набор сенсоров: он ДОБАВЛЯЕТ силу — помогает вставать, подниматься по лестнице, разгружает здоровую ногу. Это следующий технологический уровень после пассивных MPK.",
