@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-11T01:55:26+00:00",
+  "generated_at": "2026-11-11T09:24:02+00:00",
   "totals": {
     "total": 254,
-    "new": 31,
-    "posted": 198,
+    "new": 30,
+    "posted": 199,
     "blocked": 25,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 117,
-  "published_30d": 82,
+  "published_30d": 83,
   "series": [
     {
       "date": "2026-10-13",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-11",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1745,7 +1745,7 @@
       "date": "2026-11-06",
       "company": "Neuralink Corporation",
       "title": "Neuralink объявила о первом импланте BCI в собаке (Шиба-ину по имени Хиро)",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.teslarati.org/neuralink-reports-first-brain-computer-interface-implant-in-a-shibainu-dog-hiro/index.html"
     },
@@ -5251,7 +5251,7 @@
         },
         {
           "text": "Как растёт BionicM. Компания суммарно привлекла порядка $12,7 млн (включая Series A $5 млн в 2020 и раунд $3 млн в 2024, а также гранты). В августе 2024 начались первые поставки Bio Leg в США, тогда же запущено американское подразделение. Классическая траектория deep-tech стартапа: НИОКР при университете — венчур — выход на крупнейший рынок США.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Стратегия выхода BionicM на рынок — через доказательность и страховое покрытие. Bio Leg получил PDAC-одобрение со страховыми L-кодами в США (то есть может оплачиваться страховкой) и приз CES 2025 Innovation Award. В 2026 году с клиникой Brooks Rehabilitation запущено сравнительное исследование Bio Leg против C-Leg. Урок отрасли: для активного протеза ключ к продажам — reimbursement и клинические данные.",
