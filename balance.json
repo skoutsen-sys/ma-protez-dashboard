@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-11T09:24:02+00:00",
+  "generated_at": "2026-11-11T17:53:13+00:00",
   "totals": {
-    "total": 254,
-    "new": 30,
-    "posted": 199,
+    "total": 264,
+    "new": 36,
+    "posted": 203,
     "blocked": 25,
     "companies": 83
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 117,
-  "published_30d": 83,
+  "added_30d": 127,
+  "published_30d": 87,
   "series": [
     {
       "date": "2026-10-13",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-11",
-      "added": 0,
-      "published": 1,
-      "width": null
+      "added": 10,
+      "published": 5,
+      "width": 2
     }
   ],
   "companies": [
@@ -231,7 +231,7 @@
       "size": "XL",
       "owner": "Частная, миноритарий EQT",
       "site": "ottobock.com",
-      "news_count": 24,
+      "news_count": 25,
       "story_count": 7
     },
     {
@@ -547,7 +547,7 @@
       "size": "M",
       "owner": "Публичная (Nasdaq First North)",
       "site": "integrum.se",
-      "news_count": 0,
+      "news_count": 1,
       "story_count": 6
     },
     {
@@ -1301,7 +1301,7 @@
       "size": "M",
       "owner": "Частная (АО)",
       "site": "cito-pro.ru",
-      "news_count": 1,
+      "news_count": 3,
       "story_count": 3
     },
     {
@@ -1385,7 +1385,7 @@
       "size": "M",
       "owner": "Частная",
       "site": "armed.ru",
-      "news_count": 0,
+      "news_count": 1,
       "story_count": 3
     },
     {
@@ -1702,6 +1702,14 @@
       "url": "https://eksobionics.com/news-and-events/"
     },
     {
+      "date": "2026-11-09",
+      "company": "Myomo, Inc.",
+      "title": "Myomo публикует финансовые результаты за III квартал 2026 года с рекордной выручкой",
+      "status": "posted",
+      "region": "world",
+      "url": "https://myomo.com/wp-content/uploads/2026/11/Myomo-Inc-Q326-Earnings-Press-Release.pdf"
+    },
+    {
       "date": "2026-11-08",
       "company": "ICOPII",
       "title": "Международная конференция ортопедических протезов и имплантационных инноваций в Дели",
@@ -1729,7 +1737,7 @@
       "date": "2026-11-06",
       "company": "Neuralink",
       "title": "Neuralink сообщил об имплантации интерфейса мозг‑компьютер в домашнюю кошку",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.teslarati.org/neuralink-reports-first-brain-computer-interface-implant-in-a-domestic-cat-thor/index.html"
     },
@@ -1753,9 +1761,49 @@
       "date": "2026-11-06",
       "company": "Нейроимпланты ELVIS (Sensor‑Tech)",
       "title": "Российский проект ELVIS заявляет о развитии нейроимплантов для восстановления зрения — обзор статуса испытаний",
-      "status": "new",
+      "status": "posted",
       "region": "RU",
       "url": "https://www.prodpress.eu/russie-implant-cerebral-elvis-vision-sensor-tech-essais/"
+    },
+    {
+      "date": "2026-11-06",
+      "company": "BrainCo",
+      "title": "Опубликована симуляция RevoSim для тактильного моделирования руки Revo3 (BrainCo)",
+      "status": "posted",
+      "region": "world",
+      "url": "https://arxiv.org/abs/2611.08939"
+    },
+    {
+      "date": "2026-11-06",
+      "company": "Integrum",
+      "title": "Integrum выступает Legacy-спонсором GCCO 2026 и проводит обучение по OPRA",
+      "status": "new",
+      "region": "world",
+      "url": "https://investors.integrum.se/en/press-releases"
+    },
+    {
+      "date": "2026-11-06",
+      "company": "Орто‑Инновации",
+      "title": "В филиале «Орто‑Инновации» в Воронеже описали этапы реабилитации после протезирования: школа ходьбы и сопровождение пациентов",
+      "status": "new",
+      "region": "RU",
+      "url": "https://tvgram.ru/bloknot_vrn/90382"
+    },
+    {
+      "date": "2026-11-06",
+      "company": "Московское ПрОП (АО \"Московское ПрОП\")",
+      "title": "В филиале «Сыктывкарский» Московского ПрОП прошла экскурсия участников круглого стола по повышению качества протезно‑ортопедической помощи",
+      "status": "new",
+      "region": "RU",
+      "url": "https://telemetr.me/content/moscowprop"
+    },
+    {
+      "date": "2026-11-06",
+      "company": "ChronoScale Holdings Corporation (ранее связанная с Ekso Bionics)",
+      "title": "ChronoScale (бывшая публичная «Ekso») провела годовое собрание акционеров; подтверждены корпоративные изменения, включая завершённую продажу/реорганизацию экзоскелетного подразделения",
+      "status": "new",
+      "region": "world",
+      "url": "https://ir.chronoscale.com/"
     },
     {
       "date": "2026-11-05",
@@ -1798,6 +1846,14 @@
       "url": "https://ir.rewalk.com/static-files/c2b1f8f1-ab6b-47bc-abc4-21c02977b731"
     },
     {
+      "date": "2026-11-05",
+      "company": "АРМЕД",
+      "title": "АРМЕД запустил закрытый клуб для дилеров и ноябрьскую программу признания лидеров по категории ТСР",
+      "status": "new",
+      "region": "RU",
+      "url": "https://www.armed.ru/news/zakrytyy-klub-dlya-dilerov-start-programmy-priznaniya-liderov-noyabrya-v-kategorii-tsr"
+    },
+    {
       "date": "2026-11-04",
       "company": "LOOP (Uniformed Services University of the Health Sciences)",
       "title": "Два исследования остеоинтеграции в проекте LOOP установили базовые показатели для боевых ранений",
@@ -1820,6 +1876,30 @@
       "status": "new",
       "region": "world",
       "url": "https://news.usuhs.edu/2026/11/warfighter-amputee-recovery-two-loop.html"
+    },
+    {
+      "date": "2026-11-04",
+      "company": "Ottobock",
+      "title": "Ottobock (SUITX) расширяет доступ к промышленным экзоскелетам через сеть филиалов Würth в Германии и Франции",
+      "status": "new",
+      "region": "world",
+      "url": "https://exoskeletonindex.com/wurth-ottobock-exoskeletons-germany-france-branches-2026/"
+    },
+    {
+      "date": "2026-11-04",
+      "company": "ЦИТО",
+      "title": "В России начали применять неснимаемые экзопротезы — первые пациенты ЦИТО получили конструкции для постоянного ношения",
+      "status": "new",
+      "region": "RU",
+      "url": "https://www.interfax.ru/russia/1126964"
+    },
+    {
+      "date": "2026-11-04",
+      "company": "АО ЦИТО",
+      "title": "Ростех открыл центр высокотехнологичного протезирования в Улан‑Удэ и расширяет сеть ЦИТО на Дальнем Востоке",
+      "status": "new",
+      "region": "RU",
+      "url": "https://rostec.ru/media/news/rostekh-sozdal-pervyy-tsentr-vysokotekhnologichnogo-protezirovaniya-v-dalnevostochnom-federalnom-okr/"
     },
     {
       "date": "2026-11-03",
@@ -5255,7 +5335,7 @@
         },
         {
           "text": "Стратегия выхода BionicM на рынок — через доказательность и страховое покрытие. Bio Leg получил PDAC-одобрение со страховыми L-кодами в США (то есть может оплачиваться страховкой) и приз CES 2025 Innovation Award. В 2026 году с клиникой Brooks Rehabilitation запущено сравнительное исследование Bio Leg против C-Leg. Урок отрасли: для активного протеза ключ к продажам — reimbursement и клинические данные.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Итог по BionicM. Это challenger, атакующий сегмент коленных модулей не ценой, а новым принципом — активной моторизацией против пассивных MPK у Ottobock (C-Leg) и Össur. Риски типичны для стартапа: масштаб, себестоимость, конкуренция с гигантами. Но технологически это одно из самых амбициозных направлений в протезировании ног.",
