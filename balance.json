@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-12T00:42:41+00:00",
+  "generated_at": "2026-11-12T09:49:04+00:00",
   "totals": {
     "total": 264,
-    "new": 36,
-    "posted": 203,
+    "new": 35,
+    "posted": 204,
     "blocked": 25,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 124,
-  "published_30d": 85,
+  "published_30d": 86,
   "series": [
     {
       "date": "2026-10-14",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-12",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1777,7 +1777,7 @@
       "date": "2026-11-06",
       "company": "Integrum",
       "title": "Integrum выступает Legacy-спонсором GCCO 2026 и проводит обучение по OPRA",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://investors.integrum.se/en/press-releases"
     },
@@ -5339,7 +5339,7 @@
         },
         {
           "text": "Итог по BionicM. Это challenger, атакующий сегмент коленных модулей не ценой, а новым принципом — активной моторизацией против пассивных MPK у Ottobock (C-Leg) и Össur. Риски типичны для стартапа: масштаб, себестоимость, конкуренция с гигантами. Но технологически это одно из самых амбициозных направлений в протезировании ног.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
