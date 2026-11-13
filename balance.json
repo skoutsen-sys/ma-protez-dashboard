@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-13T09:30:03+00:00",
+  "generated_at": "2026-11-13T17:43:37+00:00",
   "totals": {
-    "total": 264,
-    "new": 30,
-    "posted": 208,
+    "total": 276,
+    "new": 38,
+    "posted": 212,
     "blocked": 26,
     "companies": 83
   },
   "width": {
-    "level": 2,
+    "level": 1,
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 124,
-  "published_30d": 88,
+  "added_30d": 136,
+  "published_30d": 92,
   "series": [
     {
       "date": "2026-10-15",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-13",
-      "added": 0,
-      "published": 1,
-      "width": null
+      "added": 12,
+      "published": 5,
+      "width": 2
     }
   ],
   "companies": [
@@ -212,7 +212,7 @@
       "size": "XL",
       "owner": "Публичная (Nasdaq Copenhagen: OSSR)",
       "site": "ossur.com",
-      "news_count": 6,
+      "news_count": 7,
       "story_count": 7
     },
     {
@@ -231,7 +231,7 @@
       "size": "XL",
       "owner": "Частная, миноритарий EQT",
       "site": "ottobock.com",
-      "news_count": 25,
+      "news_count": 26,
       "story_count": 7
     },
     {
@@ -384,7 +384,7 @@
       "size": "S",
       "owner": "Частная (VC)",
       "site": "esperbionics.com",
-      "news_count": 0,
+      "news_count": 1,
       "story_count": 5
     },
     {
@@ -482,7 +482,7 @@
       "size": "S",
       "owner": "Частная (VC)",
       "site": "aetherbiomedical.com",
-      "news_count": 0,
+      "news_count": 1,
       "story_count": 5
     },
     {
@@ -784,7 +784,7 @@
       "size": "M",
       "owner": "Публичная (Nasdaq: EKSO)",
       "site": "eksobionics.com",
-      "news_count": 3,
+      "news_count": 4,
       "story_count": 5
     },
     {
@@ -800,7 +800,7 @@
       "size": "M",
       "owner": "Частная (VC)",
       "site": "wandercraft.eu",
-      "news_count": 6,
+      "news_count": 7,
       "story_count": 6
     },
     {
@@ -1678,12 +1678,52 @@
       "url": "https://www.globalomp.com/expo/30083"
     },
     {
+      "date": "2026-11-13",
+      "company": "Aether Biomedical",
+      "title": "Aether Biomedical участвует в AOPA 2026 и проводит сессию по экосистеме ZEUS (день конференции 13 ноября)",
+      "status": "posted",
+      "region": "world",
+      "url": "https://pl.linkedin.com/company/aether-biomedical"
+    },
+    {
       "date": "2026-11-12",
       "company": "Ottobock",
       "title": "Оттобок объявит результаты третьего квартала 2026 года",
       "status": "posted",
       "region": "world",
       "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/ottobock-leads-usd-10-5-million-blue-arbor-round-while-ottobock-stock-sits-below-eur-49-00/70427102"
+    },
+    {
+      "date": "2026-11-12",
+      "company": "Össur",
+      "title": "Össur участвует в ISPO France 2026 в Лионе (12–13 ноября)",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.ossur.com/fr-fr/a-propos-ossur/newsroom/ispo-france-2026"
+    },
+    {
+      "date": "2026-11-12",
+      "company": "Ottobock",
+      "title": "Ottobock публикует квартальный отчёт 9M 2026 с ростом выручки и улучшением маржи",
+      "status": "posted",
+      "region": "world",
+      "url": "https://investors.ottobock.com/media/document/4e4cb1ce-2691-4c63-aecc-af38bd6c7977/assets/DE000BCK2223-Q3-2026-EQ-E-00.pdf?disposition=inline"
+    },
+    {
+      "date": "2026-11-12",
+      "company": "Dephy",
+      "title": "Dephy в честь Дня ветеранов раздаёт шесть комплектов своего голеностопного экзоскелета Sidekick",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.prnewswire.com/news-releases/dephy-honors-veterans-day-by-awarding-six-veterans-its-ankle-powered-sidekick-exoskeleton-302937283.html"
+    },
+    {
+      "date": "2026-11-12",
+      "company": "Industrial Technology Research Institute (ITRI) / Free Bionics",
+      "title": "ИТРИ и партнёры завершили клиническую валидацию реабилитационного экзокостюма с управлением по мозговым сигналам",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.taiwannews.com.tw/news/6475430"
     },
     {
       "date": "2026-11-11",
@@ -1700,6 +1740,38 @@
       "status": "blocked",
       "region": "world",
       "url": "https://eksobionics.com/news-and-events/"
+    },
+    {
+      "date": "2026-11-11",
+      "company": "CYBERDYNE INC.",
+      "title": "CYBERDYNE участвует в ежегодной сессии AAPM&R 2026 и представляет HAL (ML07)",
+      "status": "new",
+      "region": "world",
+      "url": "https://events.jspargo.com/AAPMR26/Public/EventMap.aspx?EventId=886&MapID=1182&MapItBooth=1820&MapItBoothID=1089173"
+    },
+    {
+      "date": "2026-11-10",
+      "company": "Wandercraft",
+      "title": "Пациенты с параличом проходят сеансы ходьбы в экзоскелетах Wandercraft в клинике в Манхэттене",
+      "status": "new",
+      "region": "world",
+      "url": "https://the-gadgeteer.com/2026/11/10/wandercraft-walk-in-new-york-exoskeleton/"
+    },
+    {
+      "date": "2026-11-10",
+      "company": "BionicM Inc.",
+      "title": "BionicM привлекла первый транш серии B и готовится к запуску моторного коленного протеза ASISTA",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.prnewswire.com/news-releases/bionicm-raises-jpy-710-million-approx-usd-4-5-million-in-first-close-of-series-b-financing--total-equity-financing-and-grant-funding-reaches-jpy-2-58-billion-approx-usd-16-4-million-302935394.html"
+    },
+    {
+      "date": "2026-11-10",
+      "company": "Istituto Ortopedico Rizzoli",
+      "title": "Обновление клинической регистрации OSTEO-OUTCOME по остеоинтеграции при трансфеморальной ампутации",
+      "status": "new",
+      "region": "world",
+      "url": "https://clinicaltrials.gg/study/NCT06737770"
     },
     {
       "date": "2026-11-09",
@@ -1732,6 +1804,14 @@
       "status": "posted",
       "region": "world",
       "url": "https://teslanorth.com/2026/11/07/musk-neuralink-walk-hands-coming-years/"
+    },
+    {
+      "date": "2026-11-07",
+      "company": "INTCO Medical / INTCO Wheelchair",
+      "title": "INTCO Medical объявила участие в выставке MEDICA 2026 в Дюссельдорфе",
+      "status": "new",
+      "region": "world",
+      "url": "https://intcowheelchair.com/news/intco-medical-medica-2026"
     },
     {
       "date": "2026-11-06",
@@ -1804,6 +1884,22 @@
       "status": "blocked",
       "region": "world",
       "url": "https://ir.chronoscale.com/"
+    },
+    {
+      "date": "2026-11-06",
+      "company": "Esper Bionics",
+      "title": "Esper Bionics публикует обзор и анонс Esper Hand 2 — сравнение ведущих многоартикулярных протезов кисти",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.esperbionics.com/blog"
+    },
+    {
+      "date": "2026-11-06",
+      "company": "Ekso Bionics",
+      "title": "Ekso Bionics объявила, что объединённая команда Wandercraft x Ekso представит решения на конференции AAPM&R 2026",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.seedops.co/companies/eksobionics"
     },
     {
       "date": "2026-11-05",
@@ -5357,7 +5453,7 @@
         },
         {
           "text": "Итог по AOSUO. Это игрок нижнего звена глобальной цепочки: конкурирует ценой и объёмом как OEM/ODM-поставщик компонентов. Для мирового рынка такие китайские производители — давление на себестоимость и источник доступных узлов для мастерских. Собственный бренд AOSUO — попытка выйти из тени контрактного производства к продажам под своим именем.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
