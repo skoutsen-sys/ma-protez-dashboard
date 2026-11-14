@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-14T15:03:34+00:00",
+  "generated_at": "2026-11-14T20:42:25+00:00",
   "totals": {
     "total": 276,
-    "new": 35,
-    "posted": 215,
+    "new": 34,
+    "posted": 216,
     "blocked": 26,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 131,
-  "published_30d": 93,
+  "published_30d": 94,
   "series": [
     {
       "date": "2026-10-16",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-14",
       "added": 0,
-      "published": 3,
+      "published": 4,
       "width": null
     }
   ],
@@ -1753,7 +1753,7 @@
       "date": "2026-11-10",
       "company": "Wandercraft",
       "title": "Пациенты с параличом проходят сеансы ходьбы в экзоскелетах Wandercraft в клинике в Манхэттене",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://the-gadgeteer.com/2026/11/10/wandercraft-walk-in-new-york-exoskeleton/"
     },
