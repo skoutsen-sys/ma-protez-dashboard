@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-14T06:20:29+00:00",
+  "generated_at": "2026-11-14T15:03:34+00:00",
   "totals": {
     "total": 276,
-    "new": 38,
-    "posted": 212,
+    "new": 35,
+    "posted": 215,
     "blocked": 26,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 131,
-  "published_30d": 90,
+  "published_30d": 93,
   "series": [
     {
       "date": "2026-10-16",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-14",
       "added": 0,
-      "published": 0,
+      "published": 3,
       "width": null
     }
   ],
@@ -1713,7 +1713,7 @@
       "date": "2026-11-12",
       "company": "Dephy",
       "title": "Dephy в честь Дня ветеранов раздаёт шесть комплектов своего голеностопного экзоскелета Sidekick",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.prnewswire.com/news-releases/dephy-honors-veterans-day-by-awarding-six-veterans-its-ankle-powered-sidekick-exoskeleton-302937283.html"
     },
@@ -1745,7 +1745,7 @@
       "date": "2026-11-11",
       "company": "CYBERDYNE INC.",
       "title": "CYBERDYNE участвует в ежегодной сессии AAPM&R 2026 и представляет HAL (ML07)",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://events.jspargo.com/AAPMR26/Public/EventMap.aspx?EventId=886&MapID=1182&MapItBooth=1820&MapItBoothID=1089173"
     },
@@ -1761,7 +1761,7 @@
       "date": "2026-11-10",
       "company": "BionicM Inc.",
       "title": "BionicM привлекла первый транш серии B и готовится к запуску моторного коленного протеза ASISTA",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.prnewswire.com/news-releases/bionicm-raises-jpy-710-million-approx-usd-4-5-million-in-first-close-of-series-b-financing--total-equity-financing-and-grant-funding-reaches-jpy-2-58-billion-approx-usd-16-4-million-302935394.html"
     },
@@ -5463,11 +5463,11 @@
       "posts": [
         {
           "text": "Разбираем Fengxing Intelligence (奋翔, бренд Goodoing) — пекинскую компанию интеллектуальных протезов и реабилитационной техники. Она разрабатывает и производит «умные» протезы, имитирующие управление биологической конечностью. Пример новой волны китайских deep-tech игроков в протезировании — со ставкой на интеллект, а не только на дешёвые компоненты.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Технологический подход Fengxing. Устройства собирают и анализируют движения тела, чтобы протез прогнозировал намерение пользователя и подстраивался под реальную ситуацию — адаптивное, «предсказывающее» управление, а не простое включение/выключение. Тот же тренд, что двигают западные Coapt и BrainCo: распознавание паттернов вместо ручного переключения режимов.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Итог по Fengxing. Частная компания из Пекина, привлекала раунды Growth Equity; делает ставку на интеллектуальное управление протезом. Для отрасли это сигнал: Китай выходит за пределы дешёвого OEM-производства компонентов в сторону собственных «умных» протезов — и в перспективе может конкурировать не только ценой, но и технологией.",
