@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-15T09:24:30+00:00",
+  "generated_at": "2026-11-15T17:09:03+00:00",
   "totals": {
-    "total": 276,
-    "new": 31,
-    "posted": 217,
+    "total": 280,
+    "new": 32,
+    "posted": 220,
     "blocked": 28,
     "companies": 83
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 131,
-  "published_30d": 93,
+  "added_30d": 135,
+  "published_30d": 96,
   "series": [
     {
       "date": "2026-10-17",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-15",
-      "added": 0,
-      "published": 1,
-      "width": null
+      "added": 4,
+      "published": 4,
+      "width": 1
     }
   ],
   "companies": [
@@ -1686,6 +1686,30 @@
       "url": "https://pl.linkedin.com/company/aether-biomedical"
     },
     {
+      "date": "2026-11-13",
+      "company": "Lifeward Ltd. (ReWalk)",
+      "title": "Lifeward публикует финансовые результаты за 3 квартал 2026 и обновляет бизнес по ReWalk",
+      "status": "posted",
+      "region": "world",
+      "url": "https://ir.rewalk.com/news-releases/news-release-details/lifeward-reports-third-quarter-2026-financial-results-and"
+    },
+    {
+      "date": "2026-11-13",
+      "company": "Nabtesco Corporation",
+      "title": "Nabtesco публикует материалы и итоги за 3 квартал FY2026 (консолидировано)",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.nabtesco.com/cms/wp-content/uploads/Summary_of_Consolidated_Financial_Statements_for_FY2026_Q3_e.pdf"
+    },
+    {
+      "date": "2026-11-13",
+      "company": "ZIMMER BIOMET HOLDINGS, INC.",
+      "title": "NYSE одобрила листинг 4.375% нот Zimmer Biomet до 2033 года",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.sec.gov/Archives/edgar/data/1136869/000087666126000917/ZBH111326.pdf"
+    },
+    {
       "date": "2026-11-12",
       "company": "Ottobock",
       "title": "Оттобок объявит результаты третьего квартала 2026 года",
@@ -1724,6 +1748,14 @@
       "status": "posted",
       "region": "world",
       "url": "https://www.taiwannews.com.tw/news/6475430"
+    },
+    {
+      "date": "2026-11-12",
+      "company": "Ottobock SE & Co. KGaA",
+      "title": "Ottobock публикует финансовые результаты за 9 месяцев 2026 года: рост выручки и улучшение рентабельности",
+      "status": "new",
+      "region": "world",
+      "url": "https://corporate.ottobock.com/en/media/newsroom/ottobock-continues-growth-track-amid-a-more-challenging-environment"
     },
     {
       "date": "2026-11-11",
@@ -4543,7 +4575,7 @@
       "posts": [
         {
           "text": "Разбираем ReWalk (сегодня Lifeward) — пионера носимых экзоскелетов для людей с травмой спинного мозга. Компанию (изначально Argo Medical Technologies) основал в 2001 году в Израиле инженер Амит Гоффер, сам ставший тетраплегиком после аварии на квадроцикле в 1997-м. Позиционирование: вертикализация и ходьба для колясочников с параличом нижних конечностей. Вывод для отрасли: продукт вырос из личного опыта пациента-инженера — редкий случай, когда основатель одновременно и целевой пользователь.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Продуктовая линейка. ReWalk Personal — первый коммерческий персональный экзоскелет (представлен в 2012), в 2014 получил разрешение FDA для домашнего использования. Второе направление — ReStore, мягкий текстильный экзо-костюм (soft suit) для реабилитации ходьбы после инсульта. Вывод для отрасли: связка жёсткого каркасного экзо для SCI и мягкого суита для нейрореабилитации закрывает два разных клинических сценария — постоянную мобильность и восстановительную терапию.",
