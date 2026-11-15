@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T01:54:17+00:00",
+  "generated_at": "2026-11-15T09:24:30+00:00",
   "totals": {
     "total": 276,
-    "new": 34,
-    "posted": 216,
-    "blocked": 26,
+    "new": 31,
+    "posted": 217,
+    "blocked": 28,
     "companies": 83
   },
   "width": {
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 131,
-  "published_30d": 92,
+  "published_30d": 93,
   "series": [
     {
       "date": "2026-10-17",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-15",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1769,7 +1769,7 @@
       "date": "2026-11-10",
       "company": "Istituto Ortopedico Rizzoli",
       "title": "Обновление клинической регистрации OSTEO-OUTCOME по остеоинтеграции при трансфеморальной ампутации",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://clinicaltrials.gg/study/NCT06737770"
     },
@@ -1809,7 +1809,7 @@
       "date": "2026-11-07",
       "company": "INTCO Medical / INTCO Wheelchair",
       "title": "INTCO Medical объявила участие в выставке MEDICA 2026 в Дюссельдорфе",
-      "status": "new",
+      "status": "blocked",
       "region": "world",
       "url": "https://intcowheelchair.com/news/intco-medical-medica-2026"
     },
@@ -1897,7 +1897,7 @@
       "date": "2026-11-06",
       "company": "Ekso Bionics",
       "title": "Ekso Bionics объявила, что объединённая команда Wandercraft x Ekso представит решения на конференции AAPM&R 2026",
-      "status": "new",
+      "status": "blocked",
       "region": "world",
       "url": "https://www.seedops.co/companies/eksobionics"
     },
@@ -5471,7 +5471,7 @@
         },
         {
           "text": "Итог по Fengxing. Частная компания из Пекина, привлекала раунды Growth Equity; делает ставку на интеллектуальное управление протезом. Для отрасли это сигнал: Китай выходит за пределы дешёвого OEM-производства компонентов в сторону собственных «умных» протезов — и в перспективе может конкурировать не только ценой, но и технологией.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
