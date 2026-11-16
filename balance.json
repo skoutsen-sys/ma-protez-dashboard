@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-15T22:47:18+00:00",
+  "generated_at": "2026-11-16T06:26:39+00:00",
   "totals": {
     "total": 280,
-    "new": 32,
-    "posted": 220,
-    "blocked": 28,
+    "new": 30,
+    "posted": 221,
+    "blocked": 29,
     "companies": 83
   },
   "width": {
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 127,
-  "published_30d": 93,
+  "published_30d": 94,
   "series": [
     {
       "date": "2026-10-18",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-16",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1753,7 +1753,7 @@
       "date": "2026-11-12",
       "company": "Ottobock SE & Co. KGaA",
       "title": "Ottobock публикует финансовые результаты за 9 месяцев 2026 года: рост выручки и улучшение рентабельности",
-      "status": "new",
+      "status": "blocked",
       "region": "world",
       "url": "https://corporate.ottobock.com/en/media/newsroom/ottobock-continues-growth-track-amid-a-more-challenging-environment"
     },
@@ -1921,7 +1921,7 @@
       "date": "2026-11-06",
       "company": "Esper Bionics",
       "title": "Esper Bionics публикует обзор и анонс Esper Hand 2 — сравнение ведущих многоартикулярных протезов кисти",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.esperbionics.com/blog"
     },
