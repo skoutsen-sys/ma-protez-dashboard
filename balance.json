@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-17T02:55:05+00:00",
+  "generated_at": "2026-11-17T13:24:10+00:00",
   "totals": {
-    "total": 280,
-    "new": 27,
-    "posted": 224,
-    "blocked": 29,
+    "total": 284,
+    "new": 28,
+    "posted": 226,
+    "blocked": 30,
     "companies": 83
   },
   "width": {
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 127,
-  "published_30d": 95,
+  "added_30d": 131,
+  "published_30d": 97,
   "series": [
     {
       "date": "2026-10-19",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-17",
-      "added": 0,
-      "published": 0,
-      "width": null
+      "added": 4,
+      "published": 2,
+      "width": 1
     }
   ],
   "companies": [
@@ -1109,7 +1109,7 @@
       "size": "L",
       "owner": "Частная (VC/РФПИ)",
       "site": "motorica.org",
-      "news_count": 11,
+      "news_count": 12,
       "story_count": 5
     },
     {
@@ -1670,6 +1670,14 @@
       "url": "https://en.jufair.com/exhibition/13222.html"
     },
     {
+      "date": "2026-11-16",
+      "company": "Моторика",
+      "title": "«Моторика» запустила федеральную программу амбассадорства для пользователей протезов и реабилитационных технологий",
+      "status": "posted",
+      "region": "RU",
+      "url": "https://adindex.ru/news/social_advertising/2026/11/16/351290.phtml"
+    },
+    {
       "date": "2026-11-14",
       "company": "APOSM / организаторы Xiamen International Convention and Exhibition Center",
       "title": "Азиатская конференция и выставка по протезированию и ортопедии (Xiamen, 14–16 ноября 2026)",
@@ -1708,6 +1716,14 @@
       "status": "posted",
       "region": "world",
       "url": "https://www.sec.gov/Archives/edgar/data/1136869/000087666126000917/ZBH111326.pdf"
+    },
+    {
+      "date": "2026-11-13",
+      "company": "Neuralink Corporation",
+      "title": "Neuralink добавляет хронический ишемический инсульт в новое американское раннее исследование импланта PRIME2",
+      "status": "new",
+      "region": "world",
+      "url": "https://insidebci.com/news/2026-11-13-neuralink-prime2-us-trial-chronic-ischemic-stroke-university-of-miami/"
     },
     {
       "date": "2026-11-12",
@@ -1756,6 +1772,22 @@
       "status": "blocked",
       "region": "world",
       "url": "https://corporate.ottobock.com/en/media/newsroom/ottobock-continues-growth-track-amid-a-more-challenging-environment"
+    },
+    {
+      "date": "2026-11-12",
+      "company": "CYBERDYNE Inc.",
+      "title": "CYBERDYNE публикует финансовое краткое объяснение за полугодие и отчёты по деятельности",
+      "status": "new",
+      "region": "world",
+      "url": "https://cyberdyne.jp/media/29124/20261112_tanshin_eng.pdf"
+    },
+    {
+      "date": "2026-11-12",
+      "company": "Synchron, Inc.",
+      "title": "Synchron приостанавливает набор в испытания второй генерации Stentrode из‑за проблемы с проводом",
+      "status": "new",
+      "region": "world",
+      "url": "https://insidebci.com/news/2026-11-13-synchron-pauses-stentrode-trial-enrolment-lead-problem-restructuring/"
     },
     {
       "date": "2026-11-11",
@@ -2001,7 +2033,7 @@
       "date": "2026-11-04",
       "company": "Uniformed Services University (USU) / исследовательская группа LOOP",
       "title": "Два испытания LOOP создают базу данных по остеоинтеграции для восстановления ампутантов",
-      "status": "new",
+      "status": "blocked",
       "region": "world",
       "url": "https://news.usuhs.edu/2026/11/warfighter-amputee-recovery-two-loop.html"
     },
@@ -2041,7 +2073,7 @@
       "date": "2026-11-03",
       "company": "BrainCo",
       "title": "Компания BrainCo рассматривает расширение бизнеса за пределы нейротеха и протезирования",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.moneycontrol.com/news/business/neuralinks-china-rival-targets-obesity-with-electronic-glp-1-14067616.html"
     },
@@ -4587,11 +4619,11 @@
         },
         {
           "text": "Ключевой сдвиг рынка. С 1 января 2024 года CMS (американский Medicare) впервые включила персональные экзоскелеты в тарифную сетку DMEPOS: установленная ставка возмещения — около 91 тыс. долларов за устройство. Руководство Lifeward прямо называло это событие для индустрии решением «пан или пропал». Вывод для отрасли: без государственного возмещения носимые экзоскелеты остаются нишевым продуктом — именно тариф превращает их в масштабируемый рынок.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Итог по Lifeward. Публичная компания (Nasdaq: LFWD), выросшая из идеи одного инженера-пациента, за два десятилетия прошла путь от единственного экзоскелета до диверсифицированного портфеля реабилитационных технологий. Главные факторы её устойчивости — самая обширная опубликованная доказательная база среди экзоскелетов и статус первого игрока, добившегося тарифа Medicare. Вывод для отрасли: в носимой робототехнике клинические данные и реимбурсмент решают не меньше, чем сама механика.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
