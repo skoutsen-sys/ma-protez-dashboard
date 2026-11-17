@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-17T13:24:10+00:00",
+  "generated_at": "2026-11-17T22:22:00+00:00",
   "totals": {
     "total": 284,
-    "new": 28,
-    "posted": 226,
+    "new": 27,
+    "posted": 227,
     "blocked": 30,
     "companies": 83
   },
@@ -12,15 +12,9 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 131,
-  "published_30d": 97,
+  "added_30d": 125,
+  "published_30d": 95,
   "series": [
-    {
-      "date": "2026-10-19",
-      "added": 6,
-      "published": 3,
-      "width": 3
-    },
     {
       "date": "2026-10-20",
       "added": 0,
@@ -192,8 +186,14 @@
     {
       "date": "2026-11-17",
       "added": 4,
-      "published": 2,
+      "published": 3,
       "width": 1
+    },
+    {
+      "date": "2026-11-18",
+      "added": 0,
+      "published": 0,
+      "width": null
     }
   ],
   "companies": [
@@ -1721,7 +1721,7 @@
       "date": "2026-11-13",
       "company": "Neuralink Corporation",
       "title": "Neuralink добавляет хронический ишемический инсульт в новое американское раннее исследование импланта PRIME2",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://insidebci.com/news/2026-11-13-neuralink-prime2-us-trial-chronic-ischemic-stroke-university-of-miami/"
     },
