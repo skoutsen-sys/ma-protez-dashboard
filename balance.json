@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-17T22:22:00+00:00",
+  "generated_at": "2026-11-18T07:26:13+00:00",
   "totals": {
     "total": 284,
-    "new": 27,
-    "posted": 227,
+    "new": 26,
+    "posted": 228,
     "blocked": 30,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 125,
-  "published_30d": 95,
+  "published_30d": 96,
   "series": [
     {
       "date": "2026-10-20",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-18",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1785,7 +1785,7 @@
       "date": "2026-11-12",
       "company": "Synchron, Inc.",
       "title": "Synchron приостанавливает набор в испытания второй генерации Stentrode из‑за проблемы с проводом",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://insidebci.com/news/2026-11-13-synchron-pauses-stentrode-trial-enrolment-lead-problem-restructuring/"
     },
