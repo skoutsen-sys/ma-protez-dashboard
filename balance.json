@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-19T10:19:00+00:00",
+  "generated_at": "2026-11-19T20:35:08+00:00",
   "totals": {
-    "total": 284,
-    "new": 22,
-    "posted": 231,
+    "total": 288,
+    "new": 24,
+    "posted": 233,
     "blocked": 31,
     "companies": 83
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 125,
-  "published_30d": 97,
+  "added_30d": 129,
+  "published_30d": 99,
   "series": [
     {
       "date": "2026-10-21",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-19",
-      "added": 0,
-      "published": 1,
-      "width": null
+      "added": 4,
+      "published": 3,
+      "width": 1
     }
   ],
   "companies": [
@@ -212,7 +212,7 @@
       "size": "XL",
       "owner": "Публичная (Nasdaq Copenhagen: OSSR)",
       "site": "ossur.com",
-      "news_count": 7,
+      "news_count": 8,
       "story_count": 7
     },
     {
@@ -231,7 +231,7 @@
       "size": "XL",
       "owner": "Частная, миноритарий EQT",
       "site": "ottobock.com",
-      "news_count": 26,
+      "news_count": 27,
       "story_count": 7
     },
     {
@@ -784,7 +784,7 @@
       "size": "M",
       "owner": "Публичная (Nasdaq: EKSO)",
       "site": "eksobionics.com",
-      "news_count": 4,
+      "news_count": 5,
       "story_count": 5
     },
     {
@@ -1662,6 +1662,14 @@
       "url": "https://www.ispoint.org/events/"
     },
     {
+      "date": "2026-11-19",
+      "company": "Ekso Bionics",
+      "title": "Ekso Bionics проводит демонстрацию технологий в вебинаре «AI for Good»",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.tipranks.com/news/the-fly/ekso-bionics-to-showcase-device-technology-in-ai-for-good-webinar"
+    },
+    {
       "date": "2026-11-18",
       "company": "Japan Medical Rehabilitation Equipment Association (организатор)",
       "title": "TokyoRehabilitation (HOSPEX Japan) 2026",
@@ -1676,6 +1684,14 @@
       "status": "posted",
       "region": "RU",
       "url": "https://adindex.ru/news/social_advertising/2026/11/16/351290.phtml"
+    },
+    {
+      "date": "2026-11-16",
+      "company": "Ottobock",
+      "title": "Ottobock заключила соглашение о дистрибуции в Северной Америке на носимый робот WIM S (WIRobotics)",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.cyborgslife.com/pulses/wirobotics-ottobock-wim-s-north-america-distribution-2026-11/"
     },
     {
       "date": "2026-11-14",
@@ -1724,6 +1740,14 @@
       "status": "posted",
       "region": "world",
       "url": "https://insidebci.com/news/2026-11-13-neuralink-prime2-us-trial-chronic-ischemic-stroke-university-of-miami/"
+    },
+    {
+      "date": "2026-11-13",
+      "company": "Össur (бренд Ossur)",
+      "title": "В Малайзии в реестр медицинских изделий внесены наименования ортезов для колена бренда Ossur",
+      "status": "new",
+      "region": "world",
+      "url": "https://mdar.mda.gov.my/frontend/web/index.php?id=109929&r=carian%2Freport"
     },
     {
       "date": "2026-11-12",
@@ -1788,6 +1812,14 @@
       "status": "posted",
       "region": "world",
       "url": "https://insidebci.com/news/2026-11-13-synchron-pauses-stentrode-trial-enrolment-lead-problem-restructuring/"
+    },
+    {
+      "date": "2026-11-12",
+      "company": "CYBERDYNE株式会社",
+      "title": "CYBERDYNE опубликовала консолидированные результаты за полугодие, завершившееся 30 сентября 2026 г.",
+      "status": "new",
+      "region": "world",
+      "url": "https://cyberdyne.jp/media/29127/20261112_kessanhosokusetsumei_eng.pdf"
     },
     {
       "date": "2026-11-11",
@@ -4645,7 +4677,7 @@
         },
         {
           "text": "Ключевая сделка. В декабре 2022 года Ekso Bionics за 10 млн долларов приобрела у Parker Hannifin подразделение Human Motion and Control вместе с линейкой экзоскелетов нижних конечностей Indego (Indego Personal и Indego Therapy). Сделка добавила продукты для домашнего и внебольничного применения и партнёрство с Университетом Вандербильта. Вывод для отрасли: консолидация экзо-активов от крупных индустриальных корпораций — способ для профильных игроков быстро расширить continuum of care.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Итог по Ekso Bionics. Компания прошла путь от лаборатории в Беркли до публичного игрока с портфелем, охватывающим клиническую реабилитацию (EksoNR), домашнюю мобильность (Indego) и промышленную эргономику (Ekso EVO). Её отличие — редкое сочетание военного, индустриального и медицинского опыта в одной инженерной школе. Вывод для отрасли: широта применений страхует от узости одного рынка, но требует управления сразу несколькими регуляторными и сбытовыми контурами.",
