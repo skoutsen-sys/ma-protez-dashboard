@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-20T03:13:30+00:00",
+  "generated_at": "2026-11-20T12:52:31+00:00",
   "totals": {
     "total": 288,
-    "new": 24,
-    "posted": 233,
-    "blocked": 31,
+    "new": 21,
+    "posted": 235,
+    "blocked": 32,
     "companies": 83
   },
   "width": {
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 125,
-  "published_30d": 96,
+  "published_30d": 98,
   "series": [
     {
       "date": "2026-10-22",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-20",
       "added": 0,
-      "published": 0,
+      "published": 2,
       "width": null
     }
   ],
@@ -1745,7 +1745,7 @@
       "date": "2026-11-13",
       "company": "Össur (бренд Ossur)",
       "title": "В Малайзии в реестр медицинских изделий внесены наименования ортезов для колена бренда Ossur",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://mdar.mda.gov.my/frontend/web/index.php?id=109929&r=carian%2Freport"
     },
@@ -1817,7 +1817,7 @@
       "date": "2026-11-12",
       "company": "CYBERDYNE株式会社",
       "title": "CYBERDYNE опубликовала консолидированные результаты за полугодие, завершившееся 30 сентября 2026 г.",
-      "status": "new",
+      "status": "blocked",
       "region": "world",
       "url": "https://cyberdyne.jp/media/29127/20261112_kessanhosokusetsumei_eng.pdf"
     },
@@ -2177,7 +2177,7 @@
       "date": "2026-11-02",
       "company": "Open Bionics",
       "title": "Open Bionics представила в Великобритании первую бионную протезу верхней конечности выше локтя и установила её бывшему парашютисту",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://bristoldaily.uk/news/bristol-bionic-upper-arm-ex-paratrooper"
     },
@@ -4681,7 +4681,7 @@
         },
         {
           "text": "Итог по Ekso Bionics. Компания прошла путь от лаборатории в Беркли до публичного игрока с портфелем, охватывающим клиническую реабилитацию (EksoNR), домашнюю мобильность (Indego) и промышленную эргономику (Ekso EVO). Её отличие — редкое сочетание военного, индустриального и медицинского опыта в одной инженерной школе. Вывод для отрасли: широта применений страхует от узости одного рынка, но требует управления сразу несколькими регуляторными и сбытовыми контурами.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
