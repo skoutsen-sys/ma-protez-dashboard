@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-23T07:35:56+00:00",
+  "generated_at": "2026-11-23T20:12:35+00:00",
   "totals": {
-    "total": 293,
-    "new": 18,
-    "posted": 243,
+    "total": 300,
+    "new": 23,
+    "posted": 245,
     "blocked": 32,
     "companies": 83
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 125,
-  "published_30d": 99,
+  "added_30d": 132,
+  "published_30d": 101,
   "series": [
     {
       "date": "2026-10-25",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-23",
-      "added": 0,
-      "published": 1,
-      "width": null
+      "added": 7,
+      "published": 3,
+      "width": 1
     }
   ],
   "companies": [
@@ -212,7 +212,7 @@
       "size": "XL",
       "owner": "Публичная (Nasdaq Copenhagen: OSSR)",
       "site": "ossur.com",
-      "news_count": 8,
+      "news_count": 9,
       "story_count": 7
     },
     {
@@ -649,7 +649,7 @@
       "size": "M",
       "owner": "Частная",
       "site": "oymotion.com",
-      "news_count": 4,
+      "news_count": 5,
       "story_count": 4
     },
     {
@@ -915,7 +915,7 @@
       "size": "L",
       "owner": "Частная",
       "site": "neuralink.com",
-      "news_count": 4,
+      "news_count": 5,
       "story_count": 6
     },
     {
@@ -1109,7 +1109,7 @@
       "size": "L",
       "owner": "Частная (VC/РФПИ)",
       "site": "motorica.org",
-      "news_count": 13,
+      "news_count": 14,
       "story_count": 5
     },
     {
@@ -1516,7 +1516,7 @@
       "size": "M",
       "owner": "Частная",
       "site": "",
-      "news_count": 1,
+      "news_count": 2,
       "story_count": 5
     },
     {
@@ -1638,6 +1638,14 @@
       "url": "https://www.saudirehabexpo.com/"
     },
     {
+      "date": "2026-11-26",
+      "company": "Össur",
+      "title": "Össur участвует в Orto Medical Care 2026 в Мадриде",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.ossur.com/es-es/acerca-ossur/noticias-ossur/omc-2026"
+    },
+    {
       "date": "2026-11-25",
       "company": "orto Medical Care / FEDOP",
       "title": "Orto Medical Care 2026 — профессиональная ярмарка ортопедии и протезирования в Мадриде",
@@ -1654,12 +1662,36 @@
       "url": "https://efstm.com/event/index.php?id=100954252"
     },
     {
+      "date": "2026-11-23",
+      "company": "OYMotion",
+      "title": "OYMotion привлекла раунд серии D на несколько сотен миллионов юаней для коммерциализации манипуляторов и embodied-AI",
+      "status": "posted",
+      "region": "world",
+      "url": "https://dealroom.co/news/174847-oymotion-raises-hundreds-of-millions-in-series-d-for-embodied-ai-hands/"
+    },
+    {
+      "date": "2026-11-22",
+      "company": "Моторика",
+      "title": "«Моторика» проведёт «День Кибергероя» в Астане при поддержке РПОЦ",
+      "status": "new",
+      "region": "RU",
+      "url": "https://motorica.org/blog/events/den-kibergeroya-v-astane"
+    },
+    {
       "date": "2026-11-21",
       "company": "ISPO Jordan",
       "title": "ISPO День ортопедической науки в Иордании",
       "status": "posted",
       "region": "world",
       "url": "https://www.ispoint.org/events/"
+    },
+    {
+      "date": "2026-11-21",
+      "company": "Neuralink",
+      "title": "Демонстрация Neuralink: пациент управляет скоростным катером в GTA 6 с помощью импланта",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.techradar.com/ai-platforms-assistants/the-latest-demonstration-of-neuralinks-implant-capabilities-is-a-patient-piloting-a-speedboat-in-gta-6-using-only-brain-signals"
     },
     {
       "date": "2026-11-19",
@@ -1676,6 +1708,22 @@
       "status": "posted",
       "region": "world",
       "url": "https://intcowheelchair.com/"
+    },
+    {
+      "date": "2026-11-19",
+      "company": "WHILL, Inc.",
+      "title": "Генеральный директор WHILL представляет автономные сервисы и решения персональной мобильности на CoMotion Los Angeles 2026",
+      "status": "new",
+      "region": "world",
+      "url": "https://whill.inc/ca/"
+    },
+    {
+      "date": "2026-11-19",
+      "company": "INTCO Medical",
+      "title": "INTCO Medical представила решения для мобильности на выставке MEDICA 2026",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.intcowheelchair.com/news/intco-medical-medica-2026"
     },
     {
       "date": "2026-11-18",
@@ -1732,6 +1780,14 @@
       "status": "posted",
       "region": "RU",
       "url": "https://kaliningrad-news.ru/society/2026/11/16/112660.html"
+    },
+    {
+      "date": "2026-11-16",
+      "company": "ООО «Анатомика»",
+      "title": "Росздравнадзор приостановил применение отдельных партий эндопротезов тазобедренного сустава производства «Анатомика»",
+      "status": "new",
+      "region": "RU",
+      "url": "https://zdravreestr.ru/pismo/56720-implantaty-dlia-endoprotezirovaniia-tazobedrennogo-sustava-p"
     },
     {
       "date": "2026-11-14",
@@ -4751,7 +4807,7 @@
         },
         {
           "text": "Итог по Wandercraft. Частная французская компания сделала ставку на технически трудную задачу — самобалансирующуюся ходьбу без опоры на руки — и первой довела её и до клиники (Atalante), и до персонального применения (Eve, FDA-clearance 2026). Партнёрство с Renault добавило капитал и выход в промышленных гуманоидов. Вывод для отрасли: глубокая специализация в одной сложной технологии способна открыть сразу несколько рынков — от реабилитации до заводской автоматизации.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
@@ -5643,7 +5699,7 @@
       "posts": [
         {
           "text": "Разбираем ExoAtlet Global — международную экзоскелетную компанию, выросшую из технологии российского ЭкзоАтлета, но ставшую самостоятельным зарубежным игроком. Структура: корейский холдинг Cosmo Robotics (основан в 2016 под маркой ExoAtlet) и головная ExoAtlet Global S.A. в Люксембурге. Вывод для отрасли: технология одного происхождения, а капитал и юрисдикция — уже международные.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Что делает ExoAtlet Global. Это реабилитационные экзоскелеты нижних конечностей — носимые роботы для восстановления ходьбы после спинальных травм, инсульта и других поражений. По сути медицинская механотерапия: пациент заново осваивает шаг под управлением экзоскелета. Производство и продажи ведёт корейская ExoAtlet Asia.",
