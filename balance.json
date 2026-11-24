@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-24T04:47:19+00:00",
+  "generated_at": "2026-11-24T17:42:39+00:00",
   "totals": {
     "total": 300,
-    "new": 23,
-    "posted": 245,
+    "new": 20,
+    "posted": 248,
     "blocked": 32,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 128,
-  "published_30d": 98,
+  "published_30d": 101,
   "series": [
     {
       "date": "2026-10-26",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-24",
       "added": 0,
-      "published": 0,
+      "published": 3,
       "width": null
     }
   ],
@@ -1673,7 +1673,7 @@
       "date": "2026-11-22",
       "company": "Моторика",
       "title": "«Моторика» проведёт «День Кибергероя» в Астане при поддержке РПОЦ",
-      "status": "new",
+      "status": "posted",
       "region": "RU",
       "url": "https://motorica.org/blog/events/den-kibergeroya-v-astane"
     },
@@ -1689,7 +1689,7 @@
       "date": "2026-11-21",
       "company": "Neuralink",
       "title": "Демонстрация Neuralink: пациент управляет скоростным катером в GTA 6 с помощью импланта",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.techradar.com/ai-platforms-assistants/the-latest-demonstration-of-neuralinks-implant-capabilities-is-a-patient-piloting-a-speedboat-in-gta-6-using-only-brain-signals"
     },
@@ -1713,7 +1713,7 @@
       "date": "2026-11-19",
       "company": "WHILL, Inc.",
       "title": "Генеральный директор WHILL представляет автономные сервисы и решения персональной мобильности на CoMotion Los Angeles 2026",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://whill.inc/ca/"
     },
@@ -5703,11 +5703,11 @@
         },
         {
           "text": "Что делает ExoAtlet Global. Это реабилитационные экзоскелеты нижних конечностей — носимые роботы для восстановления ходьбы после спинальных травм, инсульта и других поражений. По сути медицинская механотерапия: пациент заново осваивает шаг под управлением экзоскелета. Производство и продажи ведёт корейская ExoAtlet Asia.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Регуляторная зрелость — главный актив ExoAtlet Global. У линейки собран полный набор медицинских допусков: CE (Европа), FDA (США) и KFDA (Корея). Это переводит продукт из разряда «носимой техники» в медизделие с доступом к клиникам и бюджетам реабилитации — барьер, который трудно быстро повторить конкурентам.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Ключевое событие 2026 года — IPO. 11 мая 2026 холдинг Cosmo Robotics вышел на корейскую биржу KOSDAQ (код 439960): цена размещения 6000 вон (~$4), уже на второй день ~32000 вон (~$21). После размещения ExoAtlet Global (Люксембург) стала, по оценкам, самым дорогим производителем экзоскелетов в мире по капитализации — около $1,13 млрд, войдя в статус «единорога».",
