@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-25T02:26:24+00:00",
+  "generated_at": "2026-11-25T14:20:14+00:00",
   "totals": {
-    "total": 300,
-    "new": 20,
-    "posted": 248,
+    "total": 303,
+    "new": 21,
+    "posted": 250,
     "blocked": 32,
     "companies": 83
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 128,
-  "published_30d": 99,
+  "added_30d": 131,
+  "published_30d": 101,
   "series": [
     {
       "date": "2026-10-27",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-25",
-      "added": 0,
-      "published": 0,
-      "width": null
+      "added": 3,
+      "published": 2,
+      "width": 1
     }
   ],
   "companies": [
@@ -800,7 +800,7 @@
       "size": "M",
       "owner": "Частная (VC)",
       "site": "wandercraft.eu",
-      "news_count": 7,
+      "news_count": 8,
       "story_count": 6
     },
     {
@@ -1670,6 +1670,14 @@
       "url": "https://dealroom.co/news/174847-oymotion-raises-hundreds-of-millions-in-series-d-for-embodied-ai-hands/"
     },
     {
+      "date": "2026-11-23",
+      "company": "Lifeward Ltd.",
+      "title": "Lifeward представила новое поколение беговой платформы AlterG на MEDICA 2026",
+      "status": "posted",
+      "region": "world",
+      "url": "https://www.globenewswire.com/de/news-release/2026/11/23/3408434/32993/en/lifeward-unveils-next-generation-alterg-anti-gravity-treadmill-at-medica-2026.html"
+    },
+    {
       "date": "2026-11-22",
       "company": "Моторика",
       "title": "«Моторика» проведёт «День Кибергероя» в Астане при поддержке РПОЦ",
@@ -1721,7 +1729,7 @@
       "date": "2026-11-19",
       "company": "INTCO Medical",
       "title": "INTCO Medical представила решения для мобильности на выставке MEDICA 2026",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.intcowheelchair.com/news/intco-medical-medica-2026"
     },
@@ -1748,6 +1756,22 @@
       "status": "posted",
       "region": "world",
       "url": "https://corporate.ottobock.com/en/media/newsroom"
+    },
+    {
+      "date": "2026-11-18",
+      "company": "Brain Co.",
+      "title": "Brain Co. опубликовала материал о применении AI-агентов в разработке и поддержке ПО",
+      "status": "new",
+      "region": "world",
+      "url": "https://brain.co/news"
+    },
+    {
+      "date": "2026-11-18",
+      "company": "Wandercraft",
+      "title": "Wandercraft выступила на Tech Show Paris 18 ноября 2026 — доклад об интеграции гуманоидов и экзоскелетов",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.techshowparis.fr/en/tt-t6-ia-donnees-en-action-day-2"
     },
     {
       "date": "2026-11-17",
@@ -5711,11 +5735,11 @@
         },
         {
           "text": "Ключевое событие 2026 года — IPO. 11 мая 2026 холдинг Cosmo Robotics вышел на корейскую биржу KOSDAQ (код 439960): цена размещения 6000 вон (~$4), уже на второй день ~32000 вон (~$21). После размещения ExoAtlet Global (Люксембург) стала, по оценкам, самым дорогим производителем экзоскелетов в мире по капитализации — около $1,13 млрд, войдя в статус «единорога».",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Зачем ExoAtlet Global публичный статус. Средства IPO компания направляет на глобальную экспансию, R&D и сертификацию новых рынков. Публичный капитал — это топливо для гонки с ReWalk/Lifeward, Ekso Bionics и Cyberdyne: в реабилитационных экзоскелетах побеждает тот, кто быстрее наберёт клиники, регистрации и клинические данные.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Итог по ExoAtlet Global. Редкий кейс: медтех-стартап, чья технология родом из России, через релокацию в Корею и Люксембург и IPO на KOSDAQ стал мировым лидером сегмента по капитализации. Для отрасли — сигнал зрелости: реабилитационные экзоскелеты дозрели до публичных рынков и миллиардных оценок.",
