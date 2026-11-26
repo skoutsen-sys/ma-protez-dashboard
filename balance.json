@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26T00:19:33+00:00",
+  "generated_at": "2026-11-26T10:52:20+00:00",
   "totals": {
     "total": 303,
-    "new": 20,
-    "posted": 251,
+    "new": 19,
+    "posted": 252,
     "blocked": 32,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 128,
-  "published_30d": 100,
+  "published_30d": 101,
   "series": [
     {
       "date": "2026-10-28",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-26",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1769,7 +1769,7 @@
       "date": "2026-11-18",
       "company": "Wandercraft",
       "title": "Wandercraft выступила на Tech Show Paris 18 ноября 2026 — доклад об интеграции гуманоидов и экзоскелетов",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.techshowparis.fr/en/tt-t6-ia-donnees-en-action-day-2"
     },
@@ -5743,7 +5743,7 @@
         },
         {
           "text": "Итог по ExoAtlet Global. Редкий кейс: медтех-стартап, чья технология родом из России, через релокацию в Корею и Люксембург и IPO на KOSDAQ стал мировым лидером сегмента по капитализации. Для отрасли — сигнал зрелости: реабилитационные экзоскелеты дозрели до публичных рынков и миллиардных оценок.",
-          "status": "new"
+          "status": "posted"
         }
       ]
     },
