@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T04:14:00+00:00",
+  "generated_at": "2026-11-27T06:59:14+00:00",
   "totals": {
     "total": 303,
-    "new": 18,
-    "posted": 253,
+    "new": 17,
+    "posted": 254,
     "blocked": 32,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 128,
-  "published_30d": 100,
+  "published_30d": 101,
   "series": [
     {
       "date": "2026-10-29",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-27",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -3057,7 +3057,7 @@
       "date": "2026-09-30",
       "company": "Psyonic",
       "title": "Psyonic запускает программу развёртывания биопротезов в развивающихся странах",
-      "status": "new",
+      "status": "posted",
       "region": "world",
       "url": "https://www.semafor.com/article/09/30/2026/solving-for-the-hand-startup-wants-to-pay-prosthetic-users-to-teach-robots"
     },

@@ -92,7 +92,7 @@
     <text class="lb" x="204" y="38">GitHub · репозиторий MA-protez (приватный)</text>
 
     <rect class="bx ex" x="16" y="62" width="150" height="70" rx="8"/><text class="ttl" x="30" y="90">Веб-источники</text><text class="sub" x="30" y="110">СМИ, сайты компаний</text>
-    <rect class="bx ex" x="16" y="182" width="150" height="70" rx="8"/><text class="ttl" x="30" y="210">LLM · llm.py</text><text class="sub" x="30" y="230">gpt-5-mini + web_search</text>
+    <rect class="bx ex" x="16" y="182" width="150" height="70" rx="8"/><text class="ttl" x="30" y="210">LLM · llm.py</text><text class="sub" x="30" y="230">gpt-6.1-terra + web_search</text>
     <rect class="bx ex" x="16" y="320" width="150" height="96" rx="8"/><text class="ttl" x="30" y="348">n8n</text><text class="sub" x="30" y="368">будильник publish</text><text class="sub" x="30" y="386">бот MA-bot</text><text class="sub" x="30" y="404">(только админ)</text>
 
     <rect class="bx gh" x="210" y="56" width="190" height="80" rx="8"/><text class="ttl" x="224" y="84">harvest.yml</text><text class="sub" x="224" y="104">harvest.py · ширина 1–7</text><text class="sub" x="224" y="122">раз в 2 дня, ~05:19 МСК</text>
@@ -130,7 +130,7 @@
     <div class="node"><span class="tag t-gh">Сбор</span><h3>Сборщик harvest</h3>
       <p>Ищет события по компаниям из <code>companies.md</code> и по темам отрасли, классифицирует и пишет в очередь.</p>
       <ul>
-        <li>LLM через <code>scripts/llm.py</code>: OpenAI gpt-5-mini + встроенный web_search (с 08.11.2026; запасной — Anthropic Haiku 4.5, переменная <code>LLM_PROVIDER</code>)</li>
+        <li>LLM через <code>scripts/llm.py</code>: OpenAI gpt-6.1-terra + встроенный web_search (с 27.11.2026, до того gpt-5-mini; сильная — gpt-6.1-sol; запасной — Anthropic Haiku 4.5, переменная <code>LLM_PROVIDER</code>)</li>
         <li>«Ширина» 1–7: компании → отрасль → выставки → лица → наука/клиника → регуляторика/рынок РФ → смежные</li>
         <li>Авто-режим по буферу: меньше 15 новых — шире, больше 40 — уже</li>
         <li>Текст без кириллицы или с иероглифами переводится на русский; служебная разметка вырезается</li>
@@ -217,7 +217,7 @@
       </ol>
     </div>
   </div>
-  <p class="note">Модель — как в сборщике: gpt-5-mini (OpenAI), запасная — claude-haiku-4-5. Пример: сделка Ottobock → Blue Arbor вышла 4 раза; со ступенью 3 второй и третий пост стали бы «новыми деталями» ($10,5 млн, итог раунда $15,5 млн), четвёртый — отсеян.</p>
+  <p class="note">Модель — как в сборщике: gpt-6.1-terra (OpenAI), запасная — claude-haiku-4-5. Пример: сделка Ottobock → Blue Arbor вышла 4 раза; со ступенью 3 второй и третий пост стали бы «новыми деталями» ($10,5 млн, итог раунда $15,5 млн), четвёртый — отсеян.</p>
 </section>
 
 <section class="cols">
@@ -251,6 +251,7 @@
   <div class="tbl"><table>
     <thead><tr><th>Дата</th><th>Изменение</th></tr></thead>
     <tbody>
+      <tr><td class="t">27.11.2026</td><td>OpenAI отключает gpt-5 и gpt-5-mini 11.12.2026: в <code>llm.py</code> быстрая модель — gpt-6.1-terra, сильная — gpt-6.1-sol. Новая быстрая проверка <code>llm_smoke.py</code> (обе модели и поиск) идёт вместе с бэктестом в <code>dedup-backtest</code>, который теперь запускается и при правке <code>llm.py</code>.</td></tr>
       <tr><td class="t">08.11.2026</td><td>Правила отбора сборщика (EXCLUDE в harvest.py): не брать вакансии и анонсы дат отчётов; нейротех берём, включая испытания на животных; заявления руководителей о протезировании и реабилитации (O&P) — берём, даже общие; на посторонние темы — нет. 3 новости в очереди помечены blocked с block_reason.</td></tr>
       <tr><td class="t">08.11.2026</td><td>LLM вынесена в один модуль <code>scripts/llm.py</code>; основной провайдер — ChatGPT API (gpt-5-mini для сбора и дедупа, gpt-5 для проверки ссылки), Anthropic — запасной (<code>LLM_PROVIDER</code>). Причина: организация Anthropic заблокирована до верификации, сбор 07.11 дал 0 новостей.</td></tr>
       <tr><td class="t">05.11.2026</td><td>Отдельный раздел «Защита от дублей»: три ступени (правила при записи, правила по очереди, Anthropic при отправке), вердикты и контроль.</td></tr>
