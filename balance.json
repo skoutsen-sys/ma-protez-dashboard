@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T06:59:14+00:00",
+  "generated_at": "2026-11-27T13:53:28+00:00",
   "totals": {
-    "total": 303,
-    "new": 17,
-    "posted": 254,
+    "total": 314,
+    "new": 27,
+    "posted": 255,
     "blocked": 32,
     "companies": 83
   },
@@ -12,8 +12,8 @@
     "mode": "auto",
     "max": 7
   },
-  "added_30d": 128,
-  "published_30d": 101,
+  "added_30d": 139,
+  "published_30d": 102,
   "series": [
     {
       "date": "2026-10-29",
@@ -191,9 +191,9 @@
     },
     {
       "date": "2026-11-27",
-      "added": 0,
-      "published": 1,
-      "width": null
+      "added": 11,
+      "published": 2,
+      "width": 1
     }
   ],
   "companies": [
@@ -231,7 +231,7 @@
       "size": "XL",
       "owner": "Частная, миноритарий EQT",
       "site": "ottobock.com",
-      "news_count": 27,
+      "news_count": 28,
       "story_count": 7
     },
     {
@@ -915,7 +915,7 @@
       "size": "L",
       "owner": "Частная",
       "site": "neuralink.com",
-      "news_count": 5,
+      "news_count": 7,
       "story_count": 6
     },
     {
@@ -947,7 +947,7 @@
       "size": "XL",
       "owner": "Частная (Patricia Industries)",
       "site": "permobil.com",
-      "news_count": 4,
+      "news_count": 5,
       "story_count": 5
     },
     {
@@ -1144,7 +1144,7 @@
       "size": "S",
       "owner": "Частная",
       "site": "",
-      "news_count": 1,
+      "news_count": 2,
       "story_count": 5
     },
     {
@@ -1177,7 +1177,7 @@
       "size": "S",
       "owner": "Частная",
       "site": "salut-ortho.ru",
-      "news_count": 0,
+      "news_count": 1,
       "story_count": 2
     },
     {
@@ -1401,7 +1401,7 @@
       "size": "S",
       "owner": "Частная",
       "site": "caterwil.ru",
-      "news_count": 0,
+      "news_count": 1,
       "story_count": 3
     },
     {
@@ -1638,6 +1638,14 @@
       "url": "https://www.saudirehabexpo.com/"
     },
     {
+      "date": "2026-11-27",
+      "company": "Нейри",
+      "title": "«Нейри» сообщила об установке нейроимпланта пациентке с депрессией",
+      "status": "posted",
+      "region": "RU",
+      "url": "https://naukatv.ru/news/v_rossii_vpervye_ustanovili_implant_v_mozg_dlya_borby_s_tyazheloj_depressiej"
+    },
+    {
       "date": "2026-11-26",
       "company": "Össur",
       "title": "Össur участвует в Orto Medical Care 2026 в Мадриде",
@@ -1646,12 +1654,60 @@
       "url": "https://www.ossur.com/es-es/acerca-ossur/noticias-ossur/omc-2026"
     },
     {
+      "date": "2026-11-26",
+      "company": "ГК «МЕТИЗ»",
+      "title": "Проект ГК «МЕТИЗ» о людях с ампутацией войдёт в сборник «50 лучших проектов»",
+      "status": "new",
+      "region": "RU",
+      "url": "https://www.luchnik.ru/news/prodolzhaetsya-rabota-nad-18-m-tomom-sbornika-50-luchshih-proektov"
+    },
+    {
+      "date": "2026-11-26",
+      "company": "Нейри",
+      "title": "«Нейри» представила устройство для стимуляции блуждающего нерва",
+      "status": "new",
+      "region": "RU",
+      "url": "https://www.cnews.ru/news/line/2026-11-26_zasypat_bez_tabletok_nejri"
+    },
+    {
       "date": "2026-11-25",
       "company": "orto Medical Care / FEDOP",
       "title": "Orto Medical Care 2026 — профессиональная ярмарка ортопедии и протезирования в Мадриде",
       "status": "posted",
       "region": "world",
       "url": "https://ortomedicalcare.com/"
+    },
+    {
+      "date": "2026-11-25",
+      "company": "Neuralink",
+      "title": "Neuralink получила разрешение на ключевое исследование нейроимпланта",
+      "status": "new",
+      "region": "world",
+      "url": "https://neuralink.com/updates/"
+    },
+    {
+      "date": "2026-11-25",
+      "company": "Permobil",
+      "title": "Permobil участвует в выставке средств реабилитации в Бирмингеме",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.theotshow.com/exhibitors/permobil"
+    },
+    {
+      "date": "2026-11-25",
+      "company": "Салют Орто",
+      "title": "Реабилитолог «Салют Орто» выступила на встрече для ветеранов в Иркутске",
+      "status": "new",
+      "region": "RU",
+      "url": "https://news-irkutsk.ru/sport/2026/11/25/108320.html"
+    },
+    {
+      "date": "2026-11-24",
+      "company": "Сколиолоджик",
+      "title": "«Сколиолоджик» открыл клинику в Хабаровске",
+      "status": "new",
+      "region": "RU",
+      "url": "https://acspb.ru/index.php/news3/skoliolodzhik-otkryl-pervuyu-kliniku-na-dalnem-vostoke"
     },
     {
       "date": "2026-11-23",
@@ -1678,12 +1734,36 @@
       "url": "https://www.globenewswire.com/de/news-release/2026/11/23/3408434/32993/en/lifeward-unveils-next-generation-alterg-anti-gravity-treadmill-at-medica-2026.html"
     },
     {
+      "date": "2026-11-23",
+      "company": "Ottobock",
+      "title": "Ottobock продаёт экзоскелет WIM S в США",
+      "status": "new",
+      "region": "world",
+      "url": "https://exoskeletonreport.com/2026/11/exoskeleton-report-weekly-newsletter-archive-2026-week-47/"
+    },
+    {
+      "date": "2026-11-23",
+      "company": "Fillauer Motion Control, Inc.",
+      "title": "Протез стопы Fillauer исследуют для оценки влияния на риск падений",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.research.va.gov/programs/tech_transfer/whats_new.cfm"
+    },
+    {
       "date": "2026-11-22",
       "company": "Моторика",
       "title": "«Моторика» проведёт «День Кибергероя» в Астане при поддержке РПОЦ",
       "status": "posted",
       "region": "RU",
       "url": "https://motorica.org/blog/events/den-kibergeroya-v-astane"
+    },
+    {
+      "date": "2026-11-22",
+      "company": "Neuralink",
+      "title": "Участник испытания Neuralink управляет видеоигрой с помощью нейроинтерфейса",
+      "status": "new",
+      "region": "world",
+      "url": "https://www.tomshardware.com/peripherals/wearable-tech/neuralink-trial-participant-ditches-mouth-stick-to-play-gta-6-with-his-mind-brain-computer-interface-maps-imagined-ring-finger-taps-and-hand-slides-to-a-playstation-5-controller"
     },
     {
       "date": "2026-11-21",
@@ -1700,6 +1780,14 @@
       "status": "posted",
       "region": "world",
       "url": "https://www.techradar.com/ai-platforms-assistants/the-latest-demonstration-of-neuralinks-implant-capabilities-is-a-patient-piloting-a-speedboat-in-gta-6-using-only-brain-signals"
+    },
+    {
+      "date": "2026-11-20",
+      "company": "Caterwil",
+      "title": "Caterwil представила компактную полноприводную коляску Ultra 4WD mini",
+      "status": "new",
+      "region": "RU",
+      "url": "https://caterwil.ru/blog/novosti/caterwil-ultra-4wd-mini-/"
     },
     {
       "date": "2026-11-19",
@@ -4845,11 +4933,11 @@
         },
         {
           "text": "Как работает HAL. Экзоскелет считывает биоэлектрические сигналы с поверхности кожи, отражающие намерение пользователя к движению, и приводит конечность в действие. В основе — теория интерактивной биологической обратной связи (iBF): замкнутый контур между HAL, мозгом, нервной и мышечной системами. Это не просто поддержка, а «кибернетическая терапия», обучающая нервную систему. Вывод для отрасли: акцент на нейрореабилитационном эффекте, а не на механической ассистенции, — отличительная черта подхода Cyberdyne.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Бизнес-модель. В Японии — крупнейшем для себя рынке — Cyberdyne работает по модели лизинга устройств медицинским учреждениям, снижая порог входа для клиник. С 2020 года действует домашний сервис Neuro HALFIT с арендой HAL Lumbar и удалёнными тренерами, консультирующими по методике занятий. Вывод для отрасли: аренда и сервисная подписка вместо продажи «железа» превращают дорогой экзоскелет в возобновляемый поток дохода и удерживают клиента в экосистеме.",
-          "status": "new"
+          "status": "posted"
         },
         {
           "text": "Выход на рынок США. После получения разрешения FDA Cyberdyne создала совместное предприятие Cybernic Treatment Center во Флориде вместе с реабилитационной сетью Brooks Rehabilitation — как плацдарм для распространения кибернетической терапии на Medical HAL в США. Продуктовая линейка включает Medical HAL, Well-Being HAL и системы HAL Lumbar для поясницы. Вывод для отрасли: партнёрство с локальной клинической сетью — рабочий способ для зарубежного игрока преодолеть барьер входа на рынок США.",
