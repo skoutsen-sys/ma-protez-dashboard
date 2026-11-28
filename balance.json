@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T22:42:21+00:00",
+  "generated_at": "2026-11-28T07:46:30+00:00",
   "totals": {
     "total": 314,
-    "new": 26,
-    "posted": 256,
+    "new": 25,
+    "posted": 257,
     "blocked": 32,
     "companies": 83
   },
@@ -13,7 +13,7 @@
     "max": 7
   },
   "added_30d": 131,
-  "published_30d": 100,
+  "published_30d": 101,
   "series": [
     {
       "date": "2026-10-30",
@@ -192,7 +192,7 @@
     {
       "date": "2026-11-28",
       "added": 0,
-      "published": 0,
+      "published": 1,
       "width": null
     }
   ],
@@ -1665,7 +1665,7 @@
       "date": "2026-11-26",
       "company": "Нейри",
       "title": "«Нейри» представила устройство для стимуляции блуждающего нерва",
-      "status": "new",
+      "status": "posted",
       "region": "RU",
       "url": "https://www.cnews.ru/news/line/2026-11-26_zasypat_bez_tabletok_nejri"
     },
